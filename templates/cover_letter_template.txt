@@ -1,0 +1,6 @@
+Dear Hiring Manager,
+
+I am excited to apply for the {{ job_title }} position at {{ company }}. My skills in {{ skills | join(", ") }} align with your requirements.
+
+Sincerely,
+{{ name }}
