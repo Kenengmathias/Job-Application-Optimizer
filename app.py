@@ -6,8 +6,11 @@ import sqlite3
 from jinja2 import Template
 import os
 import re
+import spacy
 
 nltk.download('punkt')
+nltk.download('stopwords')
+nlp = spacy.load("en_core_web_sm")
 
 app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
@@ -17,16 +20,28 @@ def parse_resume(pdf_path):
     try:
         with pdfplumber.open(pdf_path) as pdf:
             text = "".join(page.extract_text() for page in pdf.pages if page.extract_text())
-        # Extract achievements from Sonia
-        achievements = re.findall(r"Experience:.*?(?=\n[A-Z]|\Z)", text, re.DOTALL)
-        achievements = achievements[0] if achievements else "No experience section found."
+        # Extract achievements from various experience-related sections
+        patterns = [
+            r"(?:Experience|Work History|Professional Experience|Employment History):?\s*.*?((?=\n[A-Z])|\Z)",
+            r"(?:Experience|Work History|Professional Experience|Employment History).*?(\n\s*-.*?(?=\n[A-Z]|\Z))"
+        ]
+        achievements = []
+        for pattern in patterns:
+            matches = re.findall(pattern, text, re.DOTALL | re.IGNORECASE)
+            if matches:
+                achievements.extend(matches)
+        achievements = "\n".join(achievements).strip() if achievements else "No experience section found."
         return text, achievements
     except Exception as e:
         return f"Error parsing resume: {e}", ""
 
 def extract_keywords(text):
-    tokens = nltk.word_tokenize(text.lower())
-    return [t for t in tokens if t.isalpha() and len(t) > 3]
+    # Use spaCy for better entity recognition
+    doc = nlp(text.lower())
+    # Filter out stopwords and non-skill words
+    stopwords = set(nltk.corpus.stopwords.words('english') + ['seeking', 'proficient', 'experienced'])
+    keywords = [token.text for token in doc if token.pos_ in ['NOUN', 'PROPN'] and token.text not in stopwords and len(token.text) > 3]
+    return list(set(keywords))[:10]  # Limit to top 10 unique keywords
 
 def compare_texts(resume_keywords, job_keywords):
     missing = [k for k in job_keywords if max(fuzz.ratio(k, r) for r in resume_keywords) < 80]
@@ -35,6 +50,8 @@ def compare_texts(resume_keywords, job_keywords):
 def generate_cover_letter(name, job_title, company, skills, achievements):
     with open("templates/cover_letter_template.txt") as f:
         template = Template(f.read())
+    # Clean achievements for display
+    achievements = achievements if achievements != "No experience section found." else "relevant professional experience."
     return template.render(name=name, job_title=job_title, company=company, skills=skills, achievements=achievements)
 
 def save_application(job_title, company, date, status):
