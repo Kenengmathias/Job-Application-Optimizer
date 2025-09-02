@@ -36,12 +36,22 @@ def parse_resume(pdf_path):
         return f"Error parsing resume: {e}", ""
 
 def extract_keywords(text):
-    # Use spaCy for better entity recognition
+    # Define a basic skill list based on common resume skills
+    skill_list = {
+        'programming': ['python', 'javascript', 'c++'],
+        'web development': ['react', 'node.js', 'django'],
+        'databases': ['mysql', 'postgresql', 'mongodb'],
+        'tools': ['git', 'docker', 'aws']
+    }
     doc = nlp(text.lower())
-    # Filter out stopwords and non-skill words
+    # Extract noun chunks and filter against skill list
     stopwords = set(nltk.corpus.stopwords.words('english') + ['seeking', 'proficient', 'experienced'])
-    keywords = [token.text for token in doc if token.pos_ in ['NOUN', 'PROPN'] and token.text not in stopwords and len(token.text) > 3]
-    return list(set(keywords))[:10]  # Limit to top 10 unique keywords
+    keywords = []
+    for chunk in doc.noun_chunks:
+        chunk_text = chunk.text.lower()
+        if any(skill in chunk_text for skills in skill_list.values() for skill in skills) and chunk_text not in stopwords and len(chunk_text.split()) > 1:
+            keywords.append(chunk_text)
+    return list(set(keywords))[:5]  # Limit to top 5 unique skill phrases
 
 def compare_texts(resume_keywords, job_keywords):
     missing = [k for k in job_keywords if max(fuzz.ratio(k, r) for r in resume_keywords) < 80]
@@ -52,6 +62,8 @@ def generate_cover_letter(name, job_title, company, skills, achievements):
         template = Template(f.read())
     # Clean achievements for display
     achievements = achievements if achievements != "No experience section found." else "relevant professional experience."
+    # Ensure skills are from resume if available
+    skills = skills if skills else ["strong technical skills"]
     return template.render(name=name, job_title=job_title, company=company, skills=skills, achievements=achievements)
 
 def save_application(job_title, company, date, status):
@@ -84,7 +96,7 @@ def index():
         resume_keywords = extract_keywords(resume_text)
         job_keywords = extract_keywords(job_desc)
         missing_keywords = compare_texts(resume_keywords, job_keywords)
-        cover_letter = generate_cover_letter(name, job_title, company, missing_keywords, achievements)
+        cover_letter = generate_cover_letter(name, job_title, company, resume_keywords, achievements)
 
         save_application(job_title, company, "2025-09-01", "Applied")
 
