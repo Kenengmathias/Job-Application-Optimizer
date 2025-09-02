@@ -54,17 +54,18 @@ def extract_keywords(text):
     return list(set(keywords))[:5]  # Limit to top 5 unique skills
 
 def compare_texts(resume_keywords, job_keywords):
-    missing = [k for k in job_keywords if k not in resume_keywords and max(fuzz.ratio(k, r) for r in resume_keywords) < 80]
-    return missing[:5]
+    missing = [k for k in job_keywords if k not in resume_keywords and max(fuzz.ratio(k, r) for r in resume_keywords) < 90]
+    return missing[:5]  # Increased fuzz ratio threshold to 90 for better soft skill detection
 
-def generate_cover_letter(name, job_title, company, skills, achievements):
+def generate_cover_letter(name, job_title, company, resume_keywords, missing_keywords, achievements):
     with open("templates/cover_letter_template.txt") as f:
         template = Template(f.read())
     # Clean achievements for display
     achievements = achievements if achievements != "No experience section found." else "relevant professional experience."
-    # Use resume skills as primary, fallback to generic if none
-    skills = skills if skills else ["strong technical skills", "problem-solving"]
-    return template.render(name=name, job_title=job_title, company=company, skills=skills, achievements=achievements)
+    # Combine resume skills with missing job skills for a balanced representation
+    all_skills = list(set(resume_keywords + missing_keywords))[:5]  # Limit to top 5 unique skills
+    all_skills = all_skills if all_skills else ["strong technical skills", "problem-solving"]
+    return template.render(name=name, job_title=job_title, company=company, skills=all_skills, achievements=achievements)
 
 def save_application(job_title, company, date, status):
     conn = sqlite3.connect("applications.db")
@@ -96,7 +97,7 @@ def index():
         resume_keywords = extract_keywords(resume_text)
         job_keywords = extract_keywords(job_desc)
         missing_keywords = compare_texts(resume_keywords, job_keywords)
-        cover_letter = generate_cover_letter(name, job_title, company, resume_keywords, achievements)
+        cover_letter = generate_cover_letter(name, job_title, company, resume_keywords, missing_keywords, achievements)
 
         save_application(job_title, company, "2025-09-01", "Applied")
 
