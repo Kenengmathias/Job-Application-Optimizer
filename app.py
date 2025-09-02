@@ -54,8 +54,8 @@ def extract_keywords(text):
     return list(set(keywords))[:5]  # Limit to top 5 unique skills
 
 def compare_texts(resume_keywords, job_keywords):
-    missing = [k for k in job_keywords if k not in resume_keywords and max(fuzz.ratio(k, r) for r in resume_keywords) < 90]
-    return missing[:5]  # Increased fuzz ratio threshold to 90 for better soft skill detection
+    missing = [k for k in job_keywords if k not in resume_keywords and max(fuzz.ratio(k, r) for r in resume_keywords) < 80]
+    return missing[:5]  # Reduced fuzz ratio threshold to 80 for better soft skill detection
 
 def generate_cover_letter(name, job_title, company, resume_keywords, missing_keywords, achievements):
     with open("templates/cover_letter_template.txt") as f:
