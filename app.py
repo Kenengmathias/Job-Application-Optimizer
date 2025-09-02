@@ -80,7 +80,7 @@ def save_application(job_title, company, date, status):
 def search_jobs(query):
     jobs = []
     sites = [
-        ("Upwork", f"https://www.upwork.com/search/jobs?q={query.replace(' ', '%20')}", 'div', 'job-tile', 'h5', 'a'),
+        ("Upwork", f"https://www.upwork.com/search/jobs?q={query.replace(' ', '%20')}", 'div', 'job-tile', 'h5', 'a', 'href'),
         ("Freelancer", f"https://www.freelancer.com/job-search/{query.replace(' ', '-')}", 'div', 'JobSearchCard-item', 'a', 'JobSearchCard-primary-heading-link', 'href'),
         ("Fiverr", f"https://www.fiverr.com/search/gigs?query={query.replace(' ', '%20')}", 'div', 'gig-card-layout', 'a', 'gig-card-title', 'href'),
         ("Indeed", f"https://www.indeed.com/jobs?q={query.replace(' ', '+')}", 'div', 'job_seen_beacon', 'a', 'jobTitle', 'href'),
