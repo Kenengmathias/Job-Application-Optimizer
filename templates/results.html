@@ -19,6 +19,8 @@
         {% else %}
             <p class="alert alert-success">Your resume aligns well with the job description!</p>
         {% endif %}
+        <h3>Extracted Achievements</h3>
+        <pre class="border p-3">{{ achievements }}</pre>
         <h3>Generated Cover Letter</h3>
         <pre class="border p-3">{{ cover_letter }}</pre>
         <p class="alert alert-info">Application saved to database.</p>
