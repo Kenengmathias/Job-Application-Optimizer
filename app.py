@@ -36,25 +36,25 @@ def parse_resume(pdf_path):
         return f"Error parsing resume: {e}", ""
 
 def extract_keywords(text):
-    # Define a basic skill list based on common resume skills
+    # Expanded skill list based on resume and common job skills
     skill_list = {
-        'programming': ['python', 'javascript', 'c++'],
-        'web development': ['react', 'node.js', 'django'],
-        'databases': ['mysql', 'postgresql', 'mongodb'],
-        'tools': ['git', 'docker', 'aws']
+        'programming': ['python', 'javascript', 'c++', 'java'],
+        'web development': ['react', 'node.js', 'django', 'html', 'css'],
+        'databases': ['mysql', 'postgresql', 'mongodb', 'sql'],
+        'tools': ['git', 'docker', 'aws', 'linux'],
+        'soft skills': ['problem-solving', 'teamwork', 'communication']
     }
     doc = nlp(text.lower())
-    # Extract noun chunks and filter against skill list
-    stopwords = set(nltk.corpus.stopwords.words('english') + ['seeking', 'proficient', 'experienced'])
+    # Extract individual skill tokens
+    stopwords = set(nltk.corpus.stopwords.words('english') + ['seeking', 'proficient', 'experienced', 'developer'])
     keywords = []
-    for chunk in doc.noun_chunks:
-        chunk_text = chunk.text.lower()
-        if any(skill in chunk_text for skills in skill_list.values() for skill in skills) and chunk_text not in stopwords and len(chunk_text.split()) > 1:
-            keywords.append(chunk_text)
-    return list(set(keywords))[:5]  # Limit to top 5 unique skill phrases
+    for token in doc:
+        if token.text in [skill for skills in skill_list.values() for skill in skills] and token.text not in stopwords:
+            keywords.append(token.text)
+    return list(set(keywords))[:5]  # Limit to top 5 unique skills
 
 def compare_texts(resume_keywords, job_keywords):
-    missing = [k for k in job_keywords if max(fuzz.ratio(k, r) for r in resume_keywords) < 80]
+    missing = [k for k in job_keywords if k not in resume_keywords and max(fuzz.ratio(k, r) for r in resume_keywords) < 80]
     return missing[:5]
 
 def generate_cover_letter(name, job_title, company, skills, achievements):
@@ -62,8 +62,8 @@ def generate_cover_letter(name, job_title, company, skills, achievements):
         template = Template(f.read())
     # Clean achievements for display
     achievements = achievements if achievements != "No experience section found." else "relevant professional experience."
-    # Ensure skills are from resume if available
-    skills = skills if skills else ["strong technical skills"]
+    # Use resume skills as primary, fallback to generic if none
+    skills = skills if skills else ["strong technical skills", "problem-solving"]
     return template.render(name=name, job_title=job_title, company=company, skills=skills, achievements=achievements)
 
 def save_application(job_title, company, date, status):
