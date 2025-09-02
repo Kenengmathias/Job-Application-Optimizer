@@ -9,6 +9,7 @@ import re
 import spacy
 import requests
 from bs4 import BeautifulSoup
+import time
 
 nltk.download('punkt')
 nltk.download('stopwords')
@@ -22,7 +23,7 @@ def parse_resume(pdf_path):
     try:
         with pdfplumber.open(pdf_path) as pdf:
             text = "".join(page.extract_text() for page in pdf.pages if page.extract_text())
-        # Extract achievements from various experience-related sections
+        # Extract achievements and skills
         patterns = [
             r"(?:Experience|Work History|Professional Experience|Employment History):?\s*.*?((?=\n[A-Z])|\Z)",
             r"(?:Experience|Work History|Professional Experience|Employment History).*?(\n\s*-.*?(?=\n[A-Z]|\Z))"
@@ -33,7 +34,6 @@ def parse_resume(pdf_path):
             if matches:
                 achievements.extend(matches)
         achievements = "\n".join(achievements).strip() if achievements else "No experience section found."
-        # Extract skills section
         skills_pattern = r"(?:Skills):?\s*.*?((?=\n[A-Z])|\Z)"
         skills_match = re.findall(skills_pattern, text, re.DOTALL | re.IGNORECASE)
         skills = skills_match[0].strip().split(', ') if skills_match else []
@@ -42,7 +42,6 @@ def parse_resume(pdf_path):
         return f"Error parsing resume: {e}", "", []
 
 def extract_keywords(text):
-    # Expanded skill list based on resume and common job skills
     skill_list = {
         'programming': ['python', 'javascript', 'c++', 'java'],
         'web development': ['react', 'node.js', 'django', 'html', 'css'],
@@ -51,13 +50,12 @@ def extract_keywords(text):
         'soft skills': ['problem-solving', 'teamwork', 'communication']
     }
     doc = nlp(text.lower())
-    # Extract individual skill tokens
     stopwords = set(nltk.corpus.stopwords.words('english') + ['seeking', 'proficient', 'experienced', 'developer'])
     keywords = []
     for token in doc:
         if token.text in [skill for skills in skill_list.values() for skill in skills] and token.text not in stopwords:
             keywords.append(token.text)
-    return list(set(keywords))[:5]  # Limit to top 5 unique skills
+    return list(set(keywords))[:5]
 
 def compare_texts(resume_keywords, job_keywords):
     missing = [k for k in job_keywords if k not in resume_keywords and max(fuzz.ratio(k, r) for r in resume_keywords) < 80]
@@ -66,10 +64,8 @@ def compare_texts(resume_keywords, job_keywords):
 def generate_cover_letter(name, job_title, company, resume_keywords, missing_keywords, achievements):
     with open("templates/cover_letter_template.txt") as f:
         template = Template(f.read())
-    # Clean achievements for display
     achievements = achievements if achievements != "No experience section found." else "relevant professional experience."
-    # Combine resume skills with missing job skills for a balanced representation
-    all_skills = list(set(resume_keywords + missing_keywords))[:5]  # Limit to top 5 unique skills
+    all_skills = list(set(resume_keywords + missing_keywords))[:5]
     all_skills = all_skills if all_skills else ["strong technical skills", "problem-solving"]
     return template.render(name=name, job_title=job_title, company=company, skills=all_skills, achievements=achievements)
 
@@ -83,36 +79,36 @@ def save_application(job_title, company, date, status):
 
 def search_jobs(query):
     jobs = []
-    # Upwork
-    upwork_url = f"https://www.upwork.com/search/jobs?q={query.replace(' ', '%20')}"
-    response = requests.get(upwork_url)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    for job in soup.find_all('div', class_='job-tile', limit=5):
-        title = job.find('h5').text.strip() if job.find('h5') else "No title"
-        link = "https://www.upwork.com" + job.find('a')['href'] if job.find('a') else "No link"
-        jobs.append({"title": title, "link": link, "source": "Upwork"})
-    # Freelancer
-    freelancer_url = f"https://www.freelancer.com/job-search/{query.replace(' ', '-')}"
-    response = requests.get(freelancer_url)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    for job in soup.find_all('div', class_='JobSearchCard-item', limit=5):
-        title = job.find('a', class_='JobSearchCard-primary-heading-link').text.strip() if job.find('a', class_='JobSearchCard-primary-heading-link') else "No title"
-        link = "https://www.freelancer.com" + job.find('a', class_='JobSearchCard-primary-heading-link')['href'] if job.find('a', class_='JobSearchCard-primary-heading-link') else "No link"
-        jobs.append({"title": title, "link": link, "source": "Freelancer"})
-    # Fiverr
-    fiverr_url = f"https://www.fiverr.com/search/gigs?query={query.replace(' ', '%20')}"
-    response = requests.get(fiverr_url)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    for job in soup.find_all('div', class_='gig-card-layout', limit=5):
-        title = job.find('a', class_='gig-card-title').text.strip() if job.find('a', class_='gig-card-title') else "No title"
-        link = "https://www.fiverr.com" + job.find('a', class_='gig-card-title')['href'] if job.find('a', class_='gig-card-title') else "No link"
-        jobs.append({"title": title, "link": link, "source": "Fiverr"})
-    return jobs
+    sites = [
+        ("Upwork", f"https://www.upwork.com/search/jobs?q={query.replace(' ', '%20')}", 'div', 'job-tile', 'h5', 'a'),
+        ("Freelancer", f"https://www.freelancer.com/job-search/{query.replace(' ', '-')}", 'div', 'JobSearchCard-item', 'a', 'JobSearchCard-primary-heading-link', 'href'),
+        ("Fiverr", f"https://www.fiverr.com/search/gigs?query={query.replace(' ', '%20')}", 'div', 'gig-card-layout', 'a', 'gig-card-title', 'href'),
+        ("Indeed", f"https://www.indeed.com/jobs?q={query.replace(' ', '+')}", 'div', 'job_seen_beacon', 'a', 'jobTitle', 'href'),
+        ("LinkedIn", f"https://www.linkedin.com/jobs/search?keywords={query.replace(' ', '%20')}", 'li', 'job-card-list__title', 'a', 'base-card__full-link', 'href'),
+        ("Toptal", f"https://www.toptal.com/jobs?search={query.replace(' ', '+')}", 'div', 'job-card', 'h2', 'a', 'href')
+    ]
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+    for site_name, url, container_tag, container_class, title_tag, title_class, link_attr in sites:
+        try:
+            response = requests.get(url, headers=headers, timeout=5)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, 'html.parser')
+            time.sleep(2)  # Delay to avoid rate limiting
+            job_elements = soup.find_all(container_tag, class_=container_class, limit=3)
+            for job in job_elements:
+                title_elem = job.find(title_tag, class_=title_class) if title_class else job.find(title_tag)
+                link_elem = job.find('a', href=True) if not link_attr else job.find(title_tag, class_=title_class)
+                title = title_elem.text.strip() if title_elem else "No title"
+                link = link_elem['href'] if link_elem and link_attr in link_elem.attrs else "https://www." + site_name.lower() + ".com" + (job.find('a')['href'] if job.find('a') else "")
+                if title != "No title" and link != "No link":
+                    jobs.append({"title": title, "link": link, "source": site_name})
+        except requests.RequestException:
+            continue
+    return jobs[:9]  # Limit to 9 total (3 per 3 sites)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-        # Existing optimize logic
         resume = request.files.get("resume")
         job_desc = request.form.get("job_desc")
         name = request.form.get("name")
@@ -125,7 +121,7 @@ def index():
         resume_path = os.path.join(app.config['UPLOAD_FOLDER'], resume.filename)
         resume.save(resume_path)
 
-        resume_text, achievements = parse_resume(resume_path)
+        resume_text, achievements, _ = parse_resume(resume_path)
         if "Error" in resume_text:
             return render_template("index.html", error=resume_text)
 
@@ -145,17 +141,24 @@ def find_jobs():
     jobs = []
     query = ""
     if request.method == "POST":
-        if 'resume' in request.files and request.files['resume'].filename != '':
-            resume = request.files['resume']
-            resume_path = os.path.join(app.config['UPLOAD_FOLDER'], resume.filename)
-            resume.save(resume_path)
-            _, _, skills = parse_resume(resume_path)
-            query = ' '.join(skills) + " job"
-        else:
-            query = request.form.get("job_title", "")
+        query = request.form.get("job_title", "")
         if query:
             jobs = search_jobs(query)
     return render_template("find_jobs.html", jobs=jobs, query=query)
+
+@app.route("/match_resume_jobs", methods=["GET", "POST"])
+def match_resume_jobs():
+    jobs = []
+    if request.method == "POST":
+        resume = request.files.get("resume")
+        if resume and resume.filename != '':
+            resume_path = os.path.join(app.config['UPLOAD_FOLDER'], resume.filename)
+            resume.save(resume_path)
+            resume_text, _, skills = parse_resume(resume_path)
+            if "Error" not in resume_text:
+                query = ' '.join(skills) + " job" if skills else "general job"
+                jobs = search_jobs(query)
+    return render_template("match_resume_jobs.html", jobs=jobs)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)
