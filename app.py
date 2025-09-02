@@ -7,6 +7,8 @@ from jinja2 import Template
 import os
 import re
 import spacy
+import requests
+from bs4 import BeautifulSoup
 
 nltk.download('punkt')
 nltk.download('stopwords')
@@ -31,9 +33,13 @@ def parse_resume(pdf_path):
             if matches:
                 achievements.extend(matches)
         achievements = "\n".join(achievements).strip() if achievements else "No experience section found."
-        return text, achievements
+        # Extract skills section
+        skills_pattern = r"(?:Skills):?\s*.*?((?=\n[A-Z])|\Z)"
+        skills_match = re.findall(skills_pattern, text, re.DOTALL | re.IGNORECASE)
+        skills = skills_match[0].strip().split(', ') if skills_match else []
+        return text, achievements, skills
     except Exception as e:
-        return f"Error parsing resume: {e}", ""
+        return f"Error parsing resume: {e}", "", []
 
 def extract_keywords(text):
     # Expanded skill list based on resume and common job skills
@@ -55,7 +61,7 @@ def extract_keywords(text):
 
 def compare_texts(resume_keywords, job_keywords):
     missing = [k for k in job_keywords if k not in resume_keywords and max(fuzz.ratio(k, r) for r in resume_keywords) < 80]
-    return missing[:5]  # Reduced fuzz ratio threshold to 80 for better soft skill detection
+    return missing[:5]
 
 def generate_cover_letter(name, job_title, company, resume_keywords, missing_keywords, achievements):
     with open("templates/cover_letter_template.txt") as f:
@@ -75,9 +81,38 @@ def save_application(job_title, company, date, status):
     conn.commit()
     conn.close()
 
+def search_jobs(query):
+    jobs = []
+    # Upwork
+    upwork_url = f"https://www.upwork.com/search/jobs?q={query.replace(' ', '%20')}"
+    response = requests.get(upwork_url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    for job in soup.find_all('div', class_='job-tile', limit=5):
+        title = job.find('h5').text.strip() if job.find('h5') else "No title"
+        link = "https://www.upwork.com" + job.find('a')['href'] if job.find('a') else "No link"
+        jobs.append({"title": title, "link": link, "source": "Upwork"})
+    # Freelancer
+    freelancer_url = f"https://www.freelancer.com/job-search/{query.replace(' ', '-')}"
+    response = requests.get(freelancer_url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    for job in soup.find_all('div', class_='JobSearchCard-item', limit=5):
+        title = job.find('a', class_='JobSearchCard-primary-heading-link').text.strip() if job.find('a', class_='JobSearchCard-primary-heading-link') else "No title"
+        link = "https://www.freelancer.com" + job.find('a', class_='JobSearchCard-primary-heading-link')['href'] if job.find('a', class_='JobSearchCard-primary-heading-link') else "No link"
+        jobs.append({"title": title, "link": link, "source": "Freelancer"})
+    # Fiverr
+    fiverr_url = f"https://www.fiverr.com/search/gigs?query={query.replace(' ', '%20')}"
+    response = requests.get(fiverr_url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    for job in soup.find_all('div', class_='gig-card-layout', limit=5):
+        title = job.find('a', class_='gig-card-title').text.strip() if job.find('a', class_='gig-card-title') else "No title"
+        link = "https://www.fiverr.com" + job.find('a', class_='gig-card-title')['href'] if job.find('a', class_='gig-card-title') else "No link"
+        jobs.append({"title": title, "link": link, "source": "Fiverr"})
+    return jobs
+
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
+        # Existing optimize logic
         resume = request.files.get("resume")
         job_desc = request.form.get("job_desc")
         name = request.form.get("name")
@@ -104,6 +139,23 @@ def index():
         return render_template("results.html", missing=missing_keywords, cover_letter=cover_letter, achievements=achievements)
 
     return render_template("index.html", error=None)
+
+@app.route("/find_jobs", methods=["GET", "POST"])
+def find_jobs():
+    jobs = []
+    query = ""
+    if request.method == "POST":
+        if 'resume' in request.files and request.files['resume'].filename != '':
+            resume = request.files['resume']
+            resume_path = os.path.join(app.config['UPLOAD_FOLDER'], resume.filename)
+            resume.save(resume_path)
+            _, _, skills = parse_resume(resume_path)
+            query = ' '.join(skills) + " job"
+        else:
+            query = request.form.get("job_title", "")
+        if query:
+            jobs = search_jobs(query)
+    return render_template("find_jobs.html", jobs=jobs, query=query)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)
