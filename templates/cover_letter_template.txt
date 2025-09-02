@@ -1,6 +1,6 @@
 Dear Hiring Manager,
 
-I am excited to apply for the {{ job_title }} position at {{ company }}. With my background in {{ skills | join(", ") }}, I am confident in my ability to contribute to your team. My experience includes relevant skills that align with your requirements, such as {{ skills[0] if skills else "strong qualifications" }}. I am eager to bring my expertise to {{ company }} and support your goals.
+I am excited to apply for the {{ job_title }} position at {{ company }}. With my background in {{ skills | join(", ") }}, I am confident in my ability to contribute to your team. My experience includes: {{ achievements }} I am eager to bring my expertise to {{ company }} and support your goals.
 
 Sincerely,
 {{ name }}
