@@ -23,7 +23,6 @@ def parse_resume(pdf_path):
     try:
         with pdfplumber.open(pdf_path) as pdf:
             text = "".join(page.extract_text() for page in pdf.pages if page.extract_text())
-        # Extract achievements and skills
         patterns = [
             r"(?:Experience|Work History|Professional Experience|Employment History):?\s*.*?((?=\n[A-Z])|\Z)",
             r"(?:Experience|Work History|Professional Experience|Employment History).*?(\n\s*-.*?(?=\n[A-Z]|\Z))"
@@ -80,31 +79,39 @@ def save_application(job_title, company, date, status):
 def search_jobs(query):
     jobs = []
     sites = [
-        ("Upwork", f"https://www.upwork.com/search/jobs?q={query.replace(' ', '%20')}", 'div', 'job-tile', 'h5', 'a', 'href'),
+        ("Upwork", f"https://www.upwork.com/nx/jobs/search/?q={query.replace(' ', '+')}", 'div', 'job-tile', 'h3', None, 'href'),
         ("Freelancer", f"https://www.freelancer.com/job-search/{query.replace(' ', '-')}", 'div', 'JobSearchCard-item', 'a', 'JobSearchCard-primary-heading-link', 'href'),
-        ("Fiverr", f"https://www.fiverr.com/search/gigs?query={query.replace(' ', '%20')}", 'div', 'gig-card-layout', 'a', 'gig-card-title', 'href'),
-        ("Indeed", f"https://www.indeed.com/jobs?q={query.replace(' ', '+')}", 'div', 'job_seen_beacon', 'a', 'jobTitle', 'href'),
-        ("LinkedIn", f"https://www.linkedin.com/jobs/search?keywords={query.replace(' ', '%20')}", 'li', 'job-card-list__title', 'a', 'base-card__full-link', 'href'),
-        ("Toptal", f"https://www.toptal.com/jobs?search={query.replace(' ', '+')}", 'div', 'job-card', 'h2', 'a', 'href')
+        ("Fiverr", f"https://www.fiverr.com/search/gigs?query={query.replace(' ', '+')}", 'div', 'gig-card-layout', 'a', 'gig-card-title', 'href'),
+        ("Indeed", f"https://www.indeed.com/jobs?q={query.replace(' ', '+')}", 'div', 'job_seen_beacon', 'a', 'jcs-JobTitle', 'href'),
+        ("LinkedIn", f"https://www.linkedin.com/jobs/search?keywords={query.replace(' ', '+')}", 'li', 'job-card-list__title', 'a', None, 'href'),
+        ("Toptal", f"https://www.toptal.com/jobs?search={query.replace(' ', '+')}", 'div', 'job-card', 'h2', None, 'href')
     ]
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
     for site_name, url, container_tag, container_class, title_tag, title_class, link_attr in sites:
         try:
+            print(f"Scraping {site_name}: {url}")
             response = requests.get(url, headers=headers, timeout=5)
+            print(f"Status code: {response.status_code}")
             response.raise_for_status()
             soup = BeautifulSoup(response.text, 'html.parser')
             time.sleep(2)  # Delay to avoid rate limiting
             job_elements = soup.find_all(container_tag, class_=container_class, limit=3)
+            print(f"Found {len(job_elements)} job elements for {site_name}")
             for job in job_elements:
                 title_elem = job.find(title_tag, class_=title_class) if title_class else job.find(title_tag)
-                link_elem = job.find('a', href=True) if not link_attr else job.find(title_tag, class_=title_class)
+                link_elem = job.find('a', href=True)
                 title = title_elem.text.strip() if title_elem else "No title"
-                link = link_elem['href'] if link_elem and link_attr in link_elem.attrs else "https://www." + site_name.lower() + ".com" + (job.find('a')['href'] if job.find('a') else "")
-                if title != "No title" and link != "No link":
+                base_url = f"https://www.{site_name.lower()}.com"
+                link = link_elem['href'] if link_elem and link_attr in link_elem.attrs else base_url + (job.find('a')['href'] if job.find('a') else "")
+                if title != "No title" and link:
+                    if not link.startswith('http'):
+                        link = base_url + link if not link.startswith('/') else base_url + link
                     jobs.append({"title": title, "link": link, "source": site_name})
-        except requests.RequestException:
+        except requests.RequestException as e:
+            print(f"Error scraping {site_name}: {e}")
             continue
-    return jobs[:9]  # Limit to 9 total (3 per 3 sites)
+    print(f"Total jobs collected: {len(jobs)}")
+    return jobs[:9]  # Limit to 9 total
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -130,7 +137,7 @@ def index():
         missing_keywords = compare_texts(resume_keywords, job_keywords)
         cover_letter = generate_cover_letter(name, job_title, company, resume_keywords, missing_keywords, achievements)
 
-        save_application(job_title, company, "2025-09-01", "Applied")
+        save_application(job_title, company, "2025-09-03", "Applied")
 
         return render_template("results.html", missing=missing_keywords, cover_letter=cover_letter, achievements=achievements)
 
