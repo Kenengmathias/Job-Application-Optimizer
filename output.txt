@@ -11,3 +11,2838 @@ ERROR:__main__:Error in find_jobs: signal only works in main thread of the main 
 DEBUG:asyncio:Using selector: EpollSelector
 ERROR:__main__:Failed to launch browser or complete search: signal only works in main thread of the main interpreter
 ERROR:__main__:Error in find_jobs: signal only works in main thread of the main interpreter
+DEBUG:pdfminer.psparser:seek: 0
+DEBUG:pdfminer.pdfdocument:find_xref: b''
+DEBUG:pdfminer.pdfdocument:find_xref: b'%%EOF'
+DEBUG:pdfminer.pdfdocument:find_xref: b'2447'
+DEBUG:pdfminer.pdfdocument:find_xref: b'startxref'
+DEBUG:pdfminer.pdfdocument:xref found: pos=b'2447'
+DEBUG:pdfminer.psparser:seek: 2447
+DEBUG:pdfminer.psparser:nexttoken: (2447, /b'xref')
+DEBUG:pdfminer.pdfdocument:read_xref_from: start=2447, token=/b'xref'
+DEBUG:pdfminer.psparser:nextline: 2451, b'\n'
+DEBUG:pdfminer.psparser:nextline: 2452, b'0 9\n'
+DEBUG:pdfminer.psparser:nextline: 2456, b'0000000000 65535 f \n'
+DEBUG:pdfminer.psparser:nextline: 2476, b'0000000073 00000 n \n'
+DEBUG:pdfminer.psparser:nextline: 2496, b'0000000114 00000 n \n'
+DEBUG:pdfminer.psparser:nextline: 2516, b'0000000221 00000 n \n'
+DEBUG:pdfminer.psparser:nextline: 2536, b'0000000333 00000 n \n'
+DEBUG:pdfminer.psparser:nextline: 2556, b'0000000536 00000 n \n'
+DEBUG:pdfminer.psparser:nextline: 2576, b'0000000604 00000 n \n'
+DEBUG:pdfminer.psparser:nextline: 2596, b'0000000887 00000 n \n'
+DEBUG:pdfminer.psparser:nextline: 2616, b'0000000946 00000 n \n'
+DEBUG:pdfminer.psparser:nextline: 2636, b'trailer\n'
+DEBUG:pdfminer.psparser:seek: 2636
+DEBUG:pdfminer.pdfdocument:xref objects: {1: (None, 73, 0), 2: (None, 114, 0), 3: (None, 221, 0), 4: (None, 333, 0), 5: (None, 536, 0), 6: (None, 604, 0), 7: (None, 887, 0), 8: (None, 946, 0)}
+DEBUG:pdfminer.psparser:nexttoken: (2636, /b'trailer')
+DEBUG:pdfminer.psparser:nexttoken: (2644, /b'<<')
+DEBUG:pdfminer.psparser:start_type: pos=2644, type='d'
+DEBUG:pdfminer.psparser:nexttoken: (2647, /'ID')
+DEBUG:pdfminer.psparser:nexttoken: (2652, /b'[')
+DEBUG:pdfminer.psparser:start_type: pos=2652, type='a'
+DEBUG:pdfminer.psparser:nexttoken: (2653, b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89')
+DEBUG:pdfminer.psparser:nexttoken: (2687, b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89')
+DEBUG:pdfminer.psparser:nexttoken: (2721, /b']')
+DEBUG:pdfminer.psparser:end_type: pos=2652, type='a', objs=[b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89', b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89']
+DEBUG:pdfminer.psparser:nexttoken: (2796, /'Info')
+DEBUG:pdfminer.psparser:nexttoken: (2802, 6)
+DEBUG:pdfminer.psparser:nexttoken: (2804, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2806, /b'R')
+DEBUG:pdfminer.psparser:do_keyword: pos=2806, token=/b'R', stack=[(2647, /'ID'), (2652, [b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89', b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89']), (2796, /'Info'), (2802, 6), (2804, 0)]
+DEBUG:pdfminer.psparser:nexttoken: (2808, /'Root')
+DEBUG:pdfminer.psparser:nexttoken: (2814, 5)
+DEBUG:pdfminer.psparser:nexttoken: (2816, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2818, /b'R')
+DEBUG:pdfminer.psparser:do_keyword: pos=2818, token=/b'R', stack=[(2647, /'ID'), (2652, [b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89', b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89']), (2796, /'Info'), (2806, <PDFObjRef:6>), (2808, /'Root'), (2814, 5), (2816, 0)]
+DEBUG:pdfminer.psparser:nexttoken: (2820, /'Size')
+DEBUG:pdfminer.psparser:nexttoken: (2826, 9)
+DEBUG:pdfminer.psparser:nexttoken: (2828, /b'>>')
+DEBUG:pdfminer.psparser:end_type: pos=2644, type='d', objs=[/'ID', [b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89', b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89'], /'Info', <PDFObjRef:6>, /'Root', <PDFObjRef:5>, /'Size', 9]
+DEBUG:pdfminer.psparser:nexttoken: (2831, /b'startxref')
+DEBUG:pdfminer.psparser:do_keyword: pos=2831, token=/b'startxref', stack=[(2644, {'ID': [b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89', b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89'], 'Info': <PDFObjRef:6>, 'Root': <PDFObjRef:5>, 'Size': 9})]
+DEBUG:pdfminer.psparser:add_results: ((2644, {'ID': [b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89', b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89'], 'Info': <PDFObjRef:6>, 'Root': <PDFObjRef:5>, 'Size': 9}),)
+DEBUG:pdfminer.psparser:nextobject: (2644, {'ID': [b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89', b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89'], 'Info': <PDFObjRef:6>, 'Root': <PDFObjRef:5>, 'Size': 9})
+DEBUG:pdfminer.pdfdocument:trailer={'ID': [b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89', b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89'], 'Info': <PDFObjRef:6>, 'Root': <PDFObjRef:5>, 'Size': 9}
+DEBUG:pdfminer.pdfdocument:trailer: {'ID': [b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89', b'of\xa9\xae\xd0\xc9\xd8:\x99;\xd2\x9a4\x05\x8e\x89'], 'Info': <PDFObjRef:6>, 'Root': <PDFObjRef:5>, 'Size': 9}
+DEBUG:pdfminer.pdfdocument:getobj: objid=6
+DEBUG:pdfminer.psparser:seek: 604
+DEBUG:pdfminer.psparser:nexttoken: (604, 6)
+DEBUG:pdfminer.psparser:nexttoken: (606, 0)
+DEBUG:pdfminer.psparser:nexttoken: (608, /b'obj')
+DEBUG:pdfminer.psparser:nexttoken: (612, /b'<<')
+DEBUG:pdfminer.psparser:start_type: pos=612, type='d'
+DEBUG:pdfminer.psparser:nexttoken: (615, /'Author')
+DEBUG:pdfminer.psparser:nexttoken: (623, b'(anonymous)')
+DEBUG:pdfminer.psparser:nexttoken: (639, /'CreationDate')
+DEBUG:pdfminer.psparser:nexttoken: (653, b"D:20250901135912+00'00'")
+DEBUG:pdfminer.psparser:nexttoken: (679, /'Creator')
+DEBUG:pdfminer.psparser:nexttoken: (688, b'(unspecified)')
+DEBUG:pdfminer.psparser:nexttoken: (706, /'Keywords')
+DEBUG:pdfminer.psparser:nexttoken: (716, b'')
+DEBUG:pdfminer.psparser:nexttoken: (719, /'ModDate')
+DEBUG:pdfminer.psparser:nexttoken: (728, b"D:20250901135912+00'00'")
+DEBUG:pdfminer.psparser:nexttoken: (754, /'Producer')
+DEBUG:pdfminer.psparser:nexttoken: (764, b'ReportLab PDF Library - www.reportlab.com')
+DEBUG:pdfminer.psparser:nexttoken: (811, /'Subject')
+DEBUG:pdfminer.psparser:nexttoken: (820, b'(unspecified)')
+DEBUG:pdfminer.psparser:nexttoken: (838, /'Title')
+DEBUG:pdfminer.psparser:nexttoken: (845, b'(anonymous)')
+DEBUG:pdfminer.psparser:nexttoken: (861, /'Trapped')
+DEBUG:pdfminer.psparser:nexttoken: (870, /'False')
+DEBUG:pdfminer.psparser:nexttoken: (877, /b'>>')
+DEBUG:pdfminer.psparser:end_type: pos=612, type='d', objs=[/'Author', b'(anonymous)', /'CreationDate', b"D:20250901135912+00'00'", /'Creator', b'(unspecified)', /'Keywords', b'', /'ModDate', b"D:20250901135912+00'00'", /'Producer', b'ReportLab PDF Library - www.reportlab.com', /'Subject', b'(unspecified)', /'Title', b'(anonymous)', /'Trapped', /'False']
+DEBUG:pdfminer.psparser:nexttoken: (880, /b'endobj')
+DEBUG:pdfminer.psparser:do_keyword: pos=880, token=/b'endobj', stack=[(612, {'Author': b'(anonymous)', 'CreationDate': b"D:20250901135912+00'00'", 'Creator': b'(unspecified)', 'Keywords': b'', 'ModDate': b"D:20250901135912+00'00'", 'Producer': b'ReportLab PDF Library - www.reportlab.com', 'Subject': b'(unspecified)', 'Title': b'(anonymous)', 'Trapped': /'False'})]
+DEBUG:pdfminer.psparser:add_results: ((612, {'Author': b'(anonymous)', 'CreationDate': b"D:20250901135912+00'00'", 'Creator': b'(unspecified)', 'Keywords': b'', 'ModDate': b"D:20250901135912+00'00'", 'Producer': b'ReportLab PDF Library - www.reportlab.com', 'Subject': b'(unspecified)', 'Title': b'(anonymous)', 'Trapped': /'False'}),)
+DEBUG:pdfminer.psparser:nextobject: (612, {'Author': b'(anonymous)', 'CreationDate': b"D:20250901135912+00'00'", 'Creator': b'(unspecified)', 'Keywords': b'', 'ModDate': b"D:20250901135912+00'00'", 'Producer': b'ReportLab PDF Library - www.reportlab.com', 'Subject': b'(unspecified)', 'Title': b'(anonymous)', 'Trapped': /'False'})
+DEBUG:pdfminer.pdfdocument:register: objid=6: {'Author': b'(anonymous)', 'CreationDate': b"D:20250901135912+00'00'", 'Creator': b'(unspecified)', 'Keywords': b'', 'ModDate': b"D:20250901135912+00'00'", 'Producer': b'ReportLab PDF Library - www.reportlab.com', 'Subject': b'(unspecified)', 'Title': b'(anonymous)', 'Trapped': /'False'}
+DEBUG:pdfminer.pdfdocument:getobj: objid=5
+DEBUG:pdfminer.psparser:seek: 536
+DEBUG:pdfminer.psparser:nexttoken: (536, 5)
+DEBUG:pdfminer.psparser:nexttoken: (538, 0)
+DEBUG:pdfminer.psparser:nexttoken: (540, /b'obj')
+DEBUG:pdfminer.psparser:nexttoken: (544, /b'<<')
+DEBUG:pdfminer.psparser:start_type: pos=544, type='d'
+DEBUG:pdfminer.psparser:nexttoken: (547, /'PageMode')
+DEBUG:pdfminer.psparser:nexttoken: (557, /'UseNone')
+DEBUG:pdfminer.psparser:nexttoken: (566, /'Pages')
+DEBUG:pdfminer.psparser:nexttoken: (573, 7)
+DEBUG:pdfminer.psparser:nexttoken: (575, 0)
+DEBUG:pdfminer.psparser:nexttoken: (577, /b'R')
+DEBUG:pdfminer.psparser:do_keyword: pos=577, token=/b'R', stack=[(547, /'PageMode'), (557, /'UseNone'), (566, /'Pages'), (573, 7), (575, 0)]
+DEBUG:pdfminer.psparser:nexttoken: (579, /'Type')
+DEBUG:pdfminer.psparser:nexttoken: (585, /'Catalog')
+DEBUG:pdfminer.psparser:nexttoken: (594, /b'>>')
+DEBUG:pdfminer.psparser:end_type: pos=544, type='d', objs=[/'PageMode', /'UseNone', /'Pages', <PDFObjRef:7>, /'Type', /'Catalog']
+DEBUG:pdfminer.psparser:nexttoken: (597, /b'endobj')
+DEBUG:pdfminer.psparser:do_keyword: pos=597, token=/b'endobj', stack=[(544, {'PageMode': /'UseNone', 'Pages': <PDFObjRef:7>, 'Type': /'Catalog'})]
+DEBUG:pdfminer.psparser:add_results: ((544, {'PageMode': /'UseNone', 'Pages': <PDFObjRef:7>, 'Type': /'Catalog'}),)
+DEBUG:pdfminer.psparser:nextobject: (544, {'PageMode': /'UseNone', 'Pages': <PDFObjRef:7>, 'Type': /'Catalog'})
+DEBUG:pdfminer.pdfdocument:register: objid=5: {'PageMode': /'UseNone', 'Pages': <PDFObjRef:7>, 'Type': /'Catalog'}
+DEBUG:pdfminer.pdfdocument:getobj: objid=7
+DEBUG:pdfminer.psparser:seek: 887
+DEBUG:pdfminer.psparser:nexttoken: (887, 7)
+DEBUG:pdfminer.psparser:nexttoken: (889, 0)
+DEBUG:pdfminer.psparser:nexttoken: (891, /b'obj')
+DEBUG:pdfminer.psparser:nexttoken: (895, /b'<<')
+DEBUG:pdfminer.psparser:start_type: pos=895, type='d'
+DEBUG:pdfminer.psparser:nexttoken: (898, /'Count')
+DEBUG:pdfminer.psparser:nexttoken: (905, 1)
+DEBUG:pdfminer.psparser:nexttoken: (907, /'Kids')
+DEBUG:pdfminer.psparser:nexttoken: (913, /b'[')
+DEBUG:pdfminer.psparser:start_type: pos=913, type='a'
+DEBUG:pdfminer.psparser:nexttoken: (915, 4)
+DEBUG:pdfminer.psparser:nexttoken: (917, 0)
+DEBUG:pdfminer.psparser:nexttoken: (919, /b'R')
+DEBUG:pdfminer.psparser:do_keyword: pos=919, token=/b'R', stack=[(915, 4), (917, 0)]
+DEBUG:pdfminer.psparser:nexttoken: (921, /b']')
+DEBUG:pdfminer.psparser:end_type: pos=913, type='a', objs=[<PDFObjRef:4>]
+DEBUG:pdfminer.psparser:nexttoken: (923, /'Type')
+DEBUG:pdfminer.psparser:nexttoken: (929, /'Pages')
+DEBUG:pdfminer.psparser:nexttoken: (936, /b'>>')
+DEBUG:pdfminer.psparser:end_type: pos=895, type='d', objs=[/'Count', 1, /'Kids', [<PDFObjRef:4>], /'Type', /'Pages']
+DEBUG:pdfminer.psparser:nexttoken: (939, /b'endobj')
+DEBUG:pdfminer.psparser:do_keyword: pos=939, token=/b'endobj', stack=[(895, {'Count': 1, 'Kids': [<PDFObjRef:4>], 'Type': /'Pages'})]
+DEBUG:pdfminer.psparser:add_results: ((895, {'Count': 1, 'Kids': [<PDFObjRef:4>], 'Type': /'Pages'}),)
+DEBUG:pdfminer.psparser:nextobject: (895, {'Count': 1, 'Kids': [<PDFObjRef:4>], 'Type': /'Pages'})
+DEBUG:pdfminer.pdfdocument:register: objid=7: {'Count': 1, 'Kids': [<PDFObjRef:4>], 'Type': /'Pages'}
+DEBUG:pdfminer.pdfpage:Pages: Kids=[<PDFObjRef:4>]
+DEBUG:pdfminer.pdfdocument:getobj: objid=4
+DEBUG:pdfminer.psparser:seek: 333
+DEBUG:pdfminer.psparser:nexttoken: (333, 4)
+DEBUG:pdfminer.psparser:nexttoken: (335, 0)
+DEBUG:pdfminer.psparser:nexttoken: (337, /b'obj')
+DEBUG:pdfminer.psparser:nexttoken: (341, /b'<<')
+DEBUG:pdfminer.psparser:start_type: pos=341, type='d'
+DEBUG:pdfminer.psparser:nexttoken: (344, /'Contents')
+DEBUG:pdfminer.psparser:nexttoken: (354, 8)
+DEBUG:pdfminer.psparser:nexttoken: (356, 0)
+DEBUG:pdfminer.psparser:nexttoken: (358, /b'R')
+DEBUG:pdfminer.psparser:do_keyword: pos=358, token=/b'R', stack=[(344, /'Contents'), (354, 8), (356, 0)]
+DEBUG:pdfminer.psparser:nexttoken: (360, /'MediaBox')
+DEBUG:pdfminer.psparser:nexttoken: (370, /b'[')
+DEBUG:pdfminer.psparser:start_type: pos=370, type='a'
+DEBUG:pdfminer.psparser:nexttoken: (372, 0)
+DEBUG:pdfminer.psparser:nexttoken: (374, 0)
+DEBUG:pdfminer.psparser:nexttoken: (376, 595.2756)
+DEBUG:pdfminer.psparser:nexttoken: (385, 841.8898)
+DEBUG:pdfminer.psparser:nexttoken: (394, /b']')
+DEBUG:pdfminer.psparser:end_type: pos=370, type='a', objs=[0, 0, 595.2756, 841.8898]
+DEBUG:pdfminer.psparser:nexttoken: (396, /'Parent')
+DEBUG:pdfminer.psparser:nexttoken: (404, 7)
+DEBUG:pdfminer.psparser:nexttoken: (406, 0)
+DEBUG:pdfminer.psparser:nexttoken: (408, /b'R')
+DEBUG:pdfminer.psparser:do_keyword: pos=408, token=/b'R', stack=[(344, /'Contents'), (358, <PDFObjRef:8>), (360, /'MediaBox'), (370, [0, 0, 595.2756, 841.8898]), (396, /'Parent'), (404, 7), (406, 0)]
+DEBUG:pdfminer.psparser:nexttoken: (410, /'Resources')
+DEBUG:pdfminer.psparser:nexttoken: (421, /b'<<')
+DEBUG:pdfminer.psparser:start_type: pos=421, type='d'
+DEBUG:pdfminer.psparser:nexttoken: (424, /'Font')
+DEBUG:pdfminer.psparser:nexttoken: (430, 1)
+DEBUG:pdfminer.psparser:nexttoken: (432, 0)
+DEBUG:pdfminer.psparser:nexttoken: (434, /b'R')
+DEBUG:pdfminer.psparser:do_keyword: pos=434, token=/b'R', stack=[(424, /'Font'), (430, 1), (432, 0)]
+DEBUG:pdfminer.psparser:nexttoken: (436, /'ProcSet')
+DEBUG:pdfminer.psparser:nexttoken: (445, /b'[')
+DEBUG:pdfminer.psparser:start_type: pos=445, type='a'
+DEBUG:pdfminer.psparser:nexttoken: (447, /'PDF')
+DEBUG:pdfminer.psparser:nexttoken: (452, /'Text')
+DEBUG:pdfminer.psparser:nexttoken: (458, /'ImageB')
+DEBUG:pdfminer.psparser:nexttoken: (466, /'ImageC')
+DEBUG:pdfminer.psparser:nexttoken: (474, /'ImageI')
+DEBUG:pdfminer.psparser:nexttoken: (482, /b']')
+DEBUG:pdfminer.psparser:end_type: pos=445, type='a', objs=[/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']
+DEBUG:pdfminer.psparser:nexttoken: (484, /b'>>')
+DEBUG:pdfminer.psparser:end_type: pos=421, type='d', objs=[/'Font', <PDFObjRef:1>, /'ProcSet', [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']]
+DEBUG:pdfminer.psparser:nexttoken: (487, /'Rotate')
+DEBUG:pdfminer.psparser:nexttoken: (495, 0)
+DEBUG:pdfminer.psparser:nexttoken: (497, /'Trans')
+DEBUG:pdfminer.psparser:nexttoken: (504, /b'<<')
+DEBUG:pdfminer.psparser:start_type: pos=504, type='d'
+DEBUG:pdfminer.psparser:nexttoken: (508, /b'>>')
+DEBUG:pdfminer.psparser:end_type: pos=504, type='d', objs=[]
+DEBUG:pdfminer.psparser:nexttoken: (514, /'Type')
+DEBUG:pdfminer.psparser:nexttoken: (520, /'Page')
+DEBUG:pdfminer.psparser:nexttoken: (526, /b'>>')
+DEBUG:pdfminer.psparser:end_type: pos=341, type='d', objs=[/'Contents', <PDFObjRef:8>, /'MediaBox', [0, 0, 595.2756, 841.8898], /'Parent', <PDFObjRef:7>, /'Resources', {'Font': <PDFObjRef:1>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, /'Rotate', 0, /'Trans', {}, /'Type', /'Page']
+DEBUG:pdfminer.psparser:nexttoken: (529, /b'endobj')
+DEBUG:pdfminer.psparser:do_keyword: pos=529, token=/b'endobj', stack=[(341, {'Contents': <PDFObjRef:8>, 'MediaBox': [0, 0, 595.2756, 841.8898], 'Parent': <PDFObjRef:7>, 'Resources': {'Font': <PDFObjRef:1>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, 'Rotate': 0, 'Trans': {}, 'Type': /'Page'})]
+DEBUG:pdfminer.psparser:add_results: ((341, {'Contents': <PDFObjRef:8>, 'MediaBox': [0, 0, 595.2756, 841.8898], 'Parent': <PDFObjRef:7>, 'Resources': {'Font': <PDFObjRef:1>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, 'Rotate': 0, 'Trans': {}, 'Type': /'Page'}),)
+DEBUG:pdfminer.psparser:nextobject: (341, {'Contents': <PDFObjRef:8>, 'MediaBox': [0, 0, 595.2756, 841.8898], 'Parent': <PDFObjRef:7>, 'Resources': {'Font': <PDFObjRef:1>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, 'Rotate': 0, 'Trans': {}, 'Type': /'Page'})
+DEBUG:pdfminer.pdfdocument:register: objid=4: {'Contents': <PDFObjRef:8>, 'MediaBox': [0, 0, 595.2756, 841.8898], 'Parent': <PDFObjRef:7>, 'Resources': {'Font': <PDFObjRef:1>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, 'Rotate': 0, 'Trans': {}, 'Type': /'Page'}
+DEBUG:pdfminer.pdfpage:Page: {'Contents': <PDFObjRef:8>, 'MediaBox': [0, 0, 595.2756, 841.8898], 'Parent': <PDFObjRef:7>, 'Resources': {'Font': <PDFObjRef:1>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, 'Rotate': 0, 'Trans': {}, 'Type': /'Page'}
+DEBUG:pdfminer.pdfdocument:getobj: objid=8
+DEBUG:pdfminer.psparser:seek: 946
+DEBUG:pdfminer.psparser:nexttoken: (946, 8)
+DEBUG:pdfminer.psparser:nexttoken: (948, 0)
+DEBUG:pdfminer.psparser:nexttoken: (950, /b'obj')
+DEBUG:pdfminer.psparser:nexttoken: (954, /b'<<')
+DEBUG:pdfminer.psparser:start_type: pos=954, type='d'
+DEBUG:pdfminer.psparser:nexttoken: (957, /'Filter')
+DEBUG:pdfminer.psparser:nexttoken: (965, /b'[')
+DEBUG:pdfminer.psparser:start_type: pos=965, type='a'
+DEBUG:pdfminer.psparser:nexttoken: (967, /'ASCII85Decode')
+DEBUG:pdfminer.psparser:nexttoken: (982, /'FlateDecode')
+DEBUG:pdfminer.psparser:nexttoken: (995, /b']')
+DEBUG:pdfminer.psparser:end_type: pos=965, type='a', objs=[/'ASCII85Decode', /'FlateDecode']
+DEBUG:pdfminer.psparser:nexttoken: (997, /'Length')
+DEBUG:pdfminer.psparser:nexttoken: (1005, 1410)
+DEBUG:pdfminer.psparser:nexttoken: (1010, /b'>>')
+DEBUG:pdfminer.psparser:end_type: pos=954, type='d', objs=[/'Filter', [/'ASCII85Decode', /'FlateDecode'], /'Length', 1410]
+DEBUG:pdfminer.psparser:nexttoken: (1013, /b'stream')
+DEBUG:pdfminer.psparser:do_keyword: pos=1013, token=/b'stream', stack=[(954, {'Filter': [/'ASCII85Decode', /'FlateDecode'], 'Length': 1410})]
+DEBUG:pdfminer.psparser:seek: 1013
+DEBUG:pdfminer.psparser:nextline: 1013, b'stream\n'
+DEBUG:pdfminer.psparser:seek: 2430
+DEBUG:pdfminer.psparser:nextline: 2430, b'endstream\n'
+DEBUG:pdfminer.psparser:seek: 2430
+DEBUG:pdfminer.pdfparser:Stream: pos=1020, objlen=1410, dic={'Filter': [/'ASCII85Decode', /'FlateDecode'], 'Length': 1410}, data=bytearray(b'Gat=*969)P')...
+DEBUG:pdfminer.psparser:nexttoken: (2430, /b'endstream')
+DEBUG:pdfminer.psparser:do_keyword: pos=2430, token=/b'endstream', stack=[(1020, <PDFStream(None): raw=1410, {'Filter': [/'ASCII85Decode', /'FlateDecode'], 'Length': 1410}>)]
+DEBUG:pdfminer.psparser:nexttoken: (2440, /b'endobj')
+DEBUG:pdfminer.psparser:do_keyword: pos=2440, token=/b'endobj', stack=[(1020, <PDFStream(None): raw=1410, {'Filter': [/'ASCII85Decode', /'FlateDecode'], 'Length': 1410}>), (2430, /b'endstream')]
+DEBUG:pdfminer.psparser:add_results: ((1020, <PDFStream(None): raw=1410, {'Filter': [/'ASCII85Decode', /'FlateDecode'], 'Length': 1410}>), (2430, /b'endstream'))
+DEBUG:pdfminer.psparser:nextobject: (1020, <PDFStream(None): raw=1410, {'Filter': [/'ASCII85Decode', /'FlateDecode'], 'Length': 1410}>)
+DEBUG:pdfminer.pdfdocument:register: objid=8: <PDFStream(8): raw=1410, {'Filter': [/'ASCII85Decode', /'FlateDecode'], 'Length': 1410}>
+DEBUG:pdfminer.pdfinterp:Processing page: <PDFPage: Resources={'Font': <PDFObjRef:1>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, MediaBox=[0, 0, 595.2756, 841.8898]>
+DEBUG:pdfminer.pdfinterp:render_contents: resources={'Font': <PDFObjRef:1>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, streams=[<PDFStream(8): raw=1410, {'Filter': [/'ASCII85Decode', /'FlateDecode'], 'Length': 1410}>], ctm=(1, 0, 0, 1, 0, 0)
+DEBUG:pdfminer.pdfinterp:Resource: 'Font': <PDFObjRef:1>
+DEBUG:pdfminer.pdfdocument:getobj: objid=1
+DEBUG:pdfminer.psparser:seek: 73
+DEBUG:pdfminer.psparser:nexttoken: (73, 1)
+DEBUG:pdfminer.psparser:nexttoken: (75, 0)
+DEBUG:pdfminer.psparser:nexttoken: (77, /b'obj')
+DEBUG:pdfminer.psparser:nexttoken: (81, /b'<<')
+DEBUG:pdfminer.psparser:start_type: pos=81, type='d'
+DEBUG:pdfminer.psparser:nexttoken: (84, /'F1')
+DEBUG:pdfminer.psparser:nexttoken: (88, 2)
+DEBUG:pdfminer.psparser:nexttoken: (90, 0)
+DEBUG:pdfminer.psparser:nexttoken: (92, /b'R')
+DEBUG:pdfminer.psparser:do_keyword: pos=92, token=/b'R', stack=[(84, /'F1'), (88, 2), (90, 0)]
+DEBUG:pdfminer.psparser:nexttoken: (94, /'F2')
+DEBUG:pdfminer.psparser:nexttoken: (98, 3)
+DEBUG:pdfminer.psparser:nexttoken: (100, 0)
+DEBUG:pdfminer.psparser:nexttoken: (102, /b'R')
+DEBUG:pdfminer.psparser:do_keyword: pos=102, token=/b'R', stack=[(84, /'F1'), (92, <PDFObjRef:2>), (94, /'F2'), (98, 3), (100, 0)]
+DEBUG:pdfminer.psparser:nexttoken: (104, /b'>>')
+DEBUG:pdfminer.psparser:end_type: pos=81, type='d', objs=[/'F1', <PDFObjRef:2>, /'F2', <PDFObjRef:3>]
+DEBUG:pdfminer.psparser:nexttoken: (107, /b'endobj')
+DEBUG:pdfminer.psparser:do_keyword: pos=107, token=/b'endobj', stack=[(81, {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>})]
+DEBUG:pdfminer.psparser:add_results: ((81, {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}),)
+DEBUG:pdfminer.psparser:nextobject: (81, {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>})
+DEBUG:pdfminer.pdfdocument:register: objid=1: {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}
+DEBUG:pdfminer.pdfdocument:getobj: objid=2
+DEBUG:pdfminer.psparser:seek: 114
+DEBUG:pdfminer.psparser:nexttoken: (114, 2)
+DEBUG:pdfminer.psparser:nexttoken: (116, 0)
+DEBUG:pdfminer.psparser:nexttoken: (118, /b'obj')
+DEBUG:pdfminer.psparser:nexttoken: (122, /b'<<')
+DEBUG:pdfminer.psparser:start_type: pos=122, type='d'
+DEBUG:pdfminer.psparser:nexttoken: (125, /'BaseFont')
+DEBUG:pdfminer.psparser:nexttoken: (135, /'Helvetica')
+DEBUG:pdfminer.psparser:nexttoken: (146, /'Encoding')
+DEBUG:pdfminer.psparser:nexttoken: (156, /'WinAnsiEncoding')
+DEBUG:pdfminer.psparser:nexttoken: (173, /'Name')
+DEBUG:pdfminer.psparser:nexttoken: (179, /'F1')
+DEBUG:pdfminer.psparser:nexttoken: (183, /'Subtype')
+DEBUG:pdfminer.psparser:nexttoken: (192, /'Type1')
+DEBUG:pdfminer.psparser:nexttoken: (199, /'Type')
+DEBUG:pdfminer.psparser:nexttoken: (205, /'Font')
+DEBUG:pdfminer.psparser:nexttoken: (211, /b'>>')
+DEBUG:pdfminer.psparser:end_type: pos=122, type='d', objs=[/'BaseFont', /'Helvetica', /'Encoding', /'WinAnsiEncoding', /'Name', /'F1', /'Subtype', /'Type1', /'Type', /'Font']
+DEBUG:pdfminer.psparser:nexttoken: (214, /b'endobj')
+DEBUG:pdfminer.psparser:do_keyword: pos=214, token=/b'endobj', stack=[(122, {'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding', 'Name': /'F1', 'Subtype': /'Type1', 'Type': /'Font'})]
+DEBUG:pdfminer.psparser:add_results: ((122, {'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding', 'Name': /'F1', 'Subtype': /'Type1', 'Type': /'Font'}),)
+DEBUG:pdfminer.psparser:nextobject: (122, {'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding', 'Name': /'F1', 'Subtype': /'Type1', 'Type': /'Font'})
+DEBUG:pdfminer.pdfdocument:register: objid=2: {'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding', 'Name': /'F1', 'Subtype': /'Type1', 'Type': /'Font'}
+DEBUG:pdfminer.pdfinterp:get_font: create: objid=2, spec={'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding', 'Name': /'F1', 'Subtype': /'Type1', 'Type': /'Font'}
+DEBUG:pdfminer.pdfdocument:getobj: objid=3
+DEBUG:pdfminer.psparser:seek: 221
+DEBUG:pdfminer.psparser:nexttoken: (221, 3)
+DEBUG:pdfminer.psparser:nexttoken: (223, 0)
+DEBUG:pdfminer.psparser:nexttoken: (225, /b'obj')
+DEBUG:pdfminer.psparser:nexttoken: (229, /b'<<')
+DEBUG:pdfminer.psparser:start_type: pos=229, type='d'
+DEBUG:pdfminer.psparser:nexttoken: (232, /'BaseFont')
+DEBUG:pdfminer.psparser:nexttoken: (242, /'Helvetica-Bold')
+DEBUG:pdfminer.psparser:nexttoken: (258, /'Encoding')
+DEBUG:pdfminer.psparser:nexttoken: (268, /'WinAnsiEncoding')
+DEBUG:pdfminer.psparser:nexttoken: (285, /'Name')
+DEBUG:pdfminer.psparser:nexttoken: (291, /'F2')
+DEBUG:pdfminer.psparser:nexttoken: (295, /'Subtype')
+DEBUG:pdfminer.psparser:nexttoken: (304, /'Type1')
+DEBUG:pdfminer.psparser:nexttoken: (311, /'Type')
+DEBUG:pdfminer.psparser:nexttoken: (317, /'Font')
+DEBUG:pdfminer.psparser:nexttoken: (323, /b'>>')
+DEBUG:pdfminer.psparser:end_type: pos=229, type='d', objs=[/'BaseFont', /'Helvetica-Bold', /'Encoding', /'WinAnsiEncoding', /'Name', /'F2', /'Subtype', /'Type1', /'Type', /'Font']
+DEBUG:pdfminer.psparser:nexttoken: (326, /b'endobj')
+DEBUG:pdfminer.psparser:do_keyword: pos=326, token=/b'endobj', stack=[(229, {'BaseFont': /'Helvetica-Bold', 'Encoding': /'WinAnsiEncoding', 'Name': /'F2', 'Subtype': /'Type1', 'Type': /'Font'})]
+DEBUG:pdfminer.psparser:add_results: ((229, {'BaseFont': /'Helvetica-Bold', 'Encoding': /'WinAnsiEncoding', 'Name': /'F2', 'Subtype': /'Type1', 'Type': /'Font'}),)
+DEBUG:pdfminer.psparser:nextobject: (229, {'BaseFont': /'Helvetica-Bold', 'Encoding': /'WinAnsiEncoding', 'Name': /'F2', 'Subtype': /'Type1', 'Type': /'Font'})
+DEBUG:pdfminer.pdfdocument:register: objid=3: {'BaseFont': /'Helvetica-Bold', 'Encoding': /'WinAnsiEncoding', 'Name': /'F2', 'Subtype': /'Type1', 'Type': /'Font'}
+DEBUG:pdfminer.pdfinterp:get_font: create: objid=3, spec={'BaseFont': /'Helvetica-Bold', 'Encoding': /'WinAnsiEncoding', 'Name': /'F2', 'Subtype': /'Type1', 'Type': /'Font'}
+DEBUG:pdfminer.pdfinterp:Resource: 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']
+DEBUG:pdfminer.psparser:seek: 0
+DEBUG:pdfminer.psparser:nexttoken: (0, 1)
+DEBUG:pdfminer.psparser:add_results: ((0, 1),)
+DEBUG:pdfminer.psparser:nextobject: (0, 1)
+DEBUG:pdfminer.psparser:nexttoken: (2, 0)
+DEBUG:pdfminer.psparser:add_results: ((2, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2, 0)
+DEBUG:pdfminer.psparser:nexttoken: (4, 0)
+DEBUG:pdfminer.psparser:add_results: ((4, 0),)
+DEBUG:pdfminer.psparser:nextobject: (4, 0)
+DEBUG:pdfminer.psparser:nexttoken: (6, 1)
+DEBUG:pdfminer.psparser:add_results: ((6, 1),)
+DEBUG:pdfminer.psparser:nextobject: (6, 1)
+DEBUG:pdfminer.psparser:nexttoken: (8, 0)
+DEBUG:pdfminer.psparser:add_results: ((8, 0),)
+DEBUG:pdfminer.psparser:nextobject: (8, 0)
+DEBUG:pdfminer.psparser:nexttoken: (10, 0)
+DEBUG:pdfminer.psparser:add_results: ((10, 0),)
+DEBUG:pdfminer.psparser:nextobject: (10, 0)
+DEBUG:pdfminer.psparser:nexttoken: (12, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=12, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((12, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (12, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (16, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=16, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((16, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (16, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (19, /'F1')
+DEBUG:pdfminer.psparser:add_results: ((19, /'F1'),)
+DEBUG:pdfminer.psparser:nextobject: (19, /'F1')
+DEBUG:pdfminer.psparser:nexttoken: (23, 12)
+DEBUG:pdfminer.psparser:add_results: ((23, 12),)
+DEBUG:pdfminer.psparser:nextobject: (23, 12)
+DEBUG:pdfminer.psparser:nexttoken: (26, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=26, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((26, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (26, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F1', 12]
+DEBUG:pdfminer.psparser:nexttoken: (29, 14.4)
+DEBUG:pdfminer.psparser:add_results: ((29, 14.4),)
+DEBUG:pdfminer.psparser:nextobject: (29, 14.4)
+DEBUG:pdfminer.psparser:nexttoken: (34, /b'TL')
+DEBUG:pdfminer.psparser:do_keyword: pos=34, token=/b'TL', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((34, /b'TL'),)
+DEBUG:pdfminer.psparser:nextobject: (34, /b'TL')
+DEBUG:pdfminer.pdfinterp:exec: TL [14.4]
+DEBUG:pdfminer.psparser:nexttoken: (37, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=37, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((37, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (37, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (40, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=40, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((40, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (40, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (42, 1)
+DEBUG:pdfminer.psparser:add_results: ((42, 1),)
+DEBUG:pdfminer.psparser:nextobject: (42, 1)
+DEBUG:pdfminer.psparser:nexttoken: (44, 0)
+DEBUG:pdfminer.psparser:add_results: ((44, 0),)
+DEBUG:pdfminer.psparser:nextobject: (44, 0)
+DEBUG:pdfminer.psparser:nexttoken: (46, 0)
+DEBUG:pdfminer.psparser:add_results: ((46, 0),)
+DEBUG:pdfminer.psparser:nextobject: (46, 0)
+DEBUG:pdfminer.psparser:nexttoken: (48, 1)
+DEBUG:pdfminer.psparser:add_results: ((48, 1),)
+DEBUG:pdfminer.psparser:nextobject: (48, 1)
+DEBUG:pdfminer.psparser:nexttoken: (50, 78)
+DEBUG:pdfminer.psparser:add_results: ((50, 78),)
+DEBUG:pdfminer.psparser:nextobject: (50, 78)
+DEBUG:pdfminer.psparser:nexttoken: (53, 741.8898)
+DEBUG:pdfminer.psparser:add_results: ((53, 741.8898),)
+DEBUG:pdfminer.psparser:nextobject: (53, 741.8898)
+DEBUG:pdfminer.psparser:nexttoken: (62, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=62, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((62, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (62, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 741.8898]
+DEBUG:pdfminer.psparser:nexttoken: (65, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=65, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((65, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (65, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (67, 0)
+DEBUG:pdfminer.psparser:add_results: ((67, 0),)
+DEBUG:pdfminer.psparser:nextobject: (67, 0)
+DEBUG:pdfminer.psparser:nexttoken: (69, 0)
+DEBUG:pdfminer.psparser:add_results: ((69, 0),)
+DEBUG:pdfminer.psparser:nextobject: (69, 0)
+DEBUG:pdfminer.psparser:nexttoken: (71, 0)
+DEBUG:pdfminer.psparser:add_results: ((71, 0),)
+DEBUG:pdfminer.psparser:nextobject: (71, 0)
+DEBUG:pdfminer.psparser:nexttoken: (73, /b'rg')
+DEBUG:pdfminer.psparser:do_keyword: pos=73, token=/b'rg', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((73, /b'rg'),)
+DEBUG:pdfminer.psparser:nextobject: (73, /b'rg')
+DEBUG:pdfminer.pdfinterp:exec: rg [0, 0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (76, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=76, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((76, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (76, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (79, 1)
+DEBUG:pdfminer.psparser:add_results: ((79, 1),)
+DEBUG:pdfminer.psparser:nextobject: (79, 1)
+DEBUG:pdfminer.psparser:nexttoken: (81, 0)
+DEBUG:pdfminer.psparser:add_results: ((81, 0),)
+DEBUG:pdfminer.psparser:nextobject: (81, 0)
+DEBUG:pdfminer.psparser:nexttoken: (83, 0)
+DEBUG:pdfminer.psparser:add_results: ((83, 0),)
+DEBUG:pdfminer.psparser:nextobject: (83, 0)
+DEBUG:pdfminer.psparser:nexttoken: (85, 1)
+DEBUG:pdfminer.psparser:add_results: ((85, 1),)
+DEBUG:pdfminer.psparser:nextobject: (85, 1)
+DEBUG:pdfminer.psparser:nexttoken: (87, 0)
+DEBUG:pdfminer.psparser:add_results: ((87, 0),)
+DEBUG:pdfminer.psparser:nextobject: (87, 0)
+DEBUG:pdfminer.psparser:nexttoken: (89, 4)
+DEBUG:pdfminer.psparser:add_results: ((89, 4),)
+DEBUG:pdfminer.psparser:nextobject: (89, 4)
+DEBUG:pdfminer.psparser:nexttoken: (91, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=91, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((91, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (91, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 0, 4]
+DEBUG:pdfminer.psparser:nexttoken: (94, /'F2')
+DEBUG:pdfminer.psparser:add_results: ((94, /'F2'),)
+DEBUG:pdfminer.psparser:nextobject: (94, /'F2')
+DEBUG:pdfminer.psparser:nexttoken: (98, 18)
+DEBUG:pdfminer.psparser:add_results: ((98, 18),)
+DEBUG:pdfminer.psparser:nextobject: (98, 18)
+DEBUG:pdfminer.psparser:nexttoken: (101, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=101, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((101, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (101, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F2', 18]
+DEBUG:pdfminer.psparser:nexttoken: (104, 22)
+DEBUG:pdfminer.psparser:add_results: ((104, 22),)
+DEBUG:pdfminer.psparser:nextobject: (104, 22)
+DEBUG:pdfminer.psparser:nexttoken: (107, /b'TL')
+DEBUG:pdfminer.psparser:do_keyword: pos=107, token=/b'TL', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((107, /b'TL'),)
+DEBUG:pdfminer.psparser:nextobject: (107, /b'TL')
+DEBUG:pdfminer.pdfinterp:exec: TL [22]
+DEBUG:pdfminer.psparser:nexttoken: (110, 178.6338)
+DEBUG:pdfminer.psparser:add_results: ((110, 178.6338),)
+DEBUG:pdfminer.psparser:nextobject: (110, 178.6338)
+DEBUG:pdfminer.psparser:nexttoken: (119, 0)
+DEBUG:pdfminer.psparser:add_results: ((119, 0),)
+DEBUG:pdfminer.psparser:nextobject: (119, 0)
+DEBUG:pdfminer.psparser:nexttoken: (121, /b'Td')
+DEBUG:pdfminer.psparser:do_keyword: pos=121, token=/b'Td', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((121, /b'Td'),)
+DEBUG:pdfminer.psparser:nextobject: (121, /b'Td')
+DEBUG:pdfminer.pdfinterp:exec: Td [178.6338, 0]
+DEBUG:pdfminer.psparser:nexttoken: (124, b'John Doe')
+DEBUG:pdfminer.psparser:add_results: ((124, b'John Doe'),)
+DEBUG:pdfminer.psparser:nextobject: (124, b'John Doe')
+DEBUG:pdfminer.psparser:nexttoken: (135, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=135, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((135, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (135, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'John Doe']
+DEBUG:pdfminer.psparser:nexttoken: (138, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=138, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((138, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (138, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (141, -178.6338)
+DEBUG:pdfminer.psparser:add_results: ((141, -178.6338),)
+DEBUG:pdfminer.psparser:nextobject: (141, -178.6338)
+DEBUG:pdfminer.psparser:nexttoken: (151, 0)
+DEBUG:pdfminer.psparser:add_results: ((151, 0),)
+DEBUG:pdfminer.psparser:nextobject: (151, 0)
+DEBUG:pdfminer.psparser:nexttoken: (153, /b'Td')
+DEBUG:pdfminer.psparser:do_keyword: pos=153, token=/b'Td', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((153, /b'Td'),)
+DEBUG:pdfminer.psparser:nextobject: (153, /b'Td')
+DEBUG:pdfminer.pdfinterp:exec: Td [-178.6338, 0]
+DEBUG:pdfminer.psparser:nexttoken: (156, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=156, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((156, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (156, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (159, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=159, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((159, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (159, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (161, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=161, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((161, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (161, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (163, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=163, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((163, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (163, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (165, 1)
+DEBUG:pdfminer.psparser:add_results: ((165, 1),)
+DEBUG:pdfminer.psparser:nextobject: (165, 1)
+DEBUG:pdfminer.psparser:nexttoken: (167, 0)
+DEBUG:pdfminer.psparser:add_results: ((167, 0),)
+DEBUG:pdfminer.psparser:nextobject: (167, 0)
+DEBUG:pdfminer.psparser:nexttoken: (169, 0)
+DEBUG:pdfminer.psparser:add_results: ((169, 0),)
+DEBUG:pdfminer.psparser:nextobject: (169, 0)
+DEBUG:pdfminer.psparser:nexttoken: (171, 1)
+DEBUG:pdfminer.psparser:add_results: ((171, 1),)
+DEBUG:pdfminer.psparser:nextobject: (171, 1)
+DEBUG:pdfminer.psparser:nexttoken: (173, 78)
+DEBUG:pdfminer.psparser:add_results: ((173, 78),)
+DEBUG:pdfminer.psparser:nextobject: (173, 78)
+DEBUG:pdfminer.psparser:nexttoken: (176, 711.8898)
+DEBUG:pdfminer.psparser:add_results: ((176, 711.8898),)
+DEBUG:pdfminer.psparser:nextobject: (176, 711.8898)
+DEBUG:pdfminer.psparser:nexttoken: (185, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=185, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((185, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (185, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 711.8898]
+DEBUG:pdfminer.psparser:nexttoken: (188, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=188, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((188, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (188, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (190, 0)
+DEBUG:pdfminer.psparser:add_results: ((190, 0),)
+DEBUG:pdfminer.psparser:nextobject: (190, 0)
+DEBUG:pdfminer.psparser:nexttoken: (192, 0)
+DEBUG:pdfminer.psparser:add_results: ((192, 0),)
+DEBUG:pdfminer.psparser:nextobject: (192, 0)
+DEBUG:pdfminer.psparser:nexttoken: (194, 0)
+DEBUG:pdfminer.psparser:add_results: ((194, 0),)
+DEBUG:pdfminer.psparser:nextobject: (194, 0)
+DEBUG:pdfminer.psparser:nexttoken: (196, /b'rg')
+DEBUG:pdfminer.psparser:do_keyword: pos=196, token=/b'rg', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((196, /b'rg'),)
+DEBUG:pdfminer.psparser:nextobject: (196, /b'rg')
+DEBUG:pdfminer.pdfinterp:exec: rg [0, 0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (199, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=199, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((199, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (199, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (202, 1)
+DEBUG:pdfminer.psparser:add_results: ((202, 1),)
+DEBUG:pdfminer.psparser:nextobject: (202, 1)
+DEBUG:pdfminer.psparser:nexttoken: (204, 0)
+DEBUG:pdfminer.psparser:add_results: ((204, 0),)
+DEBUG:pdfminer.psparser:nextobject: (204, 0)
+DEBUG:pdfminer.psparser:nexttoken: (206, 0)
+DEBUG:pdfminer.psparser:add_results: ((206, 0),)
+DEBUG:pdfminer.psparser:nextobject: (206, 0)
+DEBUG:pdfminer.psparser:nexttoken: (208, 1)
+DEBUG:pdfminer.psparser:add_results: ((208, 1),)
+DEBUG:pdfminer.psparser:nextobject: (208, 1)
+DEBUG:pdfminer.psparser:nexttoken: (210, 0)
+DEBUG:pdfminer.psparser:add_results: ((210, 0),)
+DEBUG:pdfminer.psparser:nextobject: (210, 0)
+DEBUG:pdfminer.psparser:nexttoken: (212, 4)
+DEBUG:pdfminer.psparser:add_results: ((212, 4),)
+DEBUG:pdfminer.psparser:nextobject: (212, 4)
+DEBUG:pdfminer.psparser:nexttoken: (214, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=214, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((214, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (214, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 0, 4]
+DEBUG:pdfminer.psparser:nexttoken: (217, /'F2')
+DEBUG:pdfminer.psparser:add_results: ((217, /'F2'),)
+DEBUG:pdfminer.psparser:nextobject: (217, /'F2')
+DEBUG:pdfminer.psparser:nexttoken: (221, 14)
+DEBUG:pdfminer.psparser:add_results: ((221, 14),)
+DEBUG:pdfminer.psparser:nextobject: (221, 14)
+DEBUG:pdfminer.psparser:nexttoken: (224, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=224, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((224, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (224, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F2', 14]
+DEBUG:pdfminer.psparser:nexttoken: (227, 18)
+DEBUG:pdfminer.psparser:add_results: ((227, 18),)
+DEBUG:pdfminer.psparser:nextobject: (227, 18)
+DEBUG:pdfminer.psparser:nexttoken: (230, /b'TL')
+DEBUG:pdfminer.psparser:do_keyword: pos=230, token=/b'TL', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((230, /b'TL'),)
+DEBUG:pdfminer.psparser:nextobject: (230, /b'TL')
+DEBUG:pdfminer.pdfinterp:exec: TL [18]
+DEBUG:pdfminer.psparser:nexttoken: (233, b'Software Developer | Data Analyst')
+DEBUG:pdfminer.psparser:add_results: ((233, b'Software Developer | Data Analyst'),)
+DEBUG:pdfminer.psparser:nextobject: (233, b'Software Developer | Data Analyst')
+DEBUG:pdfminer.psparser:nexttoken: (269, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=269, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((269, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (269, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Software Developer | Data Analyst']
+DEBUG:pdfminer.psparser:nexttoken: (272, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=272, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((272, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (272, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (275, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=275, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((275, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (275, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (278, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=278, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((278, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (278, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (280, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=280, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((280, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (280, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (282, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=282, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((282, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (282, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (284, 1)
+DEBUG:pdfminer.psparser:add_results: ((284, 1),)
+DEBUG:pdfminer.psparser:nextobject: (284, 1)
+DEBUG:pdfminer.psparser:nexttoken: (286, 0)
+DEBUG:pdfminer.psparser:add_results: ((286, 0),)
+DEBUG:pdfminer.psparser:nextobject: (286, 0)
+DEBUG:pdfminer.psparser:nexttoken: (288, 0)
+DEBUG:pdfminer.psparser:add_results: ((288, 0),)
+DEBUG:pdfminer.psparser:nextobject: (288, 0)
+DEBUG:pdfminer.psparser:nexttoken: (290, 1)
+DEBUG:pdfminer.psparser:add_results: ((290, 1),)
+DEBUG:pdfminer.psparser:nextobject: (290, 1)
+DEBUG:pdfminer.psparser:nexttoken: (292, 78)
+DEBUG:pdfminer.psparser:add_results: ((292, 78),)
+DEBUG:pdfminer.psparser:nextobject: (292, 78)
+DEBUG:pdfminer.psparser:nexttoken: (295, 693.8898)
+DEBUG:pdfminer.psparser:add_results: ((295, 693.8898),)
+DEBUG:pdfminer.psparser:nextobject: (295, 693.8898)
+DEBUG:pdfminer.psparser:nexttoken: (304, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=304, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((304, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (304, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 693.8898]
+DEBUG:pdfminer.psparser:nexttoken: (307, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=307, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((307, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (307, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (309, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=309, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((309, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (309, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (311, 1)
+DEBUG:pdfminer.psparser:add_results: ((311, 1),)
+DEBUG:pdfminer.psparser:nextobject: (311, 1)
+DEBUG:pdfminer.psparser:nexttoken: (313, 0)
+DEBUG:pdfminer.psparser:add_results: ((313, 0),)
+DEBUG:pdfminer.psparser:nextobject: (313, 0)
+DEBUG:pdfminer.psparser:nexttoken: (315, 0)
+DEBUG:pdfminer.psparser:add_results: ((315, 0),)
+DEBUG:pdfminer.psparser:nextobject: (315, 0)
+DEBUG:pdfminer.psparser:nexttoken: (317, 1)
+DEBUG:pdfminer.psparser:add_results: ((317, 1),)
+DEBUG:pdfminer.psparser:nextobject: (317, 1)
+DEBUG:pdfminer.psparser:nexttoken: (319, 78)
+DEBUG:pdfminer.psparser:add_results: ((319, 78),)
+DEBUG:pdfminer.psparser:nextobject: (319, 78)
+DEBUG:pdfminer.psparser:nexttoken: (322, 681.8898)
+DEBUG:pdfminer.psparser:add_results: ((322, 681.8898),)
+DEBUG:pdfminer.psparser:nextobject: (322, 681.8898)
+DEBUG:pdfminer.psparser:nexttoken: (331, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=331, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((331, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (331, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 681.8898]
+DEBUG:pdfminer.psparser:nexttoken: (334, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=334, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((334, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (334, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (336, 0)
+DEBUG:pdfminer.psparser:add_results: ((336, 0),)
+DEBUG:pdfminer.psparser:nextobject: (336, 0)
+DEBUG:pdfminer.psparser:nexttoken: (338, 0)
+DEBUG:pdfminer.psparser:add_results: ((338, 0),)
+DEBUG:pdfminer.psparser:nextobject: (338, 0)
+DEBUG:pdfminer.psparser:nexttoken: (340, 0)
+DEBUG:pdfminer.psparser:add_results: ((340, 0),)
+DEBUG:pdfminer.psparser:nextobject: (340, 0)
+DEBUG:pdfminer.psparser:nexttoken: (342, /b'rg')
+DEBUG:pdfminer.psparser:do_keyword: pos=342, token=/b'rg', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((342, /b'rg'),)
+DEBUG:pdfminer.psparser:nextobject: (342, /b'rg')
+DEBUG:pdfminer.pdfinterp:exec: rg [0, 0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (345, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=345, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((345, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (345, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (348, 1)
+DEBUG:pdfminer.psparser:add_results: ((348, 1),)
+DEBUG:pdfminer.psparser:nextobject: (348, 1)
+DEBUG:pdfminer.psparser:nexttoken: (350, 0)
+DEBUG:pdfminer.psparser:add_results: ((350, 0),)
+DEBUG:pdfminer.psparser:nextobject: (350, 0)
+DEBUG:pdfminer.psparser:nexttoken: (352, 0)
+DEBUG:pdfminer.psparser:add_results: ((352, 0),)
+DEBUG:pdfminer.psparser:nextobject: (352, 0)
+DEBUG:pdfminer.psparser:nexttoken: (354, 1)
+DEBUG:pdfminer.psparser:add_results: ((354, 1),)
+DEBUG:pdfminer.psparser:nextobject: (354, 1)
+DEBUG:pdfminer.psparser:nexttoken: (356, 0)
+DEBUG:pdfminer.psparser:add_results: ((356, 0),)
+DEBUG:pdfminer.psparser:nextobject: (356, 0)
+DEBUG:pdfminer.psparser:nexttoken: (358, 2)
+DEBUG:pdfminer.psparser:add_results: ((358, 2),)
+DEBUG:pdfminer.psparser:nextobject: (358, 2)
+DEBUG:pdfminer.psparser:nexttoken: (360, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=360, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((360, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (360, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 0, 2]
+DEBUG:pdfminer.psparser:nexttoken: (363, /'F1')
+DEBUG:pdfminer.psparser:add_results: ((363, /'F1'),)
+DEBUG:pdfminer.psparser:nextobject: (363, /'F1')
+DEBUG:pdfminer.psparser:nexttoken: (367, 10)
+DEBUG:pdfminer.psparser:add_results: ((367, 10),)
+DEBUG:pdfminer.psparser:nextobject: (367, 10)
+DEBUG:pdfminer.psparser:nexttoken: (370, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=370, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((370, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (370, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F1', 10]
+DEBUG:pdfminer.psparser:nexttoken: (373, 12)
+DEBUG:pdfminer.psparser:add_results: ((373, 12),)
+DEBUG:pdfminer.psparser:nextobject: (373, 12)
+DEBUG:pdfminer.psparser:nexttoken: (376, /b'TL')
+DEBUG:pdfminer.psparser:do_keyword: pos=376, token=/b'TL', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((376, /b'TL'),)
+DEBUG:pdfminer.psparser:nextobject: (376, /b'TL')
+DEBUG:pdfminer.pdfinterp:exec: TL [12]
+DEBUG:pdfminer.psparser:nexttoken: (379, b'Email: johndoe@email.com | Phone: +1 234 567 890 | LinkedIn: linkedin.com/in/johndoe')
+DEBUG:pdfminer.psparser:add_results: ((379, b'Email: johndoe@email.com | Phone: +1 234 567 890 | LinkedIn: linkedin.com/in/johndoe'),)
+DEBUG:pdfminer.psparser:nextobject: (379, b'Email: johndoe@email.com | Phone: +1 234 567 890 | LinkedIn: linkedin.com/in/johndoe')
+DEBUG:pdfminer.psparser:nexttoken: (466, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=466, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((466, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (466, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Email: johndoe@email.com | Phone: +1 234 567 890 | LinkedIn: linkedin.com/in/johndoe']
+DEBUG:pdfminer.psparser:nexttoken: (469, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=469, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((469, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (469, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (472, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=472, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((472, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (472, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (475, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=475, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((475, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (475, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (477, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=477, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((477, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (477, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (479, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=479, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((479, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (479, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (481, 1)
+DEBUG:pdfminer.psparser:add_results: ((481, 1),)
+DEBUG:pdfminer.psparser:nextobject: (481, 1)
+DEBUG:pdfminer.psparser:nexttoken: (483, 0)
+DEBUG:pdfminer.psparser:add_results: ((483, 0),)
+DEBUG:pdfminer.psparser:nextobject: (483, 0)
+DEBUG:pdfminer.psparser:nexttoken: (485, 0)
+DEBUG:pdfminer.psparser:add_results: ((485, 0),)
+DEBUG:pdfminer.psparser:nextobject: (485, 0)
+DEBUG:pdfminer.psparser:nexttoken: (487, 1)
+DEBUG:pdfminer.psparser:add_results: ((487, 1),)
+DEBUG:pdfminer.psparser:nextobject: (487, 1)
+DEBUG:pdfminer.psparser:nexttoken: (489, 78)
+DEBUG:pdfminer.psparser:add_results: ((489, 78),)
+DEBUG:pdfminer.psparser:nextobject: (489, 78)
+DEBUG:pdfminer.psparser:nexttoken: (492, 669.8898)
+DEBUG:pdfminer.psparser:add_results: ((492, 669.8898),)
+DEBUG:pdfminer.psparser:nextobject: (492, 669.8898)
+DEBUG:pdfminer.psparser:nexttoken: (501, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=501, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((501, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (501, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 669.8898]
+DEBUG:pdfminer.psparser:nexttoken: (504, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=504, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((504, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (504, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (506, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=506, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((506, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (506, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (508, 1)
+DEBUG:pdfminer.psparser:add_results: ((508, 1),)
+DEBUG:pdfminer.psparser:nextobject: (508, 1)
+DEBUG:pdfminer.psparser:nexttoken: (510, 0)
+DEBUG:pdfminer.psparser:add_results: ((510, 0),)
+DEBUG:pdfminer.psparser:nextobject: (510, 0)
+DEBUG:pdfminer.psparser:nexttoken: (512, 0)
+DEBUG:pdfminer.psparser:add_results: ((512, 0),)
+DEBUG:pdfminer.psparser:nextobject: (512, 0)
+DEBUG:pdfminer.psparser:nexttoken: (514, 1)
+DEBUG:pdfminer.psparser:add_results: ((514, 1),)
+DEBUG:pdfminer.psparser:nextobject: (514, 1)
+DEBUG:pdfminer.psparser:nexttoken: (516, 78)
+DEBUG:pdfminer.psparser:add_results: ((516, 78),)
+DEBUG:pdfminer.psparser:nextobject: (516, 78)
+DEBUG:pdfminer.psparser:nexttoken: (519, 639.8898)
+DEBUG:pdfminer.psparser:add_results: ((519, 639.8898),)
+DEBUG:pdfminer.psparser:nextobject: (519, 639.8898)
+DEBUG:pdfminer.psparser:nexttoken: (528, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=528, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((528, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (528, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 639.8898]
+DEBUG:pdfminer.psparser:nexttoken: (531, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=531, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((531, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (531, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (533, 0)
+DEBUG:pdfminer.psparser:add_results: ((533, 0),)
+DEBUG:pdfminer.psparser:nextobject: (533, 0)
+DEBUG:pdfminer.psparser:nexttoken: (535, 0)
+DEBUG:pdfminer.psparser:add_results: ((535, 0),)
+DEBUG:pdfminer.psparser:nextobject: (535, 0)
+DEBUG:pdfminer.psparser:nexttoken: (537, 0)
+DEBUG:pdfminer.psparser:add_results: ((537, 0),)
+DEBUG:pdfminer.psparser:nextobject: (537, 0)
+DEBUG:pdfminer.psparser:nexttoken: (539, /b'rg')
+DEBUG:pdfminer.psparser:do_keyword: pos=539, token=/b'rg', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((539, /b'rg'),)
+DEBUG:pdfminer.psparser:nextobject: (539, /b'rg')
+DEBUG:pdfminer.pdfinterp:exec: rg [0, 0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (542, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=542, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((542, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (542, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (545, 1)
+DEBUG:pdfminer.psparser:add_results: ((545, 1),)
+DEBUG:pdfminer.psparser:nextobject: (545, 1)
+DEBUG:pdfminer.psparser:nexttoken: (547, 0)
+DEBUG:pdfminer.psparser:add_results: ((547, 0),)
+DEBUG:pdfminer.psparser:nextobject: (547, 0)
+DEBUG:pdfminer.psparser:nexttoken: (549, 0)
+DEBUG:pdfminer.psparser:add_results: ((549, 0),)
+DEBUG:pdfminer.psparser:nextobject: (549, 0)
+DEBUG:pdfminer.psparser:nexttoken: (551, 1)
+DEBUG:pdfminer.psparser:add_results: ((551, 1),)
+DEBUG:pdfminer.psparser:nextobject: (551, 1)
+DEBUG:pdfminer.psparser:nexttoken: (553, 0)
+DEBUG:pdfminer.psparser:add_results: ((553, 0),)
+DEBUG:pdfminer.psparser:nextobject: (553, 0)
+DEBUG:pdfminer.psparser:nexttoken: (555, 4)
+DEBUG:pdfminer.psparser:add_results: ((555, 4),)
+DEBUG:pdfminer.psparser:nextobject: (555, 4)
+DEBUG:pdfminer.psparser:nexttoken: (557, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=557, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((557, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (557, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 0, 4]
+DEBUG:pdfminer.psparser:nexttoken: (560, /'F2')
+DEBUG:pdfminer.psparser:add_results: ((560, /'F2'),)
+DEBUG:pdfminer.psparser:nextobject: (560, /'F2')
+DEBUG:pdfminer.psparser:nexttoken: (564, 14)
+DEBUG:pdfminer.psparser:add_results: ((564, 14),)
+DEBUG:pdfminer.psparser:nextobject: (564, 14)
+DEBUG:pdfminer.psparser:nexttoken: (567, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=567, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((567, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (567, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F2', 14]
+DEBUG:pdfminer.psparser:nexttoken: (570, 18)
+DEBUG:pdfminer.psparser:add_results: ((570, 18),)
+DEBUG:pdfminer.psparser:nextobject: (570, 18)
+DEBUG:pdfminer.psparser:nexttoken: (573, /b'TL')
+DEBUG:pdfminer.psparser:do_keyword: pos=573, token=/b'TL', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((573, /b'TL'),)
+DEBUG:pdfminer.psparser:nextobject: (573, /b'TL')
+DEBUG:pdfminer.pdfinterp:exec: TL [18]
+DEBUG:pdfminer.psparser:nexttoken: (576, b'Professional Summary')
+DEBUG:pdfminer.psparser:add_results: ((576, b'Professional Summary'),)
+DEBUG:pdfminer.psparser:nextobject: (576, b'Professional Summary')
+DEBUG:pdfminer.psparser:nexttoken: (599, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=599, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((599, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (599, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Professional Summary']
+DEBUG:pdfminer.psparser:nexttoken: (602, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=602, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((602, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (602, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (605, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=605, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((605, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (605, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (608, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=608, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((608, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (608, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (610, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=610, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((610, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (610, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (612, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=612, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((612, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (612, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (614, 1)
+DEBUG:pdfminer.psparser:add_results: ((614, 1),)
+DEBUG:pdfminer.psparser:nextobject: (614, 1)
+DEBUG:pdfminer.psparser:nexttoken: (616, 0)
+DEBUG:pdfminer.psparser:add_results: ((616, 0),)
+DEBUG:pdfminer.psparser:nextobject: (616, 0)
+DEBUG:pdfminer.psparser:nexttoken: (618, 0)
+DEBUG:pdfminer.psparser:add_results: ((618, 0),)
+DEBUG:pdfminer.psparser:nextobject: (618, 0)
+DEBUG:pdfminer.psparser:nexttoken: (620, 1)
+DEBUG:pdfminer.psparser:add_results: ((620, 1),)
+DEBUG:pdfminer.psparser:nextobject: (620, 1)
+DEBUG:pdfminer.psparser:nexttoken: (622, 78)
+DEBUG:pdfminer.psparser:add_results: ((622, 78),)
+DEBUG:pdfminer.psparser:nextobject: (622, 78)
+DEBUG:pdfminer.psparser:nexttoken: (625, 597.8898)
+DEBUG:pdfminer.psparser:add_results: ((625, 597.8898),)
+DEBUG:pdfminer.psparser:nextobject: (625, 597.8898)
+DEBUG:pdfminer.psparser:nexttoken: (634, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=634, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((634, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (634, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 597.8898]
+DEBUG:pdfminer.psparser:nexttoken: (637, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=637, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((637, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (637, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (639, 0)
+DEBUG:pdfminer.psparser:add_results: ((639, 0),)
+DEBUG:pdfminer.psparser:nextobject: (639, 0)
+DEBUG:pdfminer.psparser:nexttoken: (641, 0)
+DEBUG:pdfminer.psparser:add_results: ((641, 0),)
+DEBUG:pdfminer.psparser:nextobject: (641, 0)
+DEBUG:pdfminer.psparser:nexttoken: (643, 0)
+DEBUG:pdfminer.psparser:add_results: ((643, 0),)
+DEBUG:pdfminer.psparser:nextobject: (643, 0)
+DEBUG:pdfminer.psparser:nexttoken: (645, /b'rg')
+DEBUG:pdfminer.psparser:do_keyword: pos=645, token=/b'rg', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((645, /b'rg'),)
+DEBUG:pdfminer.psparser:nextobject: (645, /b'rg')
+DEBUG:pdfminer.pdfinterp:exec: rg [0, 0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (648, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=648, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((648, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (648, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (651, 1)
+DEBUG:pdfminer.psparser:add_results: ((651, 1),)
+DEBUG:pdfminer.psparser:nextobject: (651, 1)
+DEBUG:pdfminer.psparser:nexttoken: (653, 0)
+DEBUG:pdfminer.psparser:add_results: ((653, 0),)
+DEBUG:pdfminer.psparser:nextobject: (653, 0)
+DEBUG:pdfminer.psparser:nexttoken: (655, 0)
+DEBUG:pdfminer.psparser:add_results: ((655, 0),)
+DEBUG:pdfminer.psparser:nextobject: (655, 0)
+DEBUG:pdfminer.psparser:nexttoken: (657, 1)
+DEBUG:pdfminer.psparser:add_results: ((657, 1),)
+DEBUG:pdfminer.psparser:nextobject: (657, 1)
+DEBUG:pdfminer.psparser:nexttoken: (659, 0)
+DEBUG:pdfminer.psparser:add_results: ((659, 0),)
+DEBUG:pdfminer.psparser:nextobject: (659, 0)
+DEBUG:pdfminer.psparser:nexttoken: (661, 26)
+DEBUG:pdfminer.psparser:add_results: ((661, 26),)
+DEBUG:pdfminer.psparser:nextobject: (661, 26)
+DEBUG:pdfminer.psparser:nexttoken: (664, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=664, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((664, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (664, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 0, 26]
+DEBUG:pdfminer.psparser:nexttoken: (667, /'F1')
+DEBUG:pdfminer.psparser:add_results: ((667, /'F1'),)
+DEBUG:pdfminer.psparser:nextobject: (667, /'F1')
+DEBUG:pdfminer.psparser:nexttoken: (671, 10)
+DEBUG:pdfminer.psparser:add_results: ((671, 10),)
+DEBUG:pdfminer.psparser:nextobject: (671, 10)
+DEBUG:pdfminer.psparser:nexttoken: (674, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=674, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((674, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (674, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F1', 10]
+DEBUG:pdfminer.psparser:nexttoken: (677, 12)
+DEBUG:pdfminer.psparser:add_results: ((677, 12),)
+DEBUG:pdfminer.psparser:nextobject: (677, 12)
+DEBUG:pdfminer.psparser:nexttoken: (680, /b'TL')
+DEBUG:pdfminer.psparser:do_keyword: pos=680, token=/b'TL', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((680, /b'TL'),)
+DEBUG:pdfminer.psparser:nextobject: (680, /b'TL')
+DEBUG:pdfminer.pdfinterp:exec: TL [12]
+DEBUG:pdfminer.psparser:nexttoken: (683, b'Passionate and detail-oriented Software Developer with 5+ years of experience in building web')
+DEBUG:pdfminer.psparser:add_results: ((683, b'Passionate and detail-oriented Software Developer with 5+ years of experience in building web'),)
+DEBUG:pdfminer.psparser:nextobject: (683, b'Passionate and detail-oriented Software Developer with 5+ years of experience in building web')
+DEBUG:pdfminer.psparser:nexttoken: (779, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=779, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((779, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (779, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Passionate and detail-oriented Software Developer with 5+ years of experience in building web']
+DEBUG:pdfminer.psparser:nexttoken: (782, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=782, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((782, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (782, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (785, b'applications, data analysis, and problem-solving. Skilled in Python, JavaScript, and SQL with a')
+DEBUG:pdfminer.psparser:add_results: ((785, b'applications, data analysis, and problem-solving. Skilled in Python, JavaScript, and SQL with a'),)
+DEBUG:pdfminer.psparser:nextobject: (785, b'applications, data analysis, and problem-solving. Skilled in Python, JavaScript, and SQL with a')
+DEBUG:pdfminer.psparser:nexttoken: (883, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=883, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((883, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (883, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'applications, data analysis, and problem-solving. Skilled in Python, JavaScript, and SQL with a']
+DEBUG:pdfminer.psparser:nexttoken: (886, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=886, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((886, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (886, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (889, b'proven track record of delivering efficient solutions.')
+DEBUG:pdfminer.psparser:add_results: ((889, b'proven track record of delivering efficient solutions.'),)
+DEBUG:pdfminer.psparser:nextobject: (889, b'proven track record of delivering efficient solutions.')
+DEBUG:pdfminer.psparser:nexttoken: (946, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=946, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((946, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (946, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'proven track record of delivering efficient solutions.']
+DEBUG:pdfminer.psparser:nexttoken: (949, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=949, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((949, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (949, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (952, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=952, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((952, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (952, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (955, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=955, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((955, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (955, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (957, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=957, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((957, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (957, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (959, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=959, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((959, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (959, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (961, 1)
+DEBUG:pdfminer.psparser:add_results: ((961, 1),)
+DEBUG:pdfminer.psparser:nextobject: (961, 1)
+DEBUG:pdfminer.psparser:nexttoken: (963, 0)
+DEBUG:pdfminer.psparser:add_results: ((963, 0),)
+DEBUG:pdfminer.psparser:nextobject: (963, 0)
+DEBUG:pdfminer.psparser:nexttoken: (965, 0)
+DEBUG:pdfminer.psparser:add_results: ((965, 0),)
+DEBUG:pdfminer.psparser:nextobject: (965, 0)
+DEBUG:pdfminer.psparser:nexttoken: (967, 1)
+DEBUG:pdfminer.psparser:add_results: ((967, 1),)
+DEBUG:pdfminer.psparser:nextobject: (967, 1)
+DEBUG:pdfminer.psparser:nexttoken: (969, 78)
+DEBUG:pdfminer.psparser:add_results: ((969, 78),)
+DEBUG:pdfminer.psparser:nextobject: (969, 78)
+DEBUG:pdfminer.psparser:nexttoken: (972, 585.8898)
+DEBUG:pdfminer.psparser:add_results: ((972, 585.8898),)
+DEBUG:pdfminer.psparser:nextobject: (972, 585.8898)
+DEBUG:pdfminer.psparser:nexttoken: (981, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=981, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((981, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (981, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 585.8898]
+DEBUG:pdfminer.psparser:nexttoken: (984, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=984, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((984, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (984, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (986, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=986, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((986, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (986, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (988, 1)
+DEBUG:pdfminer.psparser:add_results: ((988, 1),)
+DEBUG:pdfminer.psparser:nextobject: (988, 1)
+DEBUG:pdfminer.psparser:nexttoken: (990, 0)
+DEBUG:pdfminer.psparser:add_results: ((990, 0),)
+DEBUG:pdfminer.psparser:nextobject: (990, 0)
+DEBUG:pdfminer.psparser:nexttoken: (992, 0)
+DEBUG:pdfminer.psparser:add_results: ((992, 0),)
+DEBUG:pdfminer.psparser:nextobject: (992, 0)
+DEBUG:pdfminer.psparser:nexttoken: (994, 1)
+DEBUG:pdfminer.psparser:add_results: ((994, 1),)
+DEBUG:pdfminer.psparser:nextobject: (994, 1)
+DEBUG:pdfminer.psparser:nexttoken: (996, 78)
+DEBUG:pdfminer.psparser:add_results: ((996, 78),)
+DEBUG:pdfminer.psparser:nextobject: (996, 78)
+DEBUG:pdfminer.psparser:nexttoken: (999, 555.8898)
+DEBUG:pdfminer.psparser:add_results: ((999, 555.8898),)
+DEBUG:pdfminer.psparser:nextobject: (999, 555.8898)
+DEBUG:pdfminer.psparser:nexttoken: (1008, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1008, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1008, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (1008, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 555.8898]
+DEBUG:pdfminer.psparser:nexttoken: (1011, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1011, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1011, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (1011, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (1013, 0)
+DEBUG:pdfminer.psparser:add_results: ((1013, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1013, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1015, 0)
+DEBUG:pdfminer.psparser:add_results: ((1015, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1015, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1017, 0)
+DEBUG:pdfminer.psparser:add_results: ((1017, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1017, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1019, /b'rg')
+DEBUG:pdfminer.psparser:do_keyword: pos=1019, token=/b'rg', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1019, /b'rg'),)
+DEBUG:pdfminer.psparser:nextobject: (1019, /b'rg')
+DEBUG:pdfminer.pdfinterp:exec: rg [0, 0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (1022, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=1022, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1022, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (1022, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (1025, 1)
+DEBUG:pdfminer.psparser:add_results: ((1025, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1025, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1027, 0)
+DEBUG:pdfminer.psparser:add_results: ((1027, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1027, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1029, 0)
+DEBUG:pdfminer.psparser:add_results: ((1029, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1029, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1031, 1)
+DEBUG:pdfminer.psparser:add_results: ((1031, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1031, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1033, 0)
+DEBUG:pdfminer.psparser:add_results: ((1033, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1033, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1035, 4)
+DEBUG:pdfminer.psparser:add_results: ((1035, 4),)
+DEBUG:pdfminer.psparser:nextobject: (1035, 4)
+DEBUG:pdfminer.psparser:nexttoken: (1037, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1037, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1037, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (1037, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 0, 4]
+DEBUG:pdfminer.psparser:nexttoken: (1040, /'F2')
+DEBUG:pdfminer.psparser:add_results: ((1040, /'F2'),)
+DEBUG:pdfminer.psparser:nextobject: (1040, /'F2')
+DEBUG:pdfminer.psparser:nexttoken: (1044, 14)
+DEBUG:pdfminer.psparser:add_results: ((1044, 14),)
+DEBUG:pdfminer.psparser:nextobject: (1044, 14)
+DEBUG:pdfminer.psparser:nexttoken: (1047, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=1047, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1047, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (1047, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F2', 14]
+DEBUG:pdfminer.psparser:nexttoken: (1050, 18)
+DEBUG:pdfminer.psparser:add_results: ((1050, 18),)
+DEBUG:pdfminer.psparser:nextobject: (1050, 18)
+DEBUG:pdfminer.psparser:nexttoken: (1053, /b'TL')
+DEBUG:pdfminer.psparser:do_keyword: pos=1053, token=/b'TL', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1053, /b'TL'),)
+DEBUG:pdfminer.psparser:nextobject: (1053, /b'TL')
+DEBUG:pdfminer.pdfinterp:exec: TL [18]
+DEBUG:pdfminer.psparser:nexttoken: (1056, b'Skills')
+DEBUG:pdfminer.psparser:add_results: ((1056, b'Skills'),)
+DEBUG:pdfminer.psparser:nextobject: (1056, b'Skills')
+DEBUG:pdfminer.psparser:nexttoken: (1065, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=1065, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1065, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (1065, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Skills']
+DEBUG:pdfminer.psparser:nexttoken: (1068, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=1068, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1068, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (1068, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (1071, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=1071, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1071, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (1071, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (1074, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1074, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1074, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (1074, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (1076, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1076, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1076, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (1076, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (1078, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1078, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1078, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (1078, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (1080, 1)
+DEBUG:pdfminer.psparser:add_results: ((1080, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1080, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1082, 0)
+DEBUG:pdfminer.psparser:add_results: ((1082, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1082, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1084, 0)
+DEBUG:pdfminer.psparser:add_results: ((1084, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1084, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1086, 1)
+DEBUG:pdfminer.psparser:add_results: ((1086, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1086, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1088, 62.6378)
+DEBUG:pdfminer.psparser:add_results: ((1088, 62.6378),)
+DEBUG:pdfminer.psparser:nextobject: (1088, 62.6378)
+DEBUG:pdfminer.psparser:nexttoken: (1096, 474.8898)
+DEBUG:pdfminer.psparser:add_results: ((1096, 474.8898),)
+DEBUG:pdfminer.psparser:nextobject: (1096, 474.8898)
+DEBUG:pdfminer.psparser:nexttoken: (1105, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1105, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1105, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (1105, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 62.6378, 474.8898]
+DEBUG:pdfminer.psparser:nexttoken: (1108, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1108, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1108, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (1108, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (1110, 0.827451)
+DEBUG:pdfminer.psparser:add_results: ((1110, 0.827451),)
+DEBUG:pdfminer.psparser:nextobject: (1110, 0.827451)
+DEBUG:pdfminer.psparser:nexttoken: (1118, 0.827451)
+DEBUG:pdfminer.psparser:add_results: ((1118, 0.827451),)
+DEBUG:pdfminer.psparser:nextobject: (1118, 0.827451)
+DEBUG:pdfminer.psparser:nexttoken: (1126, 0.827451)
+DEBUG:pdfminer.psparser:add_results: ((1126, 0.827451),)
+DEBUG:pdfminer.psparser:nextobject: (1126, 0.827451)
+DEBUG:pdfminer.psparser:nexttoken: (1134, /b'rg')
+DEBUG:pdfminer.psparser:do_keyword: pos=1134, token=/b'rg', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1134, /b'rg'),)
+DEBUG:pdfminer.psparser:nextobject: (1134, /b'rg')
+DEBUG:pdfminer.pdfinterp:exec: rg [0.827451, 0.827451, 0.827451]
+DEBUG:pdfminer.psparser:nexttoken: (1137, /b'n')
+DEBUG:pdfminer.psparser:do_keyword: pos=1137, token=/b'n', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1137, /b'n'),)
+DEBUG:pdfminer.psparser:nextobject: (1137, /b'n')
+DEBUG:pdfminer.pdfinterp:exec: n
+DEBUG:pdfminer.psparser:nexttoken: (1139, 0)
+DEBUG:pdfminer.psparser:add_results: ((1139, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1139, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1141, 75)
+DEBUG:pdfminer.psparser:add_results: ((1141, 75),)
+DEBUG:pdfminer.psparser:nextobject: (1141, 75)
+DEBUG:pdfminer.psparser:nexttoken: (1144, 470)
+DEBUG:pdfminer.psparser:add_results: ((1144, 470),)
+DEBUG:pdfminer.psparser:nextobject: (1144, 470)
+DEBUG:pdfminer.psparser:nexttoken: (1148, -21)
+DEBUG:pdfminer.psparser:add_results: ((1148, -21),)
+DEBUG:pdfminer.psparser:nextobject: (1148, -21)
+DEBUG:pdfminer.psparser:nexttoken: (1152, /b're')
+DEBUG:pdfminer.psparser:do_keyword: pos=1152, token=/b're', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1152, /b're'),)
+DEBUG:pdfminer.psparser:nextobject: (1152, /b're')
+DEBUG:pdfminer.pdfinterp:exec: re [0, 75, 470, -21]
+DEBUG:pdfminer.psparser:nexttoken: (1155, /b'f*')
+DEBUG:pdfminer.psparser:do_keyword: pos=1155, token=/b'f*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1155, /b'f*'),)
+DEBUG:pdfminer.psparser:nextobject: (1155, /b'f*')
+DEBUG:pdfminer.pdfinterp:exec: f*
+DEBUG:pdfminer.psparser:nexttoken: (1158, 0.960784)
+DEBUG:pdfminer.psparser:add_results: ((1158, 0.960784),)
+DEBUG:pdfminer.psparser:nextobject: (1158, 0.960784)
+DEBUG:pdfminer.psparser:nexttoken: (1166, 0.960784)
+DEBUG:pdfminer.psparser:add_results: ((1166, 0.960784),)
+DEBUG:pdfminer.psparser:nextobject: (1166, 0.960784)
+DEBUG:pdfminer.psparser:nexttoken: (1174, 0.960784)
+DEBUG:pdfminer.psparser:add_results: ((1174, 0.960784),)
+DEBUG:pdfminer.psparser:nextobject: (1174, 0.960784)
+DEBUG:pdfminer.psparser:nexttoken: (1182, /b'rg')
+DEBUG:pdfminer.psparser:do_keyword: pos=1182, token=/b'rg', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1182, /b'rg'),)
+DEBUG:pdfminer.psparser:nextobject: (1182, /b'rg')
+DEBUG:pdfminer.pdfinterp:exec: rg [0.960784, 0.960784, 0.960784]
+DEBUG:pdfminer.psparser:nexttoken: (1185, /b'n')
+DEBUG:pdfminer.psparser:do_keyword: pos=1185, token=/b'n', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1185, /b'n'),)
+DEBUG:pdfminer.psparser:nextobject: (1185, /b'n')
+DEBUG:pdfminer.pdfinterp:exec: n
+DEBUG:pdfminer.psparser:nexttoken: (1187, 0)
+DEBUG:pdfminer.psparser:add_results: ((1187, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1187, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1189, 54)
+DEBUG:pdfminer.psparser:add_results: ((1189, 54),)
+DEBUG:pdfminer.psparser:nextobject: (1189, 54)
+DEBUG:pdfminer.psparser:nexttoken: (1192, 470)
+DEBUG:pdfminer.psparser:add_results: ((1192, 470),)
+DEBUG:pdfminer.psparser:nextobject: (1192, 470)
+DEBUG:pdfminer.psparser:nexttoken: (1196, -54)
+DEBUG:pdfminer.psparser:add_results: ((1196, -54),)
+DEBUG:pdfminer.psparser:nextobject: (1196, -54)
+DEBUG:pdfminer.psparser:nexttoken: (1200, /b're')
+DEBUG:pdfminer.psparser:do_keyword: pos=1200, token=/b're', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1200, /b're'),)
+DEBUG:pdfminer.psparser:nextobject: (1200, /b're')
+DEBUG:pdfminer.pdfinterp:exec: re [0, 54, 470, -54]
+DEBUG:pdfminer.psparser:nexttoken: (1203, /b'f*')
+DEBUG:pdfminer.psparser:do_keyword: pos=1203, token=/b'f*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1203, /b'f*'),)
+DEBUG:pdfminer.psparser:nextobject: (1203, /b'f*')
+DEBUG:pdfminer.pdfinterp:exec: f*
+DEBUG:pdfminer.psparser:nexttoken: (1206, 0)
+DEBUG:pdfminer.psparser:add_results: ((1206, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1206, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1208, 0)
+DEBUG:pdfminer.psparser:add_results: ((1208, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1208, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1210, 0)
+DEBUG:pdfminer.psparser:add_results: ((1210, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1210, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1212, /b'rg')
+DEBUG:pdfminer.psparser:do_keyword: pos=1212, token=/b'rg', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1212, /b'rg'),)
+DEBUG:pdfminer.psparser:nextobject: (1212, /b'rg')
+DEBUG:pdfminer.pdfinterp:exec: rg [0, 0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (1215, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=1215, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1215, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (1215, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (1218, /'F1')
+DEBUG:pdfminer.psparser:add_results: ((1218, /'F1'),)
+DEBUG:pdfminer.psparser:nextobject: (1218, /'F1')
+DEBUG:pdfminer.psparser:nexttoken: (1222, 10)
+DEBUG:pdfminer.psparser:add_results: ((1222, 10),)
+DEBUG:pdfminer.psparser:nextobject: (1222, 10)
+DEBUG:pdfminer.psparser:nexttoken: (1225, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=1225, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1225, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (1225, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F1', 10]
+DEBUG:pdfminer.psparser:nexttoken: (1228, 12)
+DEBUG:pdfminer.psparser:add_results: ((1228, 12),)
+DEBUG:pdfminer.psparser:nextobject: (1228, 12)
+DEBUG:pdfminer.psparser:nexttoken: (1231, /b'TL')
+DEBUG:pdfminer.psparser:do_keyword: pos=1231, token=/b'TL', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1231, /b'TL'),)
+DEBUG:pdfminer.psparser:nextobject: (1231, /b'TL')
+DEBUG:pdfminer.pdfinterp:exec: TL [12]
+DEBUG:pdfminer.psparser:nexttoken: (1234, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=1234, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1234, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (1234, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (1237, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=1237, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1237, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (1237, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (1240, 1)
+DEBUG:pdfminer.psparser:add_results: ((1240, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1240, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1242, 0)
+DEBUG:pdfminer.psparser:add_results: ((1242, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1242, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1244, 0)
+DEBUG:pdfminer.psparser:add_results: ((1244, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1244, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1246, 1)
+DEBUG:pdfminer.psparser:add_results: ((1246, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1246, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1248, 6)
+DEBUG:pdfminer.psparser:add_results: ((1248, 6),)
+DEBUG:pdfminer.psparser:nextobject: (1248, 6)
+DEBUG:pdfminer.psparser:nexttoken: (1250, 62)
+DEBUG:pdfminer.psparser:add_results: ((1250, 62),)
+DEBUG:pdfminer.psparser:nextobject: (1250, 62)
+DEBUG:pdfminer.psparser:nexttoken: (1253, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1253, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1253, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (1253, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 6, 62]
+DEBUG:pdfminer.psparser:nexttoken: (1256, b'Programming:')
+DEBUG:pdfminer.psparser:add_results: ((1256, b'Programming:'),)
+DEBUG:pdfminer.psparser:nextobject: (1256, b'Programming:')
+DEBUG:pdfminer.psparser:nexttoken: (1271, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=1271, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1271, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (1271, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Programming:']
+DEBUG:pdfminer.psparser:nexttoken: (1274, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=1274, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1274, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (1274, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (1277, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=1277, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1277, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (1277, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (1280, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=1280, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1280, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (1280, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (1283, 1)
+DEBUG:pdfminer.psparser:add_results: ((1283, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1283, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1285, 0)
+DEBUG:pdfminer.psparser:add_results: ((1285, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1285, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1287, 0)
+DEBUG:pdfminer.psparser:add_results: ((1287, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1287, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1289, 1)
+DEBUG:pdfminer.psparser:add_results: ((1289, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1289, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1291, 126)
+DEBUG:pdfminer.psparser:add_results: ((1291, 126),)
+DEBUG:pdfminer.psparser:nextobject: (1291, 126)
+DEBUG:pdfminer.psparser:nexttoken: (1295, 62)
+DEBUG:pdfminer.psparser:add_results: ((1295, 62),)
+DEBUG:pdfminer.psparser:nextobject: (1295, 62)
+DEBUG:pdfminer.psparser:nexttoken: (1298, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1298, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1298, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (1298, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 126, 62]
+DEBUG:pdfminer.psparser:nexttoken: (1301, b'Python, JavaScript, C++')
+DEBUG:pdfminer.psparser:add_results: ((1301, b'Python, JavaScript, C++'),)
+DEBUG:pdfminer.psparser:nextobject: (1301, b'Python, JavaScript, C++')
+DEBUG:pdfminer.psparser:nexttoken: (1327, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=1327, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1327, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (1327, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Python, JavaScript, C++']
+DEBUG:pdfminer.psparser:nexttoken: (1330, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=1330, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1330, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (1330, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (1333, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=1333, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1333, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (1333, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (1336, 0)
+DEBUG:pdfminer.psparser:add_results: ((1336, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1336, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1338, 0)
+DEBUG:pdfminer.psparser:add_results: ((1338, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1338, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1340, 0)
+DEBUG:pdfminer.psparser:add_results: ((1340, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1340, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1342, /b'rg')
+DEBUG:pdfminer.psparser:do_keyword: pos=1342, token=/b'rg', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1342, /b'rg'),)
+DEBUG:pdfminer.psparser:nextobject: (1342, /b'rg')
+DEBUG:pdfminer.pdfinterp:exec: rg [0, 0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (1345, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=1345, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1345, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (1345, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (1348, 1)
+DEBUG:pdfminer.psparser:add_results: ((1348, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1348, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1350, 0)
+DEBUG:pdfminer.psparser:add_results: ((1350, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1350, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1352, 0)
+DEBUG:pdfminer.psparser:add_results: ((1352, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1352, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1354, 1)
+DEBUG:pdfminer.psparser:add_results: ((1354, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1354, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1356, 6)
+DEBUG:pdfminer.psparser:add_results: ((1356, 6),)
+DEBUG:pdfminer.psparser:nextobject: (1356, 6)
+DEBUG:pdfminer.psparser:nexttoken: (1358, 41)
+DEBUG:pdfminer.psparser:add_results: ((1358, 41),)
+DEBUG:pdfminer.psparser:nextobject: (1358, 41)
+DEBUG:pdfminer.psparser:nexttoken: (1361, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1361, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1361, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (1361, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 6, 41]
+DEBUG:pdfminer.psparser:nexttoken: (1364, b'Web Development:')
+DEBUG:pdfminer.psparser:add_results: ((1364, b'Web Development:'),)
+DEBUG:pdfminer.psparser:nextobject: (1364, b'Web Development:')
+DEBUG:pdfminer.psparser:nexttoken: (1383, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=1383, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1383, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (1383, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Web Development:']
+DEBUG:pdfminer.psparser:nexttoken: (1386, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=1386, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1386, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (1386, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (1389, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=1389, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1389, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (1389, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (1392, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=1392, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1392, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (1392, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (1395, 1)
+DEBUG:pdfminer.psparser:add_results: ((1395, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1395, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1397, 0)
+DEBUG:pdfminer.psparser:add_results: ((1397, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1397, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1399, 0)
+DEBUG:pdfminer.psparser:add_results: ((1399, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1399, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1401, 1)
+DEBUG:pdfminer.psparser:add_results: ((1401, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1401, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1403, 126)
+DEBUG:pdfminer.psparser:add_results: ((1403, 126),)
+DEBUG:pdfminer.psparser:nextobject: (1403, 126)
+DEBUG:pdfminer.psparser:nexttoken: (1407, 41)
+DEBUG:pdfminer.psparser:add_results: ((1407, 41),)
+DEBUG:pdfminer.psparser:nextobject: (1407, 41)
+DEBUG:pdfminer.psparser:nexttoken: (1410, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1410, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1410, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (1410, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 126, 41]
+DEBUG:pdfminer.psparser:nexttoken: (1413, b'React, Node.js, Django')
+DEBUG:pdfminer.psparser:add_results: ((1413, b'React, Node.js, Django'),)
+DEBUG:pdfminer.psparser:nextobject: (1413, b'React, Node.js, Django')
+DEBUG:pdfminer.psparser:nexttoken: (1438, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=1438, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1438, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (1438, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'React, Node.js, Django']
+DEBUG:pdfminer.psparser:nexttoken: (1441, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=1441, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1441, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (1441, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (1444, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=1444, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1444, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (1444, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (1447, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=1447, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1447, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (1447, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (1450, 1)
+DEBUG:pdfminer.psparser:add_results: ((1450, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1450, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1452, 0)
+DEBUG:pdfminer.psparser:add_results: ((1452, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1452, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1454, 0)
+DEBUG:pdfminer.psparser:add_results: ((1454, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1454, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1456, 1)
+DEBUG:pdfminer.psparser:add_results: ((1456, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1456, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1458, 6)
+DEBUG:pdfminer.psparser:add_results: ((1458, 6),)
+DEBUG:pdfminer.psparser:nextobject: (1458, 6)
+DEBUG:pdfminer.psparser:nexttoken: (1460, 23)
+DEBUG:pdfminer.psparser:add_results: ((1460, 23),)
+DEBUG:pdfminer.psparser:nextobject: (1460, 23)
+DEBUG:pdfminer.psparser:nexttoken: (1463, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1463, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1463, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (1463, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 6, 23]
+DEBUG:pdfminer.psparser:nexttoken: (1466, b'Databases:')
+DEBUG:pdfminer.psparser:add_results: ((1466, b'Databases:'),)
+DEBUG:pdfminer.psparser:nextobject: (1466, b'Databases:')
+DEBUG:pdfminer.psparser:nexttoken: (1479, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=1479, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1479, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (1479, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Databases:']
+DEBUG:pdfminer.psparser:nexttoken: (1482, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=1482, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1482, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (1482, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (1485, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=1485, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1485, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (1485, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (1488, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=1488, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1488, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (1488, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (1491, 1)
+DEBUG:pdfminer.psparser:add_results: ((1491, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1491, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1493, 0)
+DEBUG:pdfminer.psparser:add_results: ((1493, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1493, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1495, 0)
+DEBUG:pdfminer.psparser:add_results: ((1495, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1495, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1497, 1)
+DEBUG:pdfminer.psparser:add_results: ((1497, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1497, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1499, 126)
+DEBUG:pdfminer.psparser:add_results: ((1499, 126),)
+DEBUG:pdfminer.psparser:nextobject: (1499, 126)
+DEBUG:pdfminer.psparser:nexttoken: (1503, 23)
+DEBUG:pdfminer.psparser:add_results: ((1503, 23),)
+DEBUG:pdfminer.psparser:nextobject: (1503, 23)
+DEBUG:pdfminer.psparser:nexttoken: (1506, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1506, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1506, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (1506, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 126, 23]
+DEBUG:pdfminer.psparser:nexttoken: (1509, b'MySQL, PostgreSQL, MongoDB')
+DEBUG:pdfminer.psparser:add_results: ((1509, b'MySQL, PostgreSQL, MongoDB'),)
+DEBUG:pdfminer.psparser:nextobject: (1509, b'MySQL, PostgreSQL, MongoDB')
+DEBUG:pdfminer.psparser:nexttoken: (1538, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=1538, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1538, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (1538, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'MySQL, PostgreSQL, MongoDB']
+DEBUG:pdfminer.psparser:nexttoken: (1541, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=1541, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1541, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (1541, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (1544, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=1544, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1544, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (1544, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (1547, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=1547, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1547, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (1547, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (1550, 1)
+DEBUG:pdfminer.psparser:add_results: ((1550, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1550, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1552, 0)
+DEBUG:pdfminer.psparser:add_results: ((1552, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1552, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1554, 0)
+DEBUG:pdfminer.psparser:add_results: ((1554, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1554, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1556, 1)
+DEBUG:pdfminer.psparser:add_results: ((1556, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1556, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1558, 6)
+DEBUG:pdfminer.psparser:add_results: ((1558, 6),)
+DEBUG:pdfminer.psparser:nextobject: (1558, 6)
+DEBUG:pdfminer.psparser:nexttoken: (1560, 5)
+DEBUG:pdfminer.psparser:add_results: ((1560, 5),)
+DEBUG:pdfminer.psparser:nextobject: (1560, 5)
+DEBUG:pdfminer.psparser:nexttoken: (1562, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1562, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1562, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (1562, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 6, 5]
+DEBUG:pdfminer.psparser:nexttoken: (1565, b'Tools:')
+DEBUG:pdfminer.psparser:add_results: ((1565, b'Tools:'),)
+DEBUG:pdfminer.psparser:nextobject: (1565, b'Tools:')
+DEBUG:pdfminer.psparser:nexttoken: (1574, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=1574, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1574, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (1574, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Tools:']
+DEBUG:pdfminer.psparser:nexttoken: (1577, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=1577, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1577, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (1577, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (1580, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=1580, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1580, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (1580, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (1583, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=1583, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1583, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (1583, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (1586, 1)
+DEBUG:pdfminer.psparser:add_results: ((1586, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1586, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1588, 0)
+DEBUG:pdfminer.psparser:add_results: ((1588, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1588, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1590, 0)
+DEBUG:pdfminer.psparser:add_results: ((1590, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1590, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1592, 1)
+DEBUG:pdfminer.psparser:add_results: ((1592, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1592, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1594, 126)
+DEBUG:pdfminer.psparser:add_results: ((1594, 126),)
+DEBUG:pdfminer.psparser:nextobject: (1594, 126)
+DEBUG:pdfminer.psparser:nexttoken: (1598, 5)
+DEBUG:pdfminer.psparser:add_results: ((1598, 5),)
+DEBUG:pdfminer.psparser:nextobject: (1598, 5)
+DEBUG:pdfminer.psparser:nexttoken: (1600, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1600, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1600, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (1600, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 126, 5]
+DEBUG:pdfminer.psparser:nexttoken: (1603, b'Git, Docker, AWS')
+DEBUG:pdfminer.psparser:add_results: ((1603, b'Git, Docker, AWS'),)
+DEBUG:pdfminer.psparser:nextobject: (1603, b'Git, Docker, AWS')
+DEBUG:pdfminer.psparser:nexttoken: (1622, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=1622, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1622, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (1622, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Git, Docker, AWS']
+DEBUG:pdfminer.psparser:nexttoken: (1625, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=1625, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1625, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (1625, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (1628, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=1628, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1628, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (1628, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (1631, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1631, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1631, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (1631, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (1633, 1)
+DEBUG:pdfminer.psparser:add_results: ((1633, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1633, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1635, /b'J')
+DEBUG:pdfminer.psparser:do_keyword: pos=1635, token=/b'J', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1635, /b'J'),)
+DEBUG:pdfminer.psparser:nextobject: (1635, /b'J')
+DEBUG:pdfminer.pdfinterp:exec: J [1]
+DEBUG:pdfminer.psparser:nexttoken: (1637, 1)
+DEBUG:pdfminer.psparser:add_results: ((1637, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1637, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1639, /b'j')
+DEBUG:pdfminer.psparser:do_keyword: pos=1639, token=/b'j', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1639, /b'j'),)
+DEBUG:pdfminer.psparser:nextobject: (1639, /b'j')
+DEBUG:pdfminer.pdfinterp:exec: j [1]
+DEBUG:pdfminer.psparser:nexttoken: (1641, 0.501961)
+DEBUG:pdfminer.psparser:add_results: ((1641, 0.501961),)
+DEBUG:pdfminer.psparser:nextobject: (1641, 0.501961)
+DEBUG:pdfminer.psparser:nexttoken: (1649, 0.501961)
+DEBUG:pdfminer.psparser:add_results: ((1649, 0.501961),)
+DEBUG:pdfminer.psparser:nextobject: (1649, 0.501961)
+DEBUG:pdfminer.psparser:nexttoken: (1657, 0.501961)
+DEBUG:pdfminer.psparser:add_results: ((1657, 0.501961),)
+DEBUG:pdfminer.psparser:nextobject: (1657, 0.501961)
+DEBUG:pdfminer.psparser:nexttoken: (1665, /b'RG')
+DEBUG:pdfminer.psparser:do_keyword: pos=1665, token=/b'RG', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1665, /b'RG'),)
+DEBUG:pdfminer.psparser:nextobject: (1665, /b'RG')
+DEBUG:pdfminer.pdfinterp:exec: RG [0.501961, 0.501961, 0.501961]
+DEBUG:pdfminer.psparser:nexttoken: (1668, 0.5)
+DEBUG:pdfminer.psparser:add_results: ((1668, 0.5),)
+DEBUG:pdfminer.psparser:nextobject: (1668, 0.5)
+DEBUG:pdfminer.psparser:nexttoken: (1671, /b'w')
+DEBUG:pdfminer.psparser:do_keyword: pos=1671, token=/b'w', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1671, /b'w'),)
+DEBUG:pdfminer.psparser:nextobject: (1671, /b'w')
+DEBUG:pdfminer.pdfinterp:exec: w [0.5]
+DEBUG:pdfminer.psparser:nexttoken: (1673, /b'n')
+DEBUG:pdfminer.psparser:do_keyword: pos=1673, token=/b'n', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1673, /b'n'),)
+DEBUG:pdfminer.psparser:nextobject: (1673, /b'n')
+DEBUG:pdfminer.pdfinterp:exec: n
+DEBUG:pdfminer.psparser:nexttoken: (1675, 0)
+DEBUG:pdfminer.psparser:add_results: ((1675, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1675, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1677, 75)
+DEBUG:pdfminer.psparser:add_results: ((1677, 75),)
+DEBUG:pdfminer.psparser:nextobject: (1677, 75)
+DEBUG:pdfminer.psparser:nexttoken: (1680, /b'm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1680, token=/b'm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1680, /b'm'),)
+DEBUG:pdfminer.psparser:nextobject: (1680, /b'm')
+DEBUG:pdfminer.pdfinterp:exec: m [0, 75]
+DEBUG:pdfminer.psparser:nexttoken: (1682, 470)
+DEBUG:pdfminer.psparser:add_results: ((1682, 470),)
+DEBUG:pdfminer.psparser:nextobject: (1682, 470)
+DEBUG:pdfminer.psparser:nexttoken: (1686, 75)
+DEBUG:pdfminer.psparser:add_results: ((1686, 75),)
+DEBUG:pdfminer.psparser:nextobject: (1686, 75)
+DEBUG:pdfminer.psparser:nexttoken: (1689, /b'l')
+DEBUG:pdfminer.psparser:do_keyword: pos=1689, token=/b'l', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1689, /b'l'),)
+DEBUG:pdfminer.psparser:nextobject: (1689, /b'l')
+DEBUG:pdfminer.pdfinterp:exec: l [470, 75]
+DEBUG:pdfminer.psparser:nexttoken: (1691, /b'S')
+DEBUG:pdfminer.psparser:do_keyword: pos=1691, token=/b'S', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1691, /b'S'),)
+DEBUG:pdfminer.psparser:nextobject: (1691, /b'S')
+DEBUG:pdfminer.pdfinterp:exec: S
+DEBUG:pdfminer.psparser:nexttoken: (1693, /b'n')
+DEBUG:pdfminer.psparser:do_keyword: pos=1693, token=/b'n', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1693, /b'n'),)
+DEBUG:pdfminer.psparser:nextobject: (1693, /b'n')
+DEBUG:pdfminer.pdfinterp:exec: n
+DEBUG:pdfminer.psparser:nexttoken: (1695, 0)
+DEBUG:pdfminer.psparser:add_results: ((1695, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1695, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1697, 0)
+DEBUG:pdfminer.psparser:add_results: ((1697, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1697, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1699, /b'm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1699, token=/b'm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1699, /b'm'),)
+DEBUG:pdfminer.psparser:nextobject: (1699, /b'm')
+DEBUG:pdfminer.pdfinterp:exec: m [0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (1701, 470)
+DEBUG:pdfminer.psparser:add_results: ((1701, 470),)
+DEBUG:pdfminer.psparser:nextobject: (1701, 470)
+DEBUG:pdfminer.psparser:nexttoken: (1705, 0)
+DEBUG:pdfminer.psparser:add_results: ((1705, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1705, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1707, /b'l')
+DEBUG:pdfminer.psparser:do_keyword: pos=1707, token=/b'l', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1707, /b'l'),)
+DEBUG:pdfminer.psparser:nextobject: (1707, /b'l')
+DEBUG:pdfminer.pdfinterp:exec: l [470, 0]
+DEBUG:pdfminer.psparser:nexttoken: (1709, /b'S')
+DEBUG:pdfminer.psparser:do_keyword: pos=1709, token=/b'S', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1709, /b'S'),)
+DEBUG:pdfminer.psparser:nextobject: (1709, /b'S')
+DEBUG:pdfminer.pdfinterp:exec: S
+DEBUG:pdfminer.psparser:nexttoken: (1711, /b'n')
+DEBUG:pdfminer.psparser:do_keyword: pos=1711, token=/b'n', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1711, /b'n'),)
+DEBUG:pdfminer.psparser:nextobject: (1711, /b'n')
+DEBUG:pdfminer.pdfinterp:exec: n
+DEBUG:pdfminer.psparser:nexttoken: (1713, 0)
+DEBUG:pdfminer.psparser:add_results: ((1713, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1713, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1715, 0)
+DEBUG:pdfminer.psparser:add_results: ((1715, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1715, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1717, /b'm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1717, token=/b'm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1717, /b'm'),)
+DEBUG:pdfminer.psparser:nextobject: (1717, /b'm')
+DEBUG:pdfminer.pdfinterp:exec: m [0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (1719, 0)
+DEBUG:pdfminer.psparser:add_results: ((1719, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1719, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1721, 75)
+DEBUG:pdfminer.psparser:add_results: ((1721, 75),)
+DEBUG:pdfminer.psparser:nextobject: (1721, 75)
+DEBUG:pdfminer.psparser:nexttoken: (1724, /b'l')
+DEBUG:pdfminer.psparser:do_keyword: pos=1724, token=/b'l', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1724, /b'l'),)
+DEBUG:pdfminer.psparser:nextobject: (1724, /b'l')
+DEBUG:pdfminer.pdfinterp:exec: l [0, 75]
+DEBUG:pdfminer.psparser:nexttoken: (1726, /b'S')
+DEBUG:pdfminer.psparser:do_keyword: pos=1726, token=/b'S', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1726, /b'S'),)
+DEBUG:pdfminer.psparser:nextobject: (1726, /b'S')
+DEBUG:pdfminer.pdfinterp:exec: S
+DEBUG:pdfminer.psparser:nexttoken: (1728, /b'n')
+DEBUG:pdfminer.psparser:do_keyword: pos=1728, token=/b'n', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1728, /b'n'),)
+DEBUG:pdfminer.psparser:nextobject: (1728, /b'n')
+DEBUG:pdfminer.pdfinterp:exec: n
+DEBUG:pdfminer.psparser:nexttoken: (1730, 470)
+DEBUG:pdfminer.psparser:add_results: ((1730, 470),)
+DEBUG:pdfminer.psparser:nextobject: (1730, 470)
+DEBUG:pdfminer.psparser:nexttoken: (1734, 0)
+DEBUG:pdfminer.psparser:add_results: ((1734, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1734, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1736, /b'm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1736, token=/b'm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1736, /b'm'),)
+DEBUG:pdfminer.psparser:nextobject: (1736, /b'm')
+DEBUG:pdfminer.pdfinterp:exec: m [470, 0]
+DEBUG:pdfminer.psparser:nexttoken: (1738, 470)
+DEBUG:pdfminer.psparser:add_results: ((1738, 470),)
+DEBUG:pdfminer.psparser:nextobject: (1738, 470)
+DEBUG:pdfminer.psparser:nexttoken: (1742, 75)
+DEBUG:pdfminer.psparser:add_results: ((1742, 75),)
+DEBUG:pdfminer.psparser:nextobject: (1742, 75)
+DEBUG:pdfminer.psparser:nexttoken: (1745, /b'l')
+DEBUG:pdfminer.psparser:do_keyword: pos=1745, token=/b'l', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1745, /b'l'),)
+DEBUG:pdfminer.psparser:nextobject: (1745, /b'l')
+DEBUG:pdfminer.pdfinterp:exec: l [470, 75]
+DEBUG:pdfminer.psparser:nexttoken: (1747, /b'S')
+DEBUG:pdfminer.psparser:do_keyword: pos=1747, token=/b'S', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1747, /b'S'),)
+DEBUG:pdfminer.psparser:nextobject: (1747, /b'S')
+DEBUG:pdfminer.pdfinterp:exec: S
+DEBUG:pdfminer.psparser:nexttoken: (1749, /b'n')
+DEBUG:pdfminer.psparser:do_keyword: pos=1749, token=/b'n', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1749, /b'n'),)
+DEBUG:pdfminer.psparser:nextobject: (1749, /b'n')
+DEBUG:pdfminer.pdfinterp:exec: n
+DEBUG:pdfminer.psparser:nexttoken: (1751, 0)
+DEBUG:pdfminer.psparser:add_results: ((1751, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1751, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1753, 54)
+DEBUG:pdfminer.psparser:add_results: ((1753, 54),)
+DEBUG:pdfminer.psparser:nextobject: (1753, 54)
+DEBUG:pdfminer.psparser:nexttoken: (1756, /b'm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1756, token=/b'm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1756, /b'm'),)
+DEBUG:pdfminer.psparser:nextobject: (1756, /b'm')
+DEBUG:pdfminer.pdfinterp:exec: m [0, 54]
+DEBUG:pdfminer.psparser:nexttoken: (1758, 470)
+DEBUG:pdfminer.psparser:add_results: ((1758, 470),)
+DEBUG:pdfminer.psparser:nextobject: (1758, 470)
+DEBUG:pdfminer.psparser:nexttoken: (1762, 54)
+DEBUG:pdfminer.psparser:add_results: ((1762, 54),)
+DEBUG:pdfminer.psparser:nextobject: (1762, 54)
+DEBUG:pdfminer.psparser:nexttoken: (1765, /b'l')
+DEBUG:pdfminer.psparser:do_keyword: pos=1765, token=/b'l', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1765, /b'l'),)
+DEBUG:pdfminer.psparser:nextobject: (1765, /b'l')
+DEBUG:pdfminer.pdfinterp:exec: l [470, 54]
+DEBUG:pdfminer.psparser:nexttoken: (1767, /b'S')
+DEBUG:pdfminer.psparser:do_keyword: pos=1767, token=/b'S', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1767, /b'S'),)
+DEBUG:pdfminer.psparser:nextobject: (1767, /b'S')
+DEBUG:pdfminer.pdfinterp:exec: S
+DEBUG:pdfminer.psparser:nexttoken: (1769, /b'n')
+DEBUG:pdfminer.psparser:do_keyword: pos=1769, token=/b'n', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1769, /b'n'),)
+DEBUG:pdfminer.psparser:nextobject: (1769, /b'n')
+DEBUG:pdfminer.pdfinterp:exec: n
+DEBUG:pdfminer.psparser:nexttoken: (1771, 0)
+DEBUG:pdfminer.psparser:add_results: ((1771, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1771, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1773, 36)
+DEBUG:pdfminer.psparser:add_results: ((1773, 36),)
+DEBUG:pdfminer.psparser:nextobject: (1773, 36)
+DEBUG:pdfminer.psparser:nexttoken: (1776, /b'm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1776, token=/b'm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1776, /b'm'),)
+DEBUG:pdfminer.psparser:nextobject: (1776, /b'm')
+DEBUG:pdfminer.pdfinterp:exec: m [0, 36]
+DEBUG:pdfminer.psparser:nexttoken: (1778, 470)
+DEBUG:pdfminer.psparser:add_results: ((1778, 470),)
+DEBUG:pdfminer.psparser:nextobject: (1778, 470)
+DEBUG:pdfminer.psparser:nexttoken: (1782, 36)
+DEBUG:pdfminer.psparser:add_results: ((1782, 36),)
+DEBUG:pdfminer.psparser:nextobject: (1782, 36)
+DEBUG:pdfminer.psparser:nexttoken: (1785, /b'l')
+DEBUG:pdfminer.psparser:do_keyword: pos=1785, token=/b'l', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1785, /b'l'),)
+DEBUG:pdfminer.psparser:nextobject: (1785, /b'l')
+DEBUG:pdfminer.pdfinterp:exec: l [470, 36]
+DEBUG:pdfminer.psparser:nexttoken: (1787, /b'S')
+DEBUG:pdfminer.psparser:do_keyword: pos=1787, token=/b'S', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1787, /b'S'),)
+DEBUG:pdfminer.psparser:nextobject: (1787, /b'S')
+DEBUG:pdfminer.pdfinterp:exec: S
+DEBUG:pdfminer.psparser:nexttoken: (1789, /b'n')
+DEBUG:pdfminer.psparser:do_keyword: pos=1789, token=/b'n', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1789, /b'n'),)
+DEBUG:pdfminer.psparser:nextobject: (1789, /b'n')
+DEBUG:pdfminer.pdfinterp:exec: n
+DEBUG:pdfminer.psparser:nexttoken: (1791, 0)
+DEBUG:pdfminer.psparser:add_results: ((1791, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1791, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1793, 18)
+DEBUG:pdfminer.psparser:add_results: ((1793, 18),)
+DEBUG:pdfminer.psparser:nextobject: (1793, 18)
+DEBUG:pdfminer.psparser:nexttoken: (1796, /b'm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1796, token=/b'm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1796, /b'm'),)
+DEBUG:pdfminer.psparser:nextobject: (1796, /b'm')
+DEBUG:pdfminer.pdfinterp:exec: m [0, 18]
+DEBUG:pdfminer.psparser:nexttoken: (1798, 470)
+DEBUG:pdfminer.psparser:add_results: ((1798, 470),)
+DEBUG:pdfminer.psparser:nextobject: (1798, 470)
+DEBUG:pdfminer.psparser:nexttoken: (1802, 18)
+DEBUG:pdfminer.psparser:add_results: ((1802, 18),)
+DEBUG:pdfminer.psparser:nextobject: (1802, 18)
+DEBUG:pdfminer.psparser:nexttoken: (1805, /b'l')
+DEBUG:pdfminer.psparser:do_keyword: pos=1805, token=/b'l', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1805, /b'l'),)
+DEBUG:pdfminer.psparser:nextobject: (1805, /b'l')
+DEBUG:pdfminer.pdfinterp:exec: l [470, 18]
+DEBUG:pdfminer.psparser:nexttoken: (1807, /b'S')
+DEBUG:pdfminer.psparser:do_keyword: pos=1807, token=/b'S', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1807, /b'S'),)
+DEBUG:pdfminer.psparser:nextobject: (1807, /b'S')
+DEBUG:pdfminer.pdfinterp:exec: S
+DEBUG:pdfminer.psparser:nexttoken: (1809, /b'n')
+DEBUG:pdfminer.psparser:do_keyword: pos=1809, token=/b'n', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1809, /b'n'),)
+DEBUG:pdfminer.psparser:nextobject: (1809, /b'n')
+DEBUG:pdfminer.pdfinterp:exec: n
+DEBUG:pdfminer.psparser:nexttoken: (1811, 120)
+DEBUG:pdfminer.psparser:add_results: ((1811, 120),)
+DEBUG:pdfminer.psparser:nextobject: (1811, 120)
+DEBUG:pdfminer.psparser:nexttoken: (1815, 0)
+DEBUG:pdfminer.psparser:add_results: ((1815, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1815, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1817, /b'm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1817, token=/b'm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1817, /b'm'),)
+DEBUG:pdfminer.psparser:nextobject: (1817, /b'm')
+DEBUG:pdfminer.pdfinterp:exec: m [120, 0]
+DEBUG:pdfminer.psparser:nexttoken: (1819, 120)
+DEBUG:pdfminer.psparser:add_results: ((1819, 120),)
+DEBUG:pdfminer.psparser:nextobject: (1819, 120)
+DEBUG:pdfminer.psparser:nexttoken: (1823, 75)
+DEBUG:pdfminer.psparser:add_results: ((1823, 75),)
+DEBUG:pdfminer.psparser:nextobject: (1823, 75)
+DEBUG:pdfminer.psparser:nexttoken: (1826, /b'l')
+DEBUG:pdfminer.psparser:do_keyword: pos=1826, token=/b'l', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1826, /b'l'),)
+DEBUG:pdfminer.psparser:nextobject: (1826, /b'l')
+DEBUG:pdfminer.pdfinterp:exec: l [120, 75]
+DEBUG:pdfminer.psparser:nexttoken: (1828, /b'S')
+DEBUG:pdfminer.psparser:do_keyword: pos=1828, token=/b'S', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1828, /b'S'),)
+DEBUG:pdfminer.psparser:nextobject: (1828, /b'S')
+DEBUG:pdfminer.pdfinterp:exec: S
+DEBUG:pdfminer.psparser:nexttoken: (1830, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1830, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1830, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (1830, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (1832, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1832, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1832, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (1832, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (1834, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1834, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1834, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (1834, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (1836, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1836, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1836, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (1836, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (1838, 1)
+DEBUG:pdfminer.psparser:add_results: ((1838, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1838, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1840, 0)
+DEBUG:pdfminer.psparser:add_results: ((1840, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1840, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1842, 0)
+DEBUG:pdfminer.psparser:add_results: ((1842, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1842, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1844, 1)
+DEBUG:pdfminer.psparser:add_results: ((1844, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1844, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1846, 78)
+DEBUG:pdfminer.psparser:add_results: ((1846, 78),)
+DEBUG:pdfminer.psparser:nextobject: (1846, 78)
+DEBUG:pdfminer.psparser:nexttoken: (1849, 462.8898)
+DEBUG:pdfminer.psparser:add_results: ((1849, 462.8898),)
+DEBUG:pdfminer.psparser:nextobject: (1849, 462.8898)
+DEBUG:pdfminer.psparser:nexttoken: (1858, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1858, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1858, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (1858, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 462.8898]
+DEBUG:pdfminer.psparser:nexttoken: (1861, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1861, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1861, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (1861, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (1863, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1863, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1863, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (1863, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (1865, 1)
+DEBUG:pdfminer.psparser:add_results: ((1865, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1865, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1867, 0)
+DEBUG:pdfminer.psparser:add_results: ((1867, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1867, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1869, 0)
+DEBUG:pdfminer.psparser:add_results: ((1869, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1869, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1871, 1)
+DEBUG:pdfminer.psparser:add_results: ((1871, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1871, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1873, 78)
+DEBUG:pdfminer.psparser:add_results: ((1873, 78),)
+DEBUG:pdfminer.psparser:nextobject: (1873, 78)
+DEBUG:pdfminer.psparser:nexttoken: (1876, 432.8898)
+DEBUG:pdfminer.psparser:add_results: ((1876, 432.8898),)
+DEBUG:pdfminer.psparser:nextobject: (1876, 432.8898)
+DEBUG:pdfminer.psparser:nexttoken: (1885, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1885, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1885, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (1885, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 432.8898]
+DEBUG:pdfminer.psparser:nexttoken: (1888, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1888, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1888, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (1888, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (1890, 0)
+DEBUG:pdfminer.psparser:add_results: ((1890, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1890, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1892, 0)
+DEBUG:pdfminer.psparser:add_results: ((1892, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1892, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1894, 0)
+DEBUG:pdfminer.psparser:add_results: ((1894, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1894, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1896, /b'rg')
+DEBUG:pdfminer.psparser:do_keyword: pos=1896, token=/b'rg', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1896, /b'rg'),)
+DEBUG:pdfminer.psparser:nextobject: (1896, /b'rg')
+DEBUG:pdfminer.pdfinterp:exec: rg [0, 0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (1899, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=1899, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1899, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (1899, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (1902, 1)
+DEBUG:pdfminer.psparser:add_results: ((1902, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1902, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1904, 0)
+DEBUG:pdfminer.psparser:add_results: ((1904, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1904, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1906, 0)
+DEBUG:pdfminer.psparser:add_results: ((1906, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1906, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1908, 1)
+DEBUG:pdfminer.psparser:add_results: ((1908, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1908, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1910, 0)
+DEBUG:pdfminer.psparser:add_results: ((1910, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1910, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1912, 4)
+DEBUG:pdfminer.psparser:add_results: ((1912, 4),)
+DEBUG:pdfminer.psparser:nextobject: (1912, 4)
+DEBUG:pdfminer.psparser:nexttoken: (1914, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1914, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1914, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (1914, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 0, 4]
+DEBUG:pdfminer.psparser:nexttoken: (1917, /'F2')
+DEBUG:pdfminer.psparser:add_results: ((1917, /'F2'),)
+DEBUG:pdfminer.psparser:nextobject: (1917, /'F2')
+DEBUG:pdfminer.psparser:nexttoken: (1921, 14)
+DEBUG:pdfminer.psparser:add_results: ((1921, 14),)
+DEBUG:pdfminer.psparser:nextobject: (1921, 14)
+DEBUG:pdfminer.psparser:nexttoken: (1924, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=1924, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1924, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (1924, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F2', 14]
+DEBUG:pdfminer.psparser:nexttoken: (1927, 18)
+DEBUG:pdfminer.psparser:add_results: ((1927, 18),)
+DEBUG:pdfminer.psparser:nextobject: (1927, 18)
+DEBUG:pdfminer.psparser:nexttoken: (1930, /b'TL')
+DEBUG:pdfminer.psparser:do_keyword: pos=1930, token=/b'TL', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1930, /b'TL'),)
+DEBUG:pdfminer.psparser:nextobject: (1930, /b'TL')
+DEBUG:pdfminer.pdfinterp:exec: TL [18]
+DEBUG:pdfminer.psparser:nexttoken: (1933, b'Experience')
+DEBUG:pdfminer.psparser:add_results: ((1933, b'Experience'),)
+DEBUG:pdfminer.psparser:nextobject: (1933, b'Experience')
+DEBUG:pdfminer.psparser:nexttoken: (1946, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=1946, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1946, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (1946, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Experience']
+DEBUG:pdfminer.psparser:nexttoken: (1949, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=1949, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1949, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (1949, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (1952, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=1952, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1952, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (1952, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (1955, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1955, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1955, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (1955, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (1957, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1957, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1957, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (1957, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (1959, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1959, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1959, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (1959, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (1961, 1)
+DEBUG:pdfminer.psparser:add_results: ((1961, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1961, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1963, 0)
+DEBUG:pdfminer.psparser:add_results: ((1963, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1963, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1965, 0)
+DEBUG:pdfminer.psparser:add_results: ((1965, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1965, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1967, 1)
+DEBUG:pdfminer.psparser:add_results: ((1967, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1967, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1969, 78)
+DEBUG:pdfminer.psparser:add_results: ((1969, 78),)
+DEBUG:pdfminer.psparser:nextobject: (1969, 78)
+DEBUG:pdfminer.psparser:nexttoken: (1972, 318.8898)
+DEBUG:pdfminer.psparser:add_results: ((1972, 318.8898),)
+DEBUG:pdfminer.psparser:nextobject: (1972, 318.8898)
+DEBUG:pdfminer.psparser:nexttoken: (1981, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=1981, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1981, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (1981, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 318.8898]
+DEBUG:pdfminer.psparser:nexttoken: (1984, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=1984, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1984, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (1984, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (1986, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=1986, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((1986, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (1986, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (1989, 1)
+DEBUG:pdfminer.psparser:add_results: ((1989, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1989, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1991, 0)
+DEBUG:pdfminer.psparser:add_results: ((1991, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1991, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1993, 0)
+DEBUG:pdfminer.psparser:add_results: ((1993, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1993, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1995, 1)
+DEBUG:pdfminer.psparser:add_results: ((1995, 1),)
+DEBUG:pdfminer.psparser:nextobject: (1995, 1)
+DEBUG:pdfminer.psparser:nexttoken: (1997, 0)
+DEBUG:pdfminer.psparser:add_results: ((1997, 0),)
+DEBUG:pdfminer.psparser:nextobject: (1997, 0)
+DEBUG:pdfminer.psparser:nexttoken: (1999, 98)
+DEBUG:pdfminer.psparser:add_results: ((1999, 98),)
+DEBUG:pdfminer.psparser:nextobject: (1999, 98)
+DEBUG:pdfminer.psparser:nexttoken: (2002, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=2002, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2002, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (2002, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 0, 98]
+DEBUG:pdfminer.psparser:nexttoken: (2005, 12)
+DEBUG:pdfminer.psparser:add_results: ((2005, 12),)
+DEBUG:pdfminer.psparser:nextobject: (2005, 12)
+DEBUG:pdfminer.psparser:nexttoken: (2008, /b'TL')
+DEBUG:pdfminer.psparser:do_keyword: pos=2008, token=/b'TL', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2008, /b'TL'),)
+DEBUG:pdfminer.psparser:nextobject: (2008, /b'TL')
+DEBUG:pdfminer.pdfinterp:exec: TL [12]
+DEBUG:pdfminer.psparser:nexttoken: (2011, /'F2')
+DEBUG:pdfminer.psparser:add_results: ((2011, /'F2'),)
+DEBUG:pdfminer.psparser:nextobject: (2011, /'F2')
+DEBUG:pdfminer.psparser:nexttoken: (2015, 10)
+DEBUG:pdfminer.psparser:add_results: ((2015, 10),)
+DEBUG:pdfminer.psparser:nextobject: (2015, 10)
+DEBUG:pdfminer.psparser:nexttoken: (2018, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=2018, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2018, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (2018, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F2', 10]
+DEBUG:pdfminer.psparser:nexttoken: (2021, 0)
+DEBUG:pdfminer.psparser:add_results: ((2021, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2021, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2023, 0)
+DEBUG:pdfminer.psparser:add_results: ((2023, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2023, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2025, 0)
+DEBUG:pdfminer.psparser:add_results: ((2025, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2025, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2027, /b'rg')
+DEBUG:pdfminer.psparser:do_keyword: pos=2027, token=/b'rg', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2027, /b'rg'),)
+DEBUG:pdfminer.psparser:nextobject: (2027, /b'rg')
+DEBUG:pdfminer.pdfinterp:exec: rg [0, 0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (2030, b'Software Developer')
+DEBUG:pdfminer.psparser:add_results: ((2030, b'Software Developer'),)
+DEBUG:pdfminer.psparser:nextobject: (2030, b'Software Developer')
+DEBUG:pdfminer.psparser:nexttoken: (2051, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=2051, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2051, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (2051, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Software Developer']
+DEBUG:pdfminer.psparser:nexttoken: (2054, /'F1')
+DEBUG:pdfminer.psparser:add_results: ((2054, /'F1'),)
+DEBUG:pdfminer.psparser:nextobject: (2054, /'F1')
+DEBUG:pdfminer.psparser:nexttoken: (2058, 10)
+DEBUG:pdfminer.psparser:add_results: ((2058, 10),)
+DEBUG:pdfminer.psparser:nextobject: (2058, 10)
+DEBUG:pdfminer.psparser:nexttoken: (2061, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=2061, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2061, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (2061, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F1', 10]
+DEBUG:pdfminer.psparser:nexttoken: (2064, b' \x97 Tech Solutions Inc. (2019 - Present)')
+DEBUG:pdfminer.psparser:add_results: ((2064, b' \x97 Tech Solutions Inc. (2019 - Present)'),)
+DEBUG:pdfminer.psparser:nextobject: (2064, b' \x97 Tech Solutions Inc. (2019 - Present)')
+DEBUG:pdfminer.psparser:nexttoken: (2111, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=2111, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2111, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (2111, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b' \x97 Tech Solutions Inc. (2019 - Present)']
+DEBUG:pdfminer.psparser:nexttoken: (2115, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=2115, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2115, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (2115, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (2118, b'- Developed and maintained scalable web applications using React and Django.')
+DEBUG:pdfminer.psparser:add_results: ((2118, b'- Developed and maintained scalable web applications using React and Django.'),)
+DEBUG:pdfminer.psparser:nextobject: (2118, b'- Developed and maintained scalable web applications using React and Django.')
+DEBUG:pdfminer.psparser:nexttoken: (2197, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=2197, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2197, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (2197, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'- Developed and maintained scalable web applications using React and Django.']
+DEBUG:pdfminer.psparser:nexttoken: (2201, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=2201, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2201, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (2201, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (2204, b'- Implemented data pipelines and performed data analysis using Python and SQL.')
+DEBUG:pdfminer.psparser:add_results: ((2204, b'- Implemented data pipelines and performed data analysis using Python and SQL.'),)
+DEBUG:pdfminer.psparser:nextobject: (2204, b'- Implemented data pipelines and performed data analysis using Python and SQL.')
+DEBUG:pdfminer.psparser:nexttoken: (2285, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=2285, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2285, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (2285, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'- Implemented data pipelines and performed data analysis using Python and SQL.']
+DEBUG:pdfminer.psparser:nexttoken: (2289, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=2289, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2289, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (2289, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (2292, b'- Collaborated with cross-functional teams to deliver high-quality products.')
+DEBUG:pdfminer.psparser:add_results: ((2292, b'- Collaborated with cross-functional teams to deliver high-quality products.'),)
+DEBUG:pdfminer.psparser:nextobject: (2292, b'- Collaborated with cross-functional teams to deliver high-quality products.')
+DEBUG:pdfminer.psparser:nexttoken: (2371, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=2371, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2371, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (2371, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'- Collaborated with cross-functional teams to deliver high-quality products.']
+DEBUG:pdfminer.psparser:nexttoken: (2375, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=2375, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2375, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (2375, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (2379, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=2379, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2379, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (2379, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (2382, /'F2')
+DEBUG:pdfminer.psparser:add_results: ((2382, /'F2'),)
+DEBUG:pdfminer.psparser:nextobject: (2382, /'F2')
+DEBUG:pdfminer.psparser:nexttoken: (2386, 10)
+DEBUG:pdfminer.psparser:add_results: ((2386, 10),)
+DEBUG:pdfminer.psparser:nextobject: (2386, 10)
+DEBUG:pdfminer.psparser:nexttoken: (2389, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=2389, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2389, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (2389, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F2', 10]
+DEBUG:pdfminer.psparser:nexttoken: (2392, b'Data Analyst')
+DEBUG:pdfminer.psparser:add_results: ((2392, b'Data Analyst'),)
+DEBUG:pdfminer.psparser:nextobject: (2392, b'Data Analyst')
+DEBUG:pdfminer.psparser:nexttoken: (2407, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=2407, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2407, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (2407, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Data Analyst']
+DEBUG:pdfminer.psparser:nexttoken: (2410, /'F1')
+DEBUG:pdfminer.psparser:add_results: ((2410, /'F1'),)
+DEBUG:pdfminer.psparser:nextobject: (2410, /'F1')
+DEBUG:pdfminer.psparser:nexttoken: (2414, 10)
+DEBUG:pdfminer.psparser:add_results: ((2414, 10),)
+DEBUG:pdfminer.psparser:nextobject: (2414, 10)
+DEBUG:pdfminer.psparser:nexttoken: (2417, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=2417, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2417, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (2417, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F1', 10]
+DEBUG:pdfminer.psparser:nexttoken: (2420, b' \x97 DataWorks (2016 - 2019)')
+DEBUG:pdfminer.psparser:add_results: ((2420, b' \x97 DataWorks (2016 - 2019)'),)
+DEBUG:pdfminer.psparser:nextobject: (2420, b' \x97 DataWorks (2016 - 2019)')
+DEBUG:pdfminer.psparser:nexttoken: (2454, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=2454, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2454, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (2454, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b' \x97 DataWorks (2016 - 2019)']
+DEBUG:pdfminer.psparser:nexttoken: (2458, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=2458, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2458, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (2458, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (2461, b'- Analyzed large datasets to provide actionable insights.')
+DEBUG:pdfminer.psparser:add_results: ((2461, b'- Analyzed large datasets to provide actionable insights.'),)
+DEBUG:pdfminer.psparser:nextobject: (2461, b'- Analyzed large datasets to provide actionable insights.')
+DEBUG:pdfminer.psparser:nexttoken: (2521, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=2521, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2521, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (2521, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'- Analyzed large datasets to provide actionable insights.']
+DEBUG:pdfminer.psparser:nexttoken: (2525, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=2525, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2525, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (2525, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (2528, b'- Automated reporting processes using Python scripts.')
+DEBUG:pdfminer.psparser:add_results: ((2528, b'- Automated reporting processes using Python scripts.'),)
+DEBUG:pdfminer.psparser:nextobject: (2528, b'- Automated reporting processes using Python scripts.')
+DEBUG:pdfminer.psparser:nexttoken: (2584, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=2584, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2584, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (2584, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'- Automated reporting processes using Python scripts.']
+DEBUG:pdfminer.psparser:nexttoken: (2588, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=2588, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2588, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (2588, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (2591, b'- Worked closely with stakeholders to define business requirements.')
+DEBUG:pdfminer.psparser:add_results: ((2591, b'- Worked closely with stakeholders to define business requirements.'),)
+DEBUG:pdfminer.psparser:nextobject: (2591, b'- Worked closely with stakeholders to define business requirements.')
+DEBUG:pdfminer.psparser:nexttoken: (2661, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=2661, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2661, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (2661, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'- Worked closely with stakeholders to define business requirements.']
+DEBUG:pdfminer.psparser:nexttoken: (2664, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=2664, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2664, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (2664, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (2667, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=2667, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2667, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (2667, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (2670, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=2670, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2670, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (2670, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (2672, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=2672, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2672, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (2672, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (2674, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=2674, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2674, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (2674, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (2676, 1)
+DEBUG:pdfminer.psparser:add_results: ((2676, 1),)
+DEBUG:pdfminer.psparser:nextobject: (2676, 1)
+DEBUG:pdfminer.psparser:nexttoken: (2678, 0)
+DEBUG:pdfminer.psparser:add_results: ((2678, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2678, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2680, 0)
+DEBUG:pdfminer.psparser:add_results: ((2680, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2680, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2682, 1)
+DEBUG:pdfminer.psparser:add_results: ((2682, 1),)
+DEBUG:pdfminer.psparser:nextobject: (2682, 1)
+DEBUG:pdfminer.psparser:nexttoken: (2684, 78)
+DEBUG:pdfminer.psparser:add_results: ((2684, 78),)
+DEBUG:pdfminer.psparser:nextobject: (2684, 78)
+DEBUG:pdfminer.psparser:nexttoken: (2687, 306.8898)
+DEBUG:pdfminer.psparser:add_results: ((2687, 306.8898),)
+DEBUG:pdfminer.psparser:nextobject: (2687, 306.8898)
+DEBUG:pdfminer.psparser:nexttoken: (2696, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=2696, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2696, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (2696, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 306.8898]
+DEBUG:pdfminer.psparser:nexttoken: (2699, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=2699, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2699, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (2699, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (2701, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=2701, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2701, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (2701, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (2703, 1)
+DEBUG:pdfminer.psparser:add_results: ((2703, 1),)
+DEBUG:pdfminer.psparser:nextobject: (2703, 1)
+DEBUG:pdfminer.psparser:nexttoken: (2705, 0)
+DEBUG:pdfminer.psparser:add_results: ((2705, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2705, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2707, 0)
+DEBUG:pdfminer.psparser:add_results: ((2707, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2707, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2709, 1)
+DEBUG:pdfminer.psparser:add_results: ((2709, 1),)
+DEBUG:pdfminer.psparser:nextobject: (2709, 1)
+DEBUG:pdfminer.psparser:nexttoken: (2711, 78)
+DEBUG:pdfminer.psparser:add_results: ((2711, 78),)
+DEBUG:pdfminer.psparser:nextobject: (2711, 78)
+DEBUG:pdfminer.psparser:nexttoken: (2714, 276.8898)
+DEBUG:pdfminer.psparser:add_results: ((2714, 276.8898),)
+DEBUG:pdfminer.psparser:nextobject: (2714, 276.8898)
+DEBUG:pdfminer.psparser:nexttoken: (2723, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=2723, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2723, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (2723, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 276.8898]
+DEBUG:pdfminer.psparser:nexttoken: (2726, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=2726, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2726, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (2726, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (2728, 0)
+DEBUG:pdfminer.psparser:add_results: ((2728, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2728, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2730, 0)
+DEBUG:pdfminer.psparser:add_results: ((2730, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2730, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2732, 0)
+DEBUG:pdfminer.psparser:add_results: ((2732, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2732, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2734, /b'rg')
+DEBUG:pdfminer.psparser:do_keyword: pos=2734, token=/b'rg', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2734, /b'rg'),)
+DEBUG:pdfminer.psparser:nextobject: (2734, /b'rg')
+DEBUG:pdfminer.pdfinterp:exec: rg [0, 0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (2737, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=2737, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2737, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (2737, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (2740, 1)
+DEBUG:pdfminer.psparser:add_results: ((2740, 1),)
+DEBUG:pdfminer.psparser:nextobject: (2740, 1)
+DEBUG:pdfminer.psparser:nexttoken: (2742, 0)
+DEBUG:pdfminer.psparser:add_results: ((2742, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2742, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2744, 0)
+DEBUG:pdfminer.psparser:add_results: ((2744, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2744, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2746, 1)
+DEBUG:pdfminer.psparser:add_results: ((2746, 1),)
+DEBUG:pdfminer.psparser:nextobject: (2746, 1)
+DEBUG:pdfminer.psparser:nexttoken: (2748, 0)
+DEBUG:pdfminer.psparser:add_results: ((2748, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2748, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2750, 4)
+DEBUG:pdfminer.psparser:add_results: ((2750, 4),)
+DEBUG:pdfminer.psparser:nextobject: (2750, 4)
+DEBUG:pdfminer.psparser:nexttoken: (2752, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=2752, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2752, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (2752, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 0, 4]
+DEBUG:pdfminer.psparser:nexttoken: (2755, /'F2')
+DEBUG:pdfminer.psparser:add_results: ((2755, /'F2'),)
+DEBUG:pdfminer.psparser:nextobject: (2755, /'F2')
+DEBUG:pdfminer.psparser:nexttoken: (2759, 14)
+DEBUG:pdfminer.psparser:add_results: ((2759, 14),)
+DEBUG:pdfminer.psparser:nextobject: (2759, 14)
+DEBUG:pdfminer.psparser:nexttoken: (2762, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=2762, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2762, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (2762, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F2', 14]
+DEBUG:pdfminer.psparser:nexttoken: (2765, 18)
+DEBUG:pdfminer.psparser:add_results: ((2765, 18),)
+DEBUG:pdfminer.psparser:nextobject: (2765, 18)
+DEBUG:pdfminer.psparser:nexttoken: (2768, /b'TL')
+DEBUG:pdfminer.psparser:do_keyword: pos=2768, token=/b'TL', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2768, /b'TL'),)
+DEBUG:pdfminer.psparser:nextobject: (2768, /b'TL')
+DEBUG:pdfminer.pdfinterp:exec: TL [18]
+DEBUG:pdfminer.psparser:nexttoken: (2771, b'Education')
+DEBUG:pdfminer.psparser:add_results: ((2771, b'Education'),)
+DEBUG:pdfminer.psparser:nextobject: (2771, b'Education')
+DEBUG:pdfminer.psparser:nexttoken: (2783, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=2783, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2783, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (2783, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Education']
+DEBUG:pdfminer.psparser:nexttoken: (2786, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=2786, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2786, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (2786, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (2789, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=2789, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2789, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (2789, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (2792, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=2792, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2792, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (2792, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (2794, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=2794, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2794, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (2794, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (2796, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=2796, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2796, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (2796, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (2798, 1)
+DEBUG:pdfminer.psparser:add_results: ((2798, 1),)
+DEBUG:pdfminer.psparser:nextobject: (2798, 1)
+DEBUG:pdfminer.psparser:nexttoken: (2800, 0)
+DEBUG:pdfminer.psparser:add_results: ((2800, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2800, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2802, 0)
+DEBUG:pdfminer.psparser:add_results: ((2802, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2802, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2804, 1)
+DEBUG:pdfminer.psparser:add_results: ((2804, 1),)
+DEBUG:pdfminer.psparser:nextobject: (2804, 1)
+DEBUG:pdfminer.psparser:nexttoken: (2806, 78)
+DEBUG:pdfminer.psparser:add_results: ((2806, 78),)
+DEBUG:pdfminer.psparser:nextobject: (2806, 78)
+DEBUG:pdfminer.psparser:nexttoken: (2809, 246.8898)
+DEBUG:pdfminer.psparser:add_results: ((2809, 246.8898),)
+DEBUG:pdfminer.psparser:nextobject: (2809, 246.8898)
+DEBUG:pdfminer.psparser:nexttoken: (2818, /b'cm')
+DEBUG:pdfminer.psparser:do_keyword: pos=2818, token=/b'cm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2818, /b'cm'),)
+DEBUG:pdfminer.psparser:nextobject: (2818, /b'cm')
+DEBUG:pdfminer.pdfinterp:exec: cm [1, 0, 0, 1, 78, 246.8898]
+DEBUG:pdfminer.psparser:nexttoken: (2821, /b'q')
+DEBUG:pdfminer.psparser:do_keyword: pos=2821, token=/b'q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2821, /b'q'),)
+DEBUG:pdfminer.psparser:nextobject: (2821, /b'q')
+DEBUG:pdfminer.pdfinterp:exec: q
+DEBUG:pdfminer.psparser:nexttoken: (2823, /b'BT')
+DEBUG:pdfminer.psparser:do_keyword: pos=2823, token=/b'BT', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2823, /b'BT'),)
+DEBUG:pdfminer.psparser:nextobject: (2823, /b'BT')
+DEBUG:pdfminer.pdfinterp:exec: BT
+DEBUG:pdfminer.psparser:nexttoken: (2826, 1)
+DEBUG:pdfminer.psparser:add_results: ((2826, 1),)
+DEBUG:pdfminer.psparser:nextobject: (2826, 1)
+DEBUG:pdfminer.psparser:nexttoken: (2828, 0)
+DEBUG:pdfminer.psparser:add_results: ((2828, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2828, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2830, 0)
+DEBUG:pdfminer.psparser:add_results: ((2830, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2830, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2832, 1)
+DEBUG:pdfminer.psparser:add_results: ((2832, 1),)
+DEBUG:pdfminer.psparser:nextobject: (2832, 1)
+DEBUG:pdfminer.psparser:nexttoken: (2834, 0)
+DEBUG:pdfminer.psparser:add_results: ((2834, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2834, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2836, 14)
+DEBUG:pdfminer.psparser:add_results: ((2836, 14),)
+DEBUG:pdfminer.psparser:nextobject: (2836, 14)
+DEBUG:pdfminer.psparser:nexttoken: (2839, /b'Tm')
+DEBUG:pdfminer.psparser:do_keyword: pos=2839, token=/b'Tm', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2839, /b'Tm'),)
+DEBUG:pdfminer.psparser:nextobject: (2839, /b'Tm')
+DEBUG:pdfminer.pdfinterp:exec: Tm [1, 0, 0, 1, 0, 14]
+DEBUG:pdfminer.psparser:nexttoken: (2842, 12)
+DEBUG:pdfminer.psparser:add_results: ((2842, 12),)
+DEBUG:pdfminer.psparser:nextobject: (2842, 12)
+DEBUG:pdfminer.psparser:nexttoken: (2845, /b'TL')
+DEBUG:pdfminer.psparser:do_keyword: pos=2845, token=/b'TL', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2845, /b'TL'),)
+DEBUG:pdfminer.psparser:nextobject: (2845, /b'TL')
+DEBUG:pdfminer.pdfinterp:exec: TL [12]
+DEBUG:pdfminer.psparser:nexttoken: (2848, /'F2')
+DEBUG:pdfminer.psparser:add_results: ((2848, /'F2'),)
+DEBUG:pdfminer.psparser:nextobject: (2848, /'F2')
+DEBUG:pdfminer.psparser:nexttoken: (2852, 10)
+DEBUG:pdfminer.psparser:add_results: ((2852, 10),)
+DEBUG:pdfminer.psparser:nextobject: (2852, 10)
+DEBUG:pdfminer.psparser:nexttoken: (2855, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=2855, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2855, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (2855, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F2', 10]
+DEBUG:pdfminer.psparser:nexttoken: (2858, 0)
+DEBUG:pdfminer.psparser:add_results: ((2858, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2858, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2860, 0)
+DEBUG:pdfminer.psparser:add_results: ((2860, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2860, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2862, 0)
+DEBUG:pdfminer.psparser:add_results: ((2862, 0),)
+DEBUG:pdfminer.psparser:nextobject: (2862, 0)
+DEBUG:pdfminer.psparser:nexttoken: (2864, /b'rg')
+DEBUG:pdfminer.psparser:do_keyword: pos=2864, token=/b'rg', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2864, /b'rg'),)
+DEBUG:pdfminer.psparser:nextobject: (2864, /b'rg')
+DEBUG:pdfminer.pdfinterp:exec: rg [0, 0, 0]
+DEBUG:pdfminer.psparser:nexttoken: (2867, b'B.Sc. Computer Science')
+DEBUG:pdfminer.psparser:add_results: ((2867, b'B.Sc. Computer Science'),)
+DEBUG:pdfminer.psparser:nextobject: (2867, b'B.Sc. Computer Science')
+DEBUG:pdfminer.psparser:nexttoken: (2892, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=2892, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2892, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (2892, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'B.Sc. Computer Science']
+DEBUG:pdfminer.psparser:nexttoken: (2895, /'F1')
+DEBUG:pdfminer.psparser:add_results: ((2895, /'F1'),)
+DEBUG:pdfminer.psparser:nextobject: (2895, /'F1')
+DEBUG:pdfminer.psparser:nexttoken: (2899, 10)
+DEBUG:pdfminer.psparser:add_results: ((2899, 10),)
+DEBUG:pdfminer.psparser:nextobject: (2899, 10)
+DEBUG:pdfminer.psparser:nexttoken: (2902, /b'Tf')
+DEBUG:pdfminer.psparser:do_keyword: pos=2902, token=/b'Tf', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2902, /b'Tf'),)
+DEBUG:pdfminer.psparser:nextobject: (2902, /b'Tf')
+DEBUG:pdfminer.pdfinterp:exec: Tf [/'F1', 10]
+DEBUG:pdfminer.psparser:nexttoken: (2905, b' \x97 University of Example (2012 - 2016)')
+DEBUG:pdfminer.psparser:add_results: ((2905, b' \x97 University of Example (2012 - 2016)'),)
+DEBUG:pdfminer.psparser:nextobject: (2905, b' \x97 University of Example (2012 - 2016)')
+DEBUG:pdfminer.psparser:nexttoken: (2951, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=2951, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2951, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (2951, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b' \x97 University of Example (2012 - 2016)']
+DEBUG:pdfminer.psparser:nexttoken: (2955, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=2955, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((2955, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (2955, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (2958, b'Graduated with honors, specialized in software engineering and data analysis.')
+DEBUG:pdfminer.psparser:add_results: ((2958, b'Graduated with honors, specialized in software engineering and data analysis.'),)
+DEBUG:pdfminer.psparser:nextobject: (2958, b'Graduated with honors, specialized in software engineering and data analysis.')
+DEBUG:pdfminer.psparser:nexttoken: (3038, /b'Tj')
+DEBUG:pdfminer.psparser:do_keyword: pos=3038, token=/b'Tj', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((3038, /b'Tj'),)
+DEBUG:pdfminer.psparser:nextobject: (3038, /b'Tj')
+DEBUG:pdfminer.pdfinterp:exec: Tj [b'Graduated with honors, specialized in software engineering and data analysis.']
+DEBUG:pdfminer.psparser:nexttoken: (3041, /b'T*')
+DEBUG:pdfminer.psparser:do_keyword: pos=3041, token=/b'T*', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((3041, /b'T*'),)
+DEBUG:pdfminer.psparser:nextobject: (3041, /b'T*')
+DEBUG:pdfminer.pdfinterp:exec: T*
+DEBUG:pdfminer.psparser:nexttoken: (3044, /b'ET')
+DEBUG:pdfminer.psparser:do_keyword: pos=3044, token=/b'ET', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((3044, /b'ET'),)
+DEBUG:pdfminer.psparser:nextobject: (3044, /b'ET')
+DEBUG:pdfminer.pdfinterp:exec: ET
+DEBUG:pdfminer.psparser:nexttoken: (3047, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=3047, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((3047, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (3047, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.psparser:nexttoken: (3049, /b'Q')
+DEBUG:pdfminer.psparser:do_keyword: pos=3049, token=/b'Q', stack=[]
+DEBUG:pdfminer.psparser:add_results: ((3049, /b'Q'),)
+DEBUG:pdfminer.psparser:nextobject: (3049, /b'Q')
+DEBUG:pdfminer.pdfinterp:exec: Q
+DEBUG:pdfminer.pdfdocument:getobj: objid=7
+DEBUG:pdfminer.pdfpage:Pages: Kids=[<PDFObjRef:4>]
+DEBUG:pdfminer.pdfdocument:getobj: objid=4
+DEBUG:pdfminer.pdfpage:Page: {'Contents': <PDFObjRef:8>, 'MediaBox': [0, 0, 595.2756, 841.8898], 'Parent': <PDFObjRef:7>, 'Resources': {'Font': <PDFObjRef:1>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, 'Rotate': 0, 'Trans': {}, 'Type': /'Page'}
+DEBUG:pdfminer.pdfdocument:getobj: objid=8
+DEBUG:asyncio:Using selector: EpollSelector
+ERROR:__main__:Failed to launch browser or complete search: signal only works in main thread of the main interpreter
+ERROR:__main__:Error in match_resume_jobs: signal only works in main thread of the main interpreter
