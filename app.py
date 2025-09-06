@@ -12,6 +12,11 @@ import nest_asyncio
 from pyppeteer import launch
 from bs4 import BeautifulSoup
 import time
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 # Apply nest_asyncio to allow nested event loops
 nest_asyncio.apply()
@@ -91,35 +96,43 @@ async def search_jobs(query):
         ("LinkedIn", f"https://www.linkedin.com/jobs/search?keywords={query.replace(' ', '+')}", 'div', 'job-card', 'a'),
         ("Toptal", f"https://www.toptal.com/jobs?search={query.replace(' ', '+')}", 'div', 'job-card', 'a')
     ]
-    browser = await launch(headless=True)
-    print(f"Starting search_jobs for query: {query}")
-    for site_name, url, container_tag, container_class, title_tag in sites:
-        print(f"Scraping {site_name}: {url}")
-        try:
-            page = await browser.newPage()
-            await page.goto(url)
-            await page.waitForTimeout(3000)  # Wait 3 seconds for JavaScript to load
-            content = await page.content()
-            soup = BeautifulSoup(content, 'html.parser')
-            job_elements = soup.find_all(container_tag, class_=container_class, limit=3)
-            print(f"Found {len(job_elements)} job elements for {site_name}")
-            if not job_elements:
-                print(f"HTML snippet for {site_name}: {soup.prettify()[:1000]}...")
-            for job in job_elements:
-                title_elem = job.find(title_tag)
-                link_elem = job.find('a', href=True)
-                title = title_elem.text.strip() if title_elem else "No title"
-                base_url = f"https://www.{site_name.lower()}.com"
-                link = link_elem['href'] if link_elem else base_url
-                if title != "No title" and link:
-                    if not link.startswith('http'):
-                        link = base_url + link if not link.startswith('/') else base_url + link
-                    jobs.append({"title": title, "link": link, "source": site_name})
-            await page.close()
-        except Exception as e:
-            print(f"Error scraping {site_name}: {e}")
-        print(f"Finished scraping {site_name}")
-    await browser.close()
+    try:
+        browser = await launch(headless=True, args=['--no-sandbox', '--disable-dev-shm-usage'])
+        logger.debug(f"Browser launched successfully for query: {query}")
+        print(f"Starting search_jobs for query: {query}")
+        for site_name, url, container_tag, container_class, title_tag in sites:
+            print(f"Scraping {site_name}: {url}")
+            try:
+                page = await browser.newPage()
+                await page.goto(url)
+                await page.waitForTimeout(5000)  # Increased to 5 seconds for stability
+                content = await page.content()
+                soup = BeautifulSoup(content, 'html.parser')
+                job_elements = soup.find_all(container_tag, class_=container_class, limit=3)
+                logger.debug(f"Found {len(job_elements)} job elements for {site_name}")
+                print(f"Found {len(job_elements)} job elements for {site_name}")
+                if not job_elements:
+                    print(f"HTML snippet for {site_name}: {soup.prettify()[:1000]}...")
+                for job in job_elements:
+                    title_elem = job.find(title_tag)
+                    link_elem = job.find('a', href=True)
+                    title = title_elem.text.strip() if title_elem else "No title"
+                    base_url = f"https://www.{site_name.lower()}.com"
+                    link = link_elem['href'] if link_elem else base_url
+                    if title != "No title" and link:
+                        if not link.startswith('http'):
+                            link = base_url + link if not link.startswith('/') else base_url + link
+                        jobs.append({"title": title, "link": link, "source": site_name})
+                await page.close()
+            except Exception as e:
+                logger.error(f"Error scraping {site_name}: {e}")
+                print(f"Error scraping {site_name}: {e}")
+            print(f"Finished scraping {site_name}")
+        await browser.close()
+    except Exception as e:
+        logger.error(f"Failed to launch browser or complete search: {e}")
+        print(f"Failed to launch browser or complete search: {e}")
+        raise
     print(f"Total jobs collected: {len(jobs)}")
     return jobs[:9]  # Limit to 9 total
 
@@ -167,8 +180,12 @@ def find_jobs():
         query = request.form.get("job_title", "")
         print(f"Received query: {query}")
         if query:
-            jobs = sync_search_jobs(query)
-            print(f"Jobs retrieved: {len(jobs)}")
+            try:
+                jobs = sync_search_jobs(query)
+                print(f"Jobs retrieved: {len(jobs)}")
+            except Exception as e:
+                print(f"Error in find_jobs: {e}")
+                logger.error(f"Error in find_jobs: {e}")
     print("Exiting find_jobs route")
     return render_template("find_jobs.html", jobs=jobs, query=query)
 
@@ -185,12 +202,15 @@ def match_resume_jobs():
             if "Error" not in resume_text:
                 query = ' '.join(skills) + " job" if skills else "general job"
                 print(f"Generated query from resume: {query}")
-                jobs = sync_search_jobs(query)
-                print(f"Jobs retrieved: {len(jobs)}")
+                try:
+                    jobs = sync_search_jobs(query)
+                    print(f"Jobs retrieved: {len(jobs)}")
+                except Exception as e:
+                    print(f"Error in match_resume_jobs: {e}")
+                    logger.error(f"Error in match_resume_jobs: {e}")
     print("Exiting match_resume_jobs route")
     return render_template("match_resume_jobs.html", jobs=jobs)
 
 if __name__ == "__main__":
-    # Use waitress instead of Flask's development server
     from waitress import serve
     serve(app, host="0.0.0.0", port=8000)
