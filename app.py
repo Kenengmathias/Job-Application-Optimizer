@@ -191,4 +191,6 @@ def match_resume_jobs():
     return render_template("match_resume_jobs.html", jobs=jobs)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000, debug=True, use_reloader=False)
+    # Use waitress instead of Flask's development server
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8000)
