@@ -97,7 +97,7 @@ async def search_jobs(query):
         ("Toptal", f"https://www.toptal.com/jobs?search={query.replace(' ', '+')}", 'div', 'job-card', 'a')
     ]
     try:
-        browser = await launch(headless=True, args=['--no-sandbox', '--disable-dev-shm-usage'])
+        browser = await launch(headless=True, args=['--no-sandbox', '--disable-dev-shm-usage'], handleSIGINT=False)
         logger.debug(f"Browser launched successfully for query: {query}")
         print(f"Starting search_jobs for query: {query}")
         for site_name, url, container_tag, container_class, title_tag in sites:
