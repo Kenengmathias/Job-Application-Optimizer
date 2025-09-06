@@ -90,7 +90,8 @@ def search_jobs(query):
         ("Toptal", f"https://www.toptal.com/jobs?search={query.replace(' ', '+')}", 'div', 'job-card', 'a')
     ]
     options = Options()
-    options.headless = True  # Run in background
+    options.headless = True
+    options.binary_location = "/usr/bin/google-chrome"  # Default Chrome path; adjust if needed
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     print(f"Starting search_jobs for query: {query}")
     for site_name, url, container_tag, container_class, title_tag in sites:
