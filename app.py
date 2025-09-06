@@ -79,12 +79,12 @@ def save_application(job_title, company, date, status):
 def search_jobs(query):
     jobs = []
     sites = [
-        ("Upwork", f"https://www.upwork.com/nx/jobs/search/?q={query.replace(' ', '+')}", 'li', 'job-tile', 'a', 'job-title-link', 'href'),
+        ("Upwork", f"https://www.upwork.com/nx/jobs/search/?q={query.replace(' ', '+')}", 'div', 'job-tile-list', 'a', None, 'href'),
         ("Freelancer", f"https://www.freelancer.com/job-search/{query.replace(' ', '-')}", 'div', 'JobSearchCard-item', 'a', 'JobSearchCard-primary-heading-link', 'href'),
-        ("Fiverr", f"https://www.fiverr.com/search/gigs?query={query.replace(' ', '+')}", 'div', 'gig-card', 'h3', 'gig-title', 'href'),
-        ("Indeed", f"https://www.indeed.com/jobs?q={query.replace(' ', '+')}", 'div', 'jobsearch-SerpJobCard', 'h2', 'title', 'href'),
-        ("LinkedIn", f"https://www.linkedin.com/jobs/search?keywords={query.replace(' ', '+')}", 'div', 'job-card-container', 'a', 'base-card__title-link', 'href'),
-        ("Toptal", f"https://www.toptal.com/jobs?search={query.replace(' ', '+')}", 'div', 'job-listing-card', 'a', 'job-title', 'href')
+        ("Fiverr", f"https://www.fiverr.com/search/gigs?query={query.replace(' ', '+')}", 'div', 'gig-list-item', 'a', None, 'href'),
+        ("Indeed", f"https://www.indeed.com/jobs?q={query.replace(' ', '+')}", 'div', 'jobsearch-SerpJobCard', 'a', None, 'href'),
+        ("LinkedIn", f"https://www.linkedin.com/jobs/search?keywords={query.replace(' ', '+')}", 'div', 'job-card', 'a', None, 'href'),
+        ("Toptal", f"https://www.toptal.com/jobs?search={query.replace(' ', '+')}", 'div', 'job-card', 'a', None, 'href')
     ]
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
     for site_name, url, container_tag, container_class, title_tag, title_class, link_attr in sites:
@@ -98,9 +98,9 @@ def search_jobs(query):
             job_elements = soup.find_all(container_tag, class_=container_class, limit=3)
             print(f"Found {len(job_elements)} job elements for {site_name}")
             if not job_elements:
-                print(f"HTML snippet for {site_name}: {soup.prettify()[:500]}...")
+                print(f"HTML snippet for {site_name}: {soup.prettify()[:1000]}...")  # Increased to 1000 chars
             for job in job_elements:
-                title_elem = job.find(title_tag, class_=title_class) if title_class else job.find(title_tag)
+                title_elem = job.find(title_tag) if title_class is None else job.find(title_tag, class_=title_class)
                 link_elem = job.find('a', href=True)
                 title = title_elem.text.strip() if title_elem else "No title"
                 base_url = f"https://www.{site_name.lower()}.com"
@@ -139,7 +139,7 @@ def index():
         missing_keywords = compare_texts(resume_keywords, job_keywords)
         cover_letter = generate_cover_letter(name, job_title, company, resume_keywords, missing_keywords, achievements)
 
-        save_application(job_title, company, "2025-09-03", "Applied")
+        save_application(job_title, company, "2025-09-06", "Applied")
 
         return render_template("results.html", missing=missing_keywords, cover_letter=cover_letter, achievements=achievements)
 
