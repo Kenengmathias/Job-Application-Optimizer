@@ -8,9 +8,13 @@ import os
 import re
 import spacy
 import asyncio
+import nest_asyncio
 from pyppeteer import launch
 from bs4 import BeautifulSoup
 import time
+
+# Apply nest_asyncio to allow nested event loops
+nest_asyncio.apply()
 
 nltk.download('punkt')
 nltk.download('stopwords')
@@ -187,4 +191,4 @@ def match_resume_jobs():
     return render_template("match_resume_jobs.html", jobs=jobs)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000, debug=True)
+    app.run(host="0.0.0.0", port=8000, debug=True, use_reloader=False)
