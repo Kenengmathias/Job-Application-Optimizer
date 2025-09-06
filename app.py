@@ -7,7 +7,10 @@ from jinja2 import Template
 import os
 import re
 import spacy
-import requests
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 import time
 
@@ -79,39 +82,41 @@ def save_application(job_title, company, date, status):
 def search_jobs(query):
     jobs = []
     sites = [
-        ("Upwork", f"https://www.upwork.com/nx/jobs/search/?q={query.replace(' ', '+')}", 'div', 'job-tile-list', 'a', None, 'href'),
-        ("Freelancer", f"https://www.freelancer.com/job-search/{query.replace(' ', '-')}", 'div', 'JobSearchCard-item', 'a', 'JobSearchCard-primary-heading-link', 'href'),
-        ("Fiverr", f"https://www.fiverr.com/search/gigs?query={query.replace(' ', '+')}", 'div', 'gig-list-item', 'a', None, 'href'),
-        ("Indeed", f"https://www.indeed.com/jobs?q={query.replace(' ', '+')}", 'div', 'jobsearch-SerpJobCard', 'a', None, 'href'),
-        ("LinkedIn", f"https://www.linkedin.com/jobs/search?keywords={query.replace(' ', '+')}", 'div', 'job-card', 'a', None, 'href'),
-        ("Toptal", f"https://www.toptal.com/jobs?search={query.replace(' ', '+')}", 'div', 'job-card', 'a', None, 'href')
+        ("Upwork", f"https://www.upwork.com/nx/jobs/search/?q={query.replace(' ', '+')}", 'div', 'job-tile-list', 'a'),
+        ("Freelancer", f"https://www.freelancer.com/job-search/{query.replace(' ', '-')}", 'div', 'JobSearchCard-item', 'a'),
+        ("Fiverr", f"https://www.fiverr.com/search/gigs?query={query.replace(' ', '+')}", 'div', 'gig-list-item', 'a'),
+        ("Indeed", f"https://www.indeed.com/jobs?q={query.replace(' ', '+')}", 'div', 'jobsearch-SerpJobCard', 'a'),
+        ("LinkedIn", f"https://www.linkedin.com/jobs/search?keywords={query.replace(' ', '+')}", 'div', 'job-card', 'a'),
+        ("Toptal", f"https://www.toptal.com/jobs?search={query.replace(' ', '+')}", 'div', 'job-card', 'a')
     ]
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-    for site_name, url, container_tag, container_class, title_tag, title_class, link_attr in sites:
+    options = Options()
+    options.headless = True  # Run in background
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    print(f"Starting search_jobs for query: {query}")
+    for site_name, url, container_tag, container_class, title_tag in sites:
+        print(f"Scraping {site_name}: {url}")
         try:
-            print(f"Scraping {site_name}: {url}")
-            response = requests.get(url, headers=headers, timeout=5)
-            print(f"Status code: {response.status_code}")
-            response.raise_for_status()
-            soup = BeautifulSoup(response.text, 'html.parser')
-            time.sleep(2)  # Delay to avoid rate limiting
+            driver.get(url)
+            time.sleep(3)  # Wait for JavaScript to load
+            soup = BeautifulSoup(driver.page_source, 'html.parser')
             job_elements = soup.find_all(container_tag, class_=container_class, limit=3)
             print(f"Found {len(job_elements)} job elements for {site_name}")
             if not job_elements:
-                print(f"HTML snippet for {site_name}: {soup.prettify()[:1000]}...")  # Increased to 1000 chars
+                print(f"HTML snippet for {site_name}: {soup.prettify()[:1000]}...")
             for job in job_elements:
-                title_elem = job.find(title_tag) if title_class is None else job.find(title_tag, class_=title_class)
+                title_elem = job.find(title_tag)
                 link_elem = job.find('a', href=True)
                 title = title_elem.text.strip() if title_elem else "No title"
                 base_url = f"https://www.{site_name.lower()}.com"
-                link = link_elem['href'] if link_elem and link_attr in link_elem.attrs else base_url + (job.find('a')['href'] if job.find('a') else "")
+                link = link_elem['href'] if link_elem else base_url
                 if title != "No title" and link:
                     if not link.startswith('http'):
                         link = base_url + link if not link.startswith('/') else base_url + link
                     jobs.append({"title": title, "link": link, "source": site_name})
-        except requests.RequestException as e:
+        except Exception as e:
             print(f"Error scraping {site_name}: {e}")
-            continue
+        print(f"Finished scraping {site_name}")
+    driver.quit()
     print(f"Total jobs collected: {len(jobs)}")
     return jobs[:9]  # Limit to 9 total
 
@@ -149,15 +154,20 @@ def index():
 def find_jobs():
     jobs = []
     query = ""
+    print("Entering find_jobs route")
     if request.method == "POST":
         query = request.form.get("job_title", "")
+        print(f"Received query: {query}")
         if query:
             jobs = search_jobs(query)
+            print(f"Jobs retrieved: {len(jobs)}")
+    print("Exiting find_jobs route")
     return render_template("find_jobs.html", jobs=jobs, query=query)
 
 @app.route("/match_resume_jobs", methods=["GET", "POST"])
 def match_resume_jobs():
     jobs = []
+    print("Entering match_resume_jobs route")
     if request.method == "POST":
         resume = request.files.get("resume")
         if resume and resume.filename != '':
@@ -166,7 +176,10 @@ def match_resume_jobs():
             resume_text, _, skills = parse_resume(resume_path)
             if "Error" not in resume_text:
                 query = ' '.join(skills) + " job" if skills else "general job"
+                print(f"Generated query from resume: {query}")
                 jobs = search_jobs(query)
+                print(f"Jobs retrieved: {len(jobs)}")
+    print("Exiting match_resume_jobs route")
     return render_template("match_resume_jobs.html", jobs=jobs)
 
 if __name__ == "__main__":
