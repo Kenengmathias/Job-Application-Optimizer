@@ -7,10 +7,8 @@ from jinja2 import Template
 import os
 import re
 import spacy
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.options import Options
+import asyncio
+from pyppeteer import launch
 from bs4 import BeautifulSoup
 import time
 
@@ -79,7 +77,7 @@ def save_application(job_title, company, date, status):
     conn.commit()
     conn.close()
 
-def search_jobs(query):
+async def search_jobs(query):
     jobs = []
     sites = [
         ("Upwork", f"https://www.upwork.com/nx/jobs/search/?q={query.replace(' ', '+')}", 'div', 'job-tile-list', 'a'),
@@ -89,17 +87,16 @@ def search_jobs(query):
         ("LinkedIn", f"https://www.linkedin.com/jobs/search?keywords={query.replace(' ', '+')}", 'div', 'job-card', 'a'),
         ("Toptal", f"https://www.toptal.com/jobs?search={query.replace(' ', '+')}", 'div', 'job-card', 'a')
     ]
-    options = Options()
-    options.headless = True
-    options.binary_location = "/usr/bin/google-chrome"  # Default Chrome path; adjust if needed
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    browser = await launch(headless=True)
     print(f"Starting search_jobs for query: {query}")
     for site_name, url, container_tag, container_class, title_tag in sites:
         print(f"Scraping {site_name}: {url}")
         try:
-            driver.get(url)
-            time.sleep(3)  # Wait for JavaScript to load
-            soup = BeautifulSoup(driver.page_source, 'html.parser')
+            page = await browser.newPage()
+            await page.goto(url)
+            await page.waitForTimeout(3000)  # Wait 3 seconds for JavaScript to load
+            content = await page.content()
+            soup = BeautifulSoup(content, 'html.parser')
             job_elements = soup.find_all(container_tag, class_=container_class, limit=3)
             print(f"Found {len(job_elements)} job elements for {site_name}")
             if not job_elements:
@@ -114,12 +111,18 @@ def search_jobs(query):
                     if not link.startswith('http'):
                         link = base_url + link if not link.startswith('/') else base_url + link
                     jobs.append({"title": title, "link": link, "source": site_name})
+            await page.close()
         except Exception as e:
             print(f"Error scraping {site_name}: {e}")
         print(f"Finished scraping {site_name}")
-    driver.quit()
+    await browser.close()
     print(f"Total jobs collected: {len(jobs)}")
     return jobs[:9]  # Limit to 9 total
+
+def sync_search_jobs(query):
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    return loop.run_until_complete(search_jobs(query))
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -160,7 +163,7 @@ def find_jobs():
         query = request.form.get("job_title", "")
         print(f"Received query: {query}")
         if query:
-            jobs = search_jobs(query)
+            jobs = sync_search_jobs(query)
             print(f"Jobs retrieved: {len(jobs)}")
     print("Exiting find_jobs route")
     return render_template("find_jobs.html", jobs=jobs, query=query)
@@ -178,7 +181,7 @@ def match_resume_jobs():
             if "Error" not in resume_text:
                 query = ' '.join(skills) + " job" if skills else "general job"
                 print(f"Generated query from resume: {query}")
-                jobs = search_jobs(query)
+                jobs = sync_search_jobs(query)
                 print(f"Jobs retrieved: {len(jobs)}")
     print("Exiting match_resume_jobs route")
     return render_template("match_resume_jobs.html", jobs=jobs)
