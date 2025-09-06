@@ -1,88 +1,13 @@
+DEBUG:asyncio:Using selector: EpollSelector
 [nltk_data] Downloading package punkt to /home/codespace/nltk_data...
 [nltk_data]   Package punkt is already up-to-date!
 [nltk_data] Downloading package stopwords to
 [nltk_data]     /home/codespace/nltk_data...
 [nltk_data]   Package stopwords is already up-to-date!
- * Serving Flask app 'app'
- * Debug mode: on
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:8000
- * Running on http://10.0.2.171:8000
-Press CTRL+C to quit
- * Restarting with stat
-[nltk_data] Downloading package punkt to /home/codespace/nltk_data...
-[nltk_data]   Package punkt is already up-to-date!
-[nltk_data] Downloading package stopwords to
-[nltk_data]     /home/codespace/nltk_data...
-[nltk_data]   Package stopwords is already up-to-date!
- * Debugger is active!
- * Debugger PIN: 119-463-463
-127.0.0.1 - - [06/Sep/2025 13:44:16] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [06/Sep/2025 13:44:22] "GET /find_jobs HTTP/1.1" 200 -
-127.0.0.1 - - [06/Sep/2025 13:44:29] "POST /find_jobs HTTP/1.1" 500 -
-Traceback (most recent call last):
-  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/flask/app.py", line 1498, in __call__
-    return self.wsgi_app(environ, start_response)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/flask/app.py", line 1476, in wsgi_app
-    response = self.handle_exception(e)
-               ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspaces/Job-Application-Optimizer/app.py", line 162, in find_jobs
-    jobs = search_jobs(query)
-           ^^^^^^^^^^^^^^^^^^
-  File "/workspaces/Job-Application-Optimizer/app.py", line 94, in search_jobs
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/selenium/webdriver/chrome/webdriver.py", line 47, in __init__
-    super().__init__(
-  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/selenium/webdriver/chromium/webdriver.py", line 69, in __init__
-    super().__init__(command_executor=executor, options=options)
-  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 263, in __init__
-    self.start_session(capabilities)
-  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 366, in start_session
-    response = self.execute(Command.NEW_SESSION, caps)["value"]
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 458, in execute
-    self.error_handler.check_response(response)
-  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary
-Stacktrace:
-#0 0x59ce2b19f4e3 <unknown>
-#1 0x59ce2aecec76 <unknown>
-#2 0x59ce2aef5757 <unknown>
-#3 0x59ce2aef4029 <unknown>
-#4 0x59ce2af32ccc <unknown>
-#5 0x59ce2af3247f <unknown>
-#6 0x59ce2af29de3 <unknown>
-#7 0x59ce2aeff2dd <unknown>
-#8 0x59ce2af0034e <unknown>
-#9 0x59ce2b15f3e4 <unknown>
-#10 0x59ce2b1633d7 <unknown>
-#11 0x59ce2b16db20 <unknown>
-#12 0x59ce2b164023 <unknown>
-#13 0x59ce2b1321aa <unknown>
-#14 0x59ce2b1886b8 <unknown>
-#15 0x59ce2b188847 <unknown>
-#16 0x59ce2b198243 <unknown>
-#17 0x703276855aa4 <unknown>
-#18 0x7032768e2c3c <unknown>
-
-127.0.0.1 - - [06/Sep/2025 13:44:30] "GET /find_jobs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-127.0.0.1 - - [06/Sep/2025 13:44:30] "GET /find_jobs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-127.0.0.1 - - [06/Sep/2025 13:44:30] "GET /find_jobs?__debugger__=yes&cmd=resource&f=console.png&s=KrQBlZGmNgXg207vBl2v HTTP/1.1" 200 -
-127.0.0.1 - - [06/Sep/2025 13:44:31] "GET /find_jobs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-127.0.0.1 - - [06/Sep/2025 13:45:03] "GET / HTTP/1.1" 200 -
+INFO:waitress:Serving on http://0.0.0.0:8000
+DEBUG:asyncio:Using selector: EpollSelector
+ERROR:__main__:Failed to launch browser or complete search: signal only works in main thread of the main interpreter
+ERROR:__main__:Error in find_jobs: signal only works in main thread of the main interpreter
+DEBUG:asyncio:Using selector: EpollSelector
+ERROR:__main__:Failed to launch browser or complete search: signal only works in main thread of the main interpreter
+ERROR:__main__:Error in find_jobs: signal only works in main thread of the main interpreter
