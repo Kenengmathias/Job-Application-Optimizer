@@ -8,8 +8,7 @@ import os
 import re
 import spacy
 import asyncio
-import nest_asyncio
-from pyppeteer import launch
+from playwright.async_api import async_playwright
 from bs4 import BeautifulSoup
 import time
 import logging
@@ -17,9 +16,6 @@ import logging
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
-
-# Apply nest_asyncio to allow nested event loops
-nest_asyncio.apply()
 
 nltk.download('punkt')
 nltk.download('stopwords')
@@ -96,16 +92,16 @@ async def search_jobs(query):
         ("LinkedIn", f"https://www.linkedin.com/jobs/search?keywords={query.replace(' ', '+')}", 'div', 'job-card', 'a'),
         ("Toptal", f"https://www.toptal.com/jobs?search={query.replace(' ', '+')}", 'div', 'job-card', 'a')
     ]
-    try:
-        browser = await launch(headless=True, args=['--no-sandbox', '--disable-dev-shm-usage'], handleSIGINT=False)
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True, args=['--no-sandbox', '--disable-dev-shm-usage'])
         logger.debug(f"Browser launched successfully for query: {query}")
         print(f"Starting search_jobs for query: {query}")
         for site_name, url, container_tag, container_class, title_tag in sites:
             print(f"Scraping {site_name}: {url}")
             try:
-                page = await browser.newPage()
+                page = await browser.new_page()
                 await page.goto(url)
-                await page.waitForTimeout(5000)  # Increased to 5 seconds for stability
+                await page.wait_for_timeout(5000)  # Increased to 5 seconds for stability
                 content = await page.content()
                 soup = BeautifulSoup(content, 'html.parser')
                 job_elements = soup.find_all(container_tag, class_=container_class, limit=3)
@@ -129,16 +125,11 @@ async def search_jobs(query):
                 print(f"Error scraping {site_name}: {e}")
             print(f"Finished scraping {site_name}")
         await browser.close()
-    except Exception as e:
-        logger.error(f"Failed to launch browser or complete search: {e}")
-        print(f"Failed to launch browser or complete search: {e}")
-        raise
     print(f"Total jobs collected: {len(jobs)}")
     return jobs[:9]  # Limit to 9 total
 
 def sync_search_jobs(query):
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
+    loop = asyncio.get_event_loop()
     return loop.run_until_complete(search_jobs(query))
 
 @app.route("/", methods=["GET", "POST"])
@@ -165,7 +156,7 @@ def index():
         missing_keywords = compare_texts(resume_keywords, job_keywords)
         cover_letter = generate_cover_letter(name, job_title, company, resume_keywords, missing_keywords, achievements)
 
-        save_application(job_title, company, "2025-09-06", "Applied")
+        save_application(job_title, company, "2025-09-07", "Applied")
 
         return render_template("results.html", missing=missing_keywords, cover_letter=cover_letter, achievements=achievements)
 
