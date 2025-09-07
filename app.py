@@ -129,8 +129,8 @@ async def search_jobs(query):
     return jobs[:9]  # Limit to 9 total
 
 def sync_search_jobs(query):
-    loop = asyncio.get_event_loop()
-    return loop.run_until_complete(search_jobs(query))
+    # Use asyncio.run to ensure an event loop is created for this thread
+    return asyncio.run(search_jobs(query))
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -204,4 +204,4 @@ def match_resume_jobs():
 
 if __name__ == "__main__":
     from waitress import serve
-    serve(app, host="0.0.0.0", port=8000)
+    serve(app, host="0.0.0.0", port=8000, threads=1)  # Force single-threaded mode
