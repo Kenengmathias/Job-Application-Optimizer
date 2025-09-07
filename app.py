@@ -85,12 +85,12 @@ def save_application(job_title, company, date, status):
 async def search_jobs(query):
     jobs = []
     sites = [
-        ("Upwork", f"https://www.upwork.com/nx/jobs/search/?q={query.replace(' ', '+')}", 'li', 'job-tile', 'a.job-title-link'),  # Updated selector
+        ("Upwork", f"https://www.upwork.com/nx/jobs/search/?q={query.replace(' ', '+')}", 'li', 'job-tile', 'a.job-title-link'),  # Cloudflare-protected
         ("Freelancer", f"https://www.freelancer.com/job-search/{query.replace(' ', '-')}", 'div', 'JobSearchCard-item', 'a'),
-        ("Fiverr", f"https://www.fiverr.com/search/gigs?query={query.replace(' ', '+')}", 'li', 'gig-card', 'a'),  # Updated selector
-        ("Indeed", f"https://www.indeed.com/jobs?q={query.replace(' ', '+')}", 'div', 'jobsearch-SerpJobCard', 'a'),  # Verified selector
-        ("LinkedIn", f"https://www.linkedin.com/jobs/search?keywords={query.replace(' ', '+')}&start=0", 'li', 'job-card-list__item', 'a'),  # Updated URL and selector
-        ("Toptal", f"https://www.toptal.com/jobs?search={query.replace(' ', '+')}&page=1", 'div', 'job-card', 'a')  # Updated URL
+        ("Fiverr", f"https://www.fiverr.com/search/gigs?query={query.replace(' ', '+')}", 'li', 'gig-card', 'a'),  # Dynamic loading
+        ("Indeed", f"https://www.indeed.com/jobs?q={query.replace(' ', '+')}", 'div', 'job_seen_beacon', 'a'),  # Updated selector
+        ("LinkedIn", f"https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords={query.replace(' ', '+')}&start=0", 'li', 'job-card-list__item', 'a'),  # Updated URL and selector
+        ("Toptal", f"https://www.toptal.com/talent/jobs?search={query.replace(' ', '+')}&page=1", 'div', 'job-listing', 'a')  # Updated URL
     ]
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True, args=['--no-sandbox', '--disable-dev-shm-usage'])
@@ -101,7 +101,8 @@ async def search_jobs(query):
             try:
                 page = await browser.new_page(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
                 await page.goto(url)
-                await page.wait_for_timeout(10000)  # Increased to 10 seconds for anti-bot pages
+                # Wait for job elements instead of fixed timeout
+                await page.wait_for_selector(f"{container_tag}.{container_class}", timeout=15000)  # 15 seconds
                 content = await page.content()
                 soup = BeautifulSoup(content, 'html.parser')
                 job_elements = soup.find_all(container_tag, class_=container_class, limit=3)
