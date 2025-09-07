@@ -4,5 +4,47 @@
 [nltk_data]     /home/codespace/nltk_data...
 [nltk_data]   Package stopwords is already up-to-date!
 INFO:waitress:Serving on http://0.0.0.0:8000
-ERROR:__main__:Error in find_jobs: There is no current event loop in thread 'waitress-2'.
-ERROR:__main__:Error in find_jobs: There is no current event loop in thread 'waitress-3'.
+DEBUG:asyncio:Using selector: EpollSelector
+ERROR:__main__:Error in find_jobs: BrowserType.launch: 
+╔══════════════════════════════════════════════════════╗
+║ Host system is missing dependencies to run browsers. ║
+║ Please install them with the following command:      ║
+║                                                      ║
+║     sudo playwright install-deps                     ║
+║                                                      ║
+║ Alternatively, use apt:                              ║
+║     sudo apt-get install libatk1.0-0t64\             ║
+║         libatk-bridge2.0-0t64\                       ║
+║         libatspi2.0-0t64\                            ║
+║         libxcomposite1\                              ║
+║         libxdamage1\                                 ║
+║         libxfixes3\                                  ║
+║         libxrandr2\                                  ║
+║         libgbm1\                                     ║
+║         libxkbcommon0\                               ║
+║         libasound2t64                                ║
+║                                                      ║
+║ <3 Playwright Team                                   ║
+╚══════════════════════════════════════════════════════╝
+DEBUG:asyncio:Using selector: EpollSelector
+ERROR:__main__:Error in find_jobs: BrowserType.launch: 
+╔══════════════════════════════════════════════════════╗
+║ Host system is missing dependencies to run browsers. ║
+║ Please install them with the following command:      ║
+║                                                      ║
+║     sudo playwright install-deps                     ║
+║                                                      ║
+║ Alternatively, use apt:                              ║
+║     sudo apt-get install libatk1.0-0t64\             ║
+║         libatk-bridge2.0-0t64\                       ║
+║         libatspi2.0-0t64\                            ║
+║         libxcomposite1\                              ║
+║         libxdamage1\                                 ║
+║         libxfixes3\                                  ║
+║         libxrandr2\                                  ║
+║         libgbm1\                                     ║
+║         libxkbcommon0\                               ║
+║         libasound2t64                                ║
+║                                                      ║
+║ <3 Playwright Team                                   ║
+╚══════════════════════════════════════════════════════╝
